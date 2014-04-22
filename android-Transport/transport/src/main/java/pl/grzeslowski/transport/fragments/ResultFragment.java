@@ -27,9 +27,6 @@ import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.model.Connection;
 import pl.grzeslowski.transport.repository.DatabaseManager;
 
-/**
- * Created by Martin on 2014-04-22.
- */
 @EFragment(R.layout.fragment_result)
 public class ResultFragment extends Fragment {
     private static final String sConnectionsTag = "connections";
