@@ -57,8 +57,8 @@ public class ResultFragment extends Fragment {
     }
 
     private void trySetAdapter(City from, City to) {
-        if (mFrom != null && mTo != null) {
-            showResultsFor(mFrom, mTo);
+        if (from != null && to != null) {
+            showResultsFor(from, to);
         }
     }
 
@@ -84,8 +84,8 @@ public class ResultFragment extends Fragment {
         setAdapter(forAdapter);
     }
 
-    private void setAdapter(List<?> elements) {
-        ListAdapter adapter = new ArrayAdapter(getActivity(), android.R.layout.simple_list_item_1, elements);
+    private <T> void setAdapter(List<T> elements) {
+        ListAdapter adapter = new ArrayAdapter<T>(getActivity(), android.R.layout.simple_list_item_1, elements);
         mResultList.setAdapter(adapter);
     }
 
