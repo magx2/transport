@@ -48,7 +48,7 @@ public class ResultFragment extends Fragment {
     }
 
     private void trySetAdapter(List<Connection> connections) {
-        if(!connections.isEmpty()){
+        if (!connections.isEmpty()) {
             parseResultsToList(connections);
         }
     }
@@ -67,14 +67,11 @@ public class ResultFragment extends Fragment {
         parseResultsToList(mConnections);
     }
 
-    private void parseResultsToList(List<Connection> connections) {
+    private void parseResultsToList(final List<Connection> connections) {
         List<String> forAdapter = Lists.transform(connections, new Function<Connection, String>() {
             @Override
             public String apply(Connection input) {
-                City from = input.getPath().get(0);
-                City to = input.getPath().get(input.getPath().size() - 1);
-
-                return String.format("from: %s%nto: %s%nby: %s%ntime: %s:%s", from.getName(), to.getName(), input.getProvider().getName(), input.getTime().getHourOfDay(), input.getTime().getMinuteOfHour());
+                return getStringRepresentationForCity(input);
             }
         });
 
@@ -84,6 +81,13 @@ public class ResultFragment extends Fragment {
     private <T> void setAdapter(List<T> elements) {
         ListAdapter adapter = new ArrayAdapter<T>(getActivity(), android.R.layout.simple_list_item_1, elements);
         mResultList.setAdapter(adapter);
+    }
+
+    private String getStringRepresentationForCity(Connection connection) {
+        City from = connection.getPath().get(0);
+        City to = connection.getPath().get(connection.getPath().size() - 1);
+
+        return String.format("from: %s%nto: %s%nby: %s%ntime: %02d:%02d", from.getName(), to.getName(), connection.getProvider().getName(), connection.getTime().getHourOfDay(), connection.getTime().getMinuteOfHour());
     }
 
     @Override
