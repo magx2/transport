@@ -17,7 +17,7 @@ import java.util.List;
  * Created by Martin on 2014-04-17.
  */
 @DatabaseTable
-public class Connection implements Serializable{
+public class Connection implements Serializable {
 
     private static final String ID = "id";
     private static final String PATH = "path";
@@ -44,7 +44,7 @@ public class Connection implements Serializable{
     }
 
     public Connection(List<City> path, LocalTime startTime, Provider provider) {
-        this(0, path,  startTime, provider);
+        this(0, path, startTime, provider);
     }
 
     public int getId() {

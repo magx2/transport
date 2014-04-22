@@ -15,9 +15,9 @@
         android:layout_height="wrap_content"/>
 
     <fragment
-        android:layout_below="@id/fragment_search"
         android:id="@+id/fragment_result"
         class="pl.grzeslowski.transport.fragments.ResultFragment_"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_search"/>
 </RelativeLayout>
