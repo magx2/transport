@@ -8,9 +8,13 @@
     tools:ignore="MergeRootFrame" >
 
     <fragment
-        android:id="@+id/listFragment"
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         class="pl.grzeslowski.transport.fragments.SearchFragment_"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        class="pl.grzeslowski.transport.fragments.ResultFragment_"/>
 </LinearLayout>
