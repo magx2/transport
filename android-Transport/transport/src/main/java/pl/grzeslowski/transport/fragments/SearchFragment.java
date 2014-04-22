@@ -3,6 +3,7 @@ package pl.grzeslowski.transport.fragments;
 import android.support.v4.app.Fragment;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
@@ -13,6 +14,7 @@ import org.androidannotations.annotations.ViewById;
 import java.util.List;
 
 import pl.grzeslowski.transport.R;
+import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.repository.DatabaseManager;
 
 /**
@@ -42,6 +44,22 @@ public class SearchFragment extends Fragment{
     }
 
     @Click(R.id.fragment_search_search)
-    void search() {}
+    void search() {
+
+        // get from and to City
+        City from = mDatabaseManager.getCityByName((String) mFrom.getSelectedItem());
+        City to = mDatabaseManager.getCityByName((String) mTo.getSelectedItem());
+
+        ResultFragment resultFragment = (ResultFragment) getFragmentManager().findFragmentById(R.id.fragment_result);
+
+        if (resultFragment != null && resultFragment.isInLayout()) {
+            resultFragment.showResultsFor(from, to);
+        } else {
+
+            // resultFragment is not in activity; open resultActivity with result11
+            // TODO: Mock
+            Toast.makeText(getActivity(), "ResultFragment is not in activity!", Toast.LENGTH_SHORT).show();
+        }
+    }
 
 }
