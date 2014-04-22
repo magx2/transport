@@ -11,9 +11,9 @@ import com.google.common.collect.Lists;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EFragment;
+import org.androidannotations.annotations.FragmentArg;
 import org.androidannotations.annotations.ViewById;
 
-import java.util.Arrays;
 import java.util.List;
 
 import pl.grzeslowski.transport.R;
@@ -31,10 +31,18 @@ public class ResultFragment extends Fragment {
     ListView mResultList;
     @Bean
     DatabaseManager mDatabaseManager;
+    @FragmentArg
+    City mFrom;
+    @FragmentArg
+    City mTo;
 
     @AfterViews
     void prepare() {
-        setAdapter(Arrays.asList("as", "df", "fg"));
+        if(mFrom != null && mTo != null) {
+            showResultsFor(mFrom, mTo);
+        } else {
+            mResultList.setAdapter(null);
+        }
     }
 
     public void showResultsFor(City from, City to) {
