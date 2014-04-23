@@ -14,4 +14,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <fragment
+        android:id="@+id/activity_main_fragment_result"
+        class="pl.grzeslowski.transport.fragments.ResultFragment_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_main_fragment_search"/>
 </RelativeLayout>
