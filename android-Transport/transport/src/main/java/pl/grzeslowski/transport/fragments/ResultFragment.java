@@ -43,7 +43,7 @@ public class ResultFragment extends Fragment {
 
     @AfterViews
     void prepare() {
-        trySetAdapter(mFrom, mTo);
+        trySetAdapter();
         trySetAdapter(mConnections);
     }
 
@@ -53,9 +53,11 @@ public class ResultFragment extends Fragment {
         }
     }
 
-    private void trySetAdapter(City from, City to) {
-        if (from != null && to != null) {
-            showResultsFor(from, to);
+    private void trySetAdapter() {
+        if (mFrom != null && mTo != null) {
+            showResultsFor(mFrom, mTo);
+            mFrom = null;
+            mTo = null;
         }
     }
 
