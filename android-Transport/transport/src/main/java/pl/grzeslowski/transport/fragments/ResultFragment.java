@@ -10,7 +10,9 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.google.common.base.Function;
+import com.google.common.base.Joiner;
 import com.google.common.base.Preconditions;
+import com.google.common.collect.Collections2;
 import com.google.common.collect.Lists;
 
 import org.androidannotations.annotations.AfterViews;
@@ -93,7 +95,14 @@ public class ResultFragment extends Fragment {
         City from = connection.getPath().get(0);
         City to = connection.getPath().get(connection.getPath().size() - 1);
 
-        return String.format("from: %s%nto: %s%nby: %s%ntime: %02d:%02d", from.getName(), to.getName(), connection.getProvider().getName(), connection.getTime().getHourOfDay(), connection.getTime().getMinuteOfHour());
+        String cities = Joiner.on(", ").join(Collections2.transform(connection.getPath(), new Function<City, String>() {
+            @Override
+            public String apply(City input) {
+                return input.getName();
+            }
+        }));
+
+        return String.format("from: %s%nto: %s%nby: %s%ntime: %02d:%02d%npath: [%s]", from.getName(), to.getName(), connection.getProvider().getName(), connection.getTime().getHourOfDay(), connection.getTime().getMinuteOfHour(), cities);
     }
 
     @Override

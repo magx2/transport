@@ -69,6 +69,12 @@ android {
             runProguard false
         }
     }
+
+    sourceSets {
+        instrumentTest {
+            java.srcDirs = ['instrumentTest/java']
+        }
+    }
 }
 
 def getSourceSetName(variant) {
@@ -99,4 +105,33 @@ android.applicationVariants.all { variant ->
     variant.javaCompile.doFirst {
         aptOutput.mkdirs()
     }
+}
+
+task addTest {
+    def src = ['src/main/test/java']
+    def file = file("app.iml")
+
+    doLast {
+        try {
+            def parsedXml = (new XmlParser()).parse(file)
+            def node = parsedXml.component[1].content[0]
+            src.each {
+                def path = 'file://$MODULE_DIR$/' + "${it}"
+                def set = node.find { it.@url == path }
+                if (set == null) {
+                    new Node(node, 'sourceFolder', ['url': 'file://$MODULE_DIR$/' + "${it}", 'isTestSource': "true"])
+                    def writer = new StringWriter()
+                    new XmlNodePrinter(new PrintWriter(writer)).print(parsedXml)
+                    file.text = writer.toString()
+                }
+            }
+        } catch (FileNotFoundException e) {
+            // nop, iml not found
+        }
+    }
+}
+
+// always do the addtest on prebuild
+gradle.projectsEvaluated {
+    preBuild.dependsOn(addTest)
 }
