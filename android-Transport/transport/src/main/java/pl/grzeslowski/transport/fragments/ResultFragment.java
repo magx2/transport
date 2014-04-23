@@ -5,15 +5,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 
-import com.google.common.base.Function;
-import com.google.common.base.Joiner;
 import com.google.common.base.Preconditions;
-import com.google.common.collect.Collections2;
-import com.google.common.collect.Lists;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
@@ -25,6 +20,7 @@ import java.util.Collections;
 import java.util.List;
 
 import pl.grzeslowski.transport.R;
+import pl.grzeslowski.transport.adapters.ResultListAdapter;
 import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.model.Connection;
 import pl.grzeslowski.transport.repository.DatabaseManager;
@@ -61,34 +57,12 @@ public class ResultFragment extends Fragment {
 
     private void parseResultsToList(final List<Connection> connections) {
         Collections.sort(connections, new ConnectionComparator());
-
-        List<String> forAdapter = Lists.transform(connections, new Function<Connection, String>() {
-            @Override
-            public String apply(Connection input) {
-                return getStringRepresentationForCity(input);
-            }
-        });
-
-        setAdapter(forAdapter);
+        setAdapter(connections);
     }
 
-    private <T> void setAdapter(List<T> elements) {
-        ListAdapter adapter = new ArrayAdapter<T>(getActivity(), android.R.layout.simple_list_item_1, elements);
+    private void setAdapter(List<Connection> elements) {
+        ListAdapter adapter = new ResultListAdapter(elements, getActivity());
         mResultList.setAdapter(adapter);
-    }
-
-    private String getStringRepresentationForCity(Connection connection) {
-        City from = connection.getPath().get(0);
-        City to = connection.getPath().get(connection.getPath().size() - 1);
-
-        String cities = Joiner.on(", ").join(Collections2.transform(connection.getPath(), new Function<City, String>() {
-            @Override
-            public String apply(City input) {
-                return input.getName();
-            }
-        }));
-
-        return String.format("from: %s%nto: %s%nby: %s%ntime: %02d:%02d%npath: [%s]", from.getName(), to.getName(), connection.getProvider().getName(), connection.getTime().getHourOfDay(), connection.getTime().getMinuteOfHour(), cities);
     }
 
     @Override
