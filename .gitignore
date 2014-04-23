@@ -24,3 +24,5 @@ proguard/
 
 # bak files
 *.*~
+
+android-Transport/.idea/
