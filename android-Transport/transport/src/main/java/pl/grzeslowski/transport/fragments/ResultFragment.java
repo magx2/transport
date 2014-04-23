@@ -18,7 +18,6 @@ import com.google.common.collect.Lists;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EFragment;
-import org.androidannotations.annotations.FragmentArg;
 import org.androidannotations.annotations.ViewById;
 
 import java.util.ArrayList;
@@ -39,29 +38,16 @@ public class ResultFragment extends Fragment {
     ListView mResultList;
     @Bean
     DatabaseManager mDatabaseManager;
-    @FragmentArg
-    City mFrom;
-    @FragmentArg
-    City mTo;
     private List<Connection> mConnections = new ArrayList<Connection>();
 
     @AfterViews
     void prepare() {
-        trySetAdapter();
         trySetAdapter(mConnections);
     }
 
     private void trySetAdapter(List<Connection> connections) {
         if (!connections.isEmpty()) {
             parseResultsToList(connections);
-        }
-    }
-
-    private void trySetAdapter() {
-        if (mFrom != null && mTo != null) {
-            showResultsFor(mFrom, mTo);
-            mFrom = null;
-            mTo = null;
         }
     }
 
