@@ -20,12 +20,14 @@ import org.androidannotations.annotations.FragmentArg;
 import org.androidannotations.annotations.ViewById;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import pl.grzeslowski.transport.R;
 import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.model.Connection;
 import pl.grzeslowski.transport.repository.DatabaseManager;
+import pl.grzeslowski.transport.tools.ConnectionComparator;
 
 @EFragment(R.layout.fragment_result)
 public class ResultFragment extends Fragment {
@@ -70,6 +72,8 @@ public class ResultFragment extends Fragment {
     }
 
     private void parseResultsToList(final List<Connection> connections) {
+        Collections.sort(connections, new ConnectionComparator());
+
         List<String> forAdapter = Lists.transform(connections, new Function<Connection, String>() {
             @Override
             public String apply(Connection input) {
