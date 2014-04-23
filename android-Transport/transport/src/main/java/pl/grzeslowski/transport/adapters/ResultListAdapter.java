@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
+import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
 import com.google.common.base.Function;
@@ -19,7 +19,7 @@ import pl.grzeslowski.transport.R;
 import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.model.Connection;
 
-public class ResultListAdapter extends BaseAdapter {
+public class ResultListAdapter extends BaseExpandableListAdapter {
 
     private final List<Connection> mConnections;
     private final LayoutInflater mInflater;
@@ -30,22 +30,42 @@ public class ResultListAdapter extends BaseAdapter {
     }
 
     @Override
-    public int getCount() {
+    public int getGroupCount() {
         return mConnections.size();
     }
 
     @Override
-    public Object getItem(int position) {
-        return mConnections.get(position);
+    public int getChildrenCount(int groupPosition) {
+        return 1;
     }
 
     @Override
-    public long getItemId(int position) {
-        return position;
+    public Object getGroup(int groupPosition) {
+        return null;
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public Object getChild(int groupPosition, int childPosition) {
+        return null;
+    }
+
+    @Override
+    public long getGroupId(int groupPosition) {
+        return groupPosition;
+    }
+
+    @Override
+    public long getChildId(int groupPosition, int childPosition) {
+        return childPosition;
+    }
+
+    @Override
+    public boolean hasStableIds() {
+        return true;
+    }
+
+    @Override
+    public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
         ViewHolder viewHolder;
 
         if (convertView == null) {
@@ -57,7 +77,28 @@ public class ResultListAdapter extends BaseAdapter {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        Connection connection = mConnections.get(position);
+        Connection connection = mConnections.get(groupPosition);
+
+        String text = String.format("by: %s%ntime: %02d:%02d", connection.getProvider().getName(), connection.getTime().getHourOfDay(), connection.getTime().getMinuteOfHour());
+        viewHolder.mTextView.setText(text);
+
+        return convertView;
+    }
+
+    @Override
+    public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
+        ChildViewHolder viewHolder;
+
+        if (convertView == null) {
+            convertView = mInflater.inflate(R.layout.list_result_expanded, null);
+            viewHolder = new ChildViewHolder(convertView);
+
+            convertView.setTag(viewHolder);
+        } else {
+            viewHolder = (ChildViewHolder) convertView.getTag();
+        }
+
+        Connection connection = mConnections.get(groupPosition);
 
         String cities = Joiner.on(", ").join(Collections2.transform(connection.getPath(), new Function<City, String>() {
             @Override
@@ -65,10 +106,14 @@ public class ResultListAdapter extends BaseAdapter {
                 return input.getName();
             }
         }));
-        String text = String.format("by: %s%ntime: %02d:%02d%npath: [%s]", connection.getProvider().getName(), connection.getTime().getHourOfDay(), connection.getTime().getMinuteOfHour(), cities);
-        viewHolder.mTextView.setText(text);
+        viewHolder.mTextView.setText(cities);
 
         return convertView;
+    }
+
+    @Override
+    public boolean isChildSelectable(int groupPosition, int childPosition) {
+        return false;
     }
 
     private class ViewHolder {
@@ -76,6 +121,14 @@ public class ResultListAdapter extends BaseAdapter {
 
         ViewHolder(View convertView) {
             mTextView = (TextView) convertView.findViewById(R.id.list_result_text_view);
+        }
+    }
+
+    private class ChildViewHolder {
+        private TextView mTextView;
+
+        ChildViewHolder(View convertView) {
+            mTextView = (TextView) convertView.findViewById(R.id.list_result_expanded_text_view);
         }
     }
 

@@ -5,8 +5,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListAdapter;
-import android.widget.ListView;
+import android.widget.ExpandableListView;
 
 import com.google.common.base.Preconditions;
 
@@ -31,7 +30,7 @@ public class ResultFragment extends Fragment {
     private static final String sConnectionsTag = "connections";
 
     @ViewById(R.id.fragment_result_list)
-    ListView mResultList;
+    ExpandableListView mResultList;
     @Bean
     DatabaseManager mDatabaseManager;
     private List<Connection> mConnections = new ArrayList<Connection>();
@@ -61,7 +60,7 @@ public class ResultFragment extends Fragment {
     }
 
     private void setAdapter(List<Connection> elements) {
-        ListAdapter adapter = new ResultListAdapter(elements, getActivity());
+        ResultListAdapter adapter = new ResultListAdapter(elements, getActivity());
         mResultList.setAdapter(adapter);
     }
 
