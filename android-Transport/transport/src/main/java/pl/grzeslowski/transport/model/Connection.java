@@ -18,11 +18,12 @@ import java.util.List;
  */
 @DatabaseTable
 public class Connection implements Serializable {
-
     private static final String ID = "id";
     private static final String PATH = "path";
     private static final String START_TIME = "start";
     private static final String PROVIDER = "provider";
+    private static final String MARKS = "marks";
+
     @DatabaseField(generatedId = true, columnName = ID)
     private int mId;
     @ForeignCollectionField(eager = true, columnName = PATH)
@@ -31,20 +32,27 @@ public class Connection implements Serializable {
     private LocalTime mStartTime;
     @DatabaseField(columnName = PROVIDER, canBeNull = false)
     private Provider mProvider;
+    @ForeignCollectionField(eager = true, columnName = MARKS)
+    private Collection<ConnectionMark> mMarks;
 
     private Connection() {
         // for ORM
     }
 
-    public Connection(int id, List<City> path, LocalTime startTime, Provider provider) {
+    public Connection(int id, List<City> path, LocalTime startTime, Provider provider, List<ConnectionMark> marks) {
         mId = id;
-        mPath = Preconditions.checkNotNull(path);
+        mPath = new ArrayList<City>(Preconditions.checkNotNull(path));
         mStartTime = Preconditions.checkNotNull(startTime);
         mProvider = Preconditions.checkNotNull(provider);
+        if (marks == null) {
+            mMarks = new ArrayList<ConnectionMark>();
+        } else {
+            mMarks = new ArrayList<ConnectionMark>(marks);
+        }
     }
 
     public Connection(List<City> path, LocalTime startTime, Provider provider) {
-        this(0, path, startTime, provider);
+        this(0, path, startTime, provider, null);
     }
 
     public int getId() {
