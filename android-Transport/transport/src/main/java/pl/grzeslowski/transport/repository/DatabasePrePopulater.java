@@ -40,35 +40,35 @@ public class DatabasePrePopulater {
 
             // Sca - Wro
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(4, 25),
                     sProviders.get(0),
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w niedzielę"),
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(5, 15),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(5, 40),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(6, 15),
                     sProviders.get(0),
                     Arrays.asList(
@@ -77,25 +77,25 @@ public class DatabasePrePopulater {
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(6, 55),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(7, 25),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(7, 55),
                     sProviders.get(0),
                     Arrays.asList(
@@ -104,7 +104,7 @@ public class DatabasePrePopulater {
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(8, 40),
                     sProviders.get(0),
                     Arrays.asList(
@@ -113,16 +113,16 @@ public class DatabasePrePopulater {
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(9, 20),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(9, 55),
                     sProviders.get(0),
                     Arrays.asList(
@@ -131,16 +131,16 @@ public class DatabasePrePopulater {
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(10, 30),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(11, 05),
                     sProviders.get(0),
                     Arrays.asList(
@@ -149,16 +149,16 @@ public class DatabasePrePopulater {
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(11, 40),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(12, 10),
                     sProviders.get(0),
                     Arrays.asList(
@@ -167,16 +167,16 @@ public class DatabasePrePopulater {
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(12, 40),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(13, 30),
                     sProviders.get(0),
                     Arrays.asList(
@@ -185,17 +185,17 @@ public class DatabasePrePopulater {
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(14, 05),
                     sProviders.get(0),
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(14, 50),
                     sProviders.get(0),
                     Arrays.asList(
@@ -204,17 +204,17 @@ public class DatabasePrePopulater {
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(15, 30),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe "),
+                            new ConnectionMark("nie kursuje w święta ustawowe"),
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(16, 05),
                     sProviders.get(0),
                     Arrays.asList(
@@ -223,27 +223,27 @@ public class DatabasePrePopulater {
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(16, 40),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe "),
+                            new ConnectionMark("nie kursuje w święta ustawowe"),
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(17, 05),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe "),
+                            new ConnectionMark("nie kursuje w święta ustawowe"),
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(17, 40),
                     sProviders.get(0),
                     Arrays.asList(
@@ -252,17 +252,17 @@ public class DatabasePrePopulater {
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(18, 10),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe "),
+                            new ConnectionMark("nie kursuje w święta ustawowe"),
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(18, 50),
                     sProviders.get(0),
                     Arrays.asList(
@@ -271,7 +271,7 @@ public class DatabasePrePopulater {
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(19, 50),
                     sProviders.get(0),
                     Arrays.asList(
@@ -280,7 +280,7 @@ public class DatabasePrePopulater {
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(20, 40),
                     sProviders.get(0),
                     Arrays.asList(
@@ -290,11 +290,11 @@ public class DatabasePrePopulater {
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
             ),
             new Connection(
-                    getScaWro(),
+                    getScaWroPwhd(),
                     new LocalTime(21, 15),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe "),
+                            new ConnectionMark("nie kursuje w święta ustawowe"),
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
                     "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
@@ -302,35 +302,35 @@ public class DatabasePrePopulater {
 
             // Wro - Sca
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(5, 40),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe "),
+                            new ConnectionMark("nie kursuje w święta ustawowe"),
                             new ConnectionMark("nie kursuje w niedzielę")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(6, 30),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(6, 50),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(7, 25),
                     sProviders.get(0),
                     Arrays.asList(
@@ -339,16 +339,16 @@ public class DatabasePrePopulater {
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(8, 40),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(9, 10),
                     sProviders.get(0),
                     Arrays.asList(
@@ -357,25 +357,25 @@ public class DatabasePrePopulater {
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(9, 40),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(10, 10),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(10, 40),
                     sProviders.get(0),
                     Arrays.asList(
@@ -384,7 +384,7 @@ public class DatabasePrePopulater {
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(11, 05),
                     sProviders.get(0),
                     Arrays.asList(
@@ -393,16 +393,16 @@ public class DatabasePrePopulater {
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(12, 00),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(12, 30),
                     sProviders.get(0),
                     Arrays.asList(
@@ -411,16 +411,16 @@ public class DatabasePrePopulater {
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(13, 25),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(14, 00),
                     sProviders.get(0),
                     Arrays.asList(
@@ -429,25 +429,25 @@ public class DatabasePrePopulater {
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(14, 30),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(15, 20),
                     sProviders.get(0),
                     Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(15, 55),
                     sProviders.get(0),
                     Arrays.asList(
@@ -456,7 +456,7 @@ public class DatabasePrePopulater {
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(16, 10),
                     sProviders.get(0),
                     Arrays.asList(
@@ -465,17 +465,17 @@ public class DatabasePrePopulater {
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(17, 00),
                     sProviders.get(0),
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(17, 30),
                     sProviders.get(0),
                     Arrays.asList(
@@ -484,17 +484,17 @@ public class DatabasePrePopulater {
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(18, 20),
                     sProviders.get(0),
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(19, 05),
                     sProviders.get(0),
                     Arrays.asList(
@@ -503,17 +503,17 @@ public class DatabasePrePopulater {
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(19, 30),
                     sProviders.get(0),
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(20, 00),
                     sProviders.get(0),
                     Arrays.asList(
@@ -522,7 +522,7 @@ public class DatabasePrePopulater {
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(20, 50),
                     sProviders.get(0),
                     Arrays.asList(
@@ -531,32 +531,32 @@ public class DatabasePrePopulater {
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(21, 25),
                     sProviders.get(0),
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(21, 50),
                     sProviders.get(0),
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             ),
             new Connection(
-                    getWroSca(),
+                    getWroScaPwhd(),
                     new LocalTime(22, 25),
                     sProviders.get(0),
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe ")
+                            new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
                     "ul. Dawida", "6", "4,5"
             )
@@ -570,14 +570,14 @@ public class DatabasePrePopulater {
 //            new Connection(Arrays.asList(sCities.get(1), sCities.get(2)), getRandomLocalTime(), sProviders.get(2), "dworzec PKP", "6", "4,5")
     );
 
-    private static List<City> getWroSca() {
-        List<City> path = getScaWro();
+    private static List<City> getWroScaPwhd() {
+        List<City> path = getScaWroPwhd();
         Collections.reverse(path);
 
         return path;
     }
 
-    private static List<City> getScaWro() {
+    private static List<City> getScaWroPwhd() {
         return Arrays.asList(sCities.get(0), sCities.get(5), sCities.get(6), sCities.get(7), sCities.get(8), sCities.get(9), sCities.get(10), sCities.get(11), sCities.get(12), sCities.get(13), sCities.get(1));
     }
 
