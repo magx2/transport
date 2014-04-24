@@ -4,11 +4,13 @@ import com.google.common.base.Preconditions;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
+import java.io.Serializable;
+
 /**
  * Created by Martin on 2014-04-17.
  */
 @DatabaseTable
-public class Provider {
+public class Provider implements Serializable {
     public static final String ID = "id";
     public static final String NAME = "name";
 
