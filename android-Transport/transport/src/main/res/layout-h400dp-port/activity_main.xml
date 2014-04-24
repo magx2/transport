@@ -16,6 +16,7 @@
         android:id="@+id/activity_main_fragment_search"
         class="pl.grzeslowski.transport.fragments.SearchFragment_"
         android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/margin_between_search_and_result"
         android:layout_height="wrap_content"/>
 
     <fragment
