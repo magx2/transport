@@ -5,38 +5,33 @@
                 android:layout_height="?android:attr/listPreferredItemHeight">
 
     <TextView
-        android:id="@+id/list_result_expanded_provider"
+        android:id="@+id/list_result_expanded_price_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="P.W.H.D."/>
+        android:text="@string/list_result_expanded_price"/>
 
     <TextView
-        android:id="@+id/list_result_expanded_time_search_connection"
+        android:id="@+id/list_result_expanded_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/list_result_expanded_provider"
-        android:text="11:43"/>
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/list_result_expanded_price_text_view"
+        android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/list_result_expanded_path_search_connection"
+        android:id="@+id/list_result_expanded_departure_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/list_result_expanded_time_search_connection"
-        android:text="Marcinowice - Wrocław"/>
-    <TextView
-        android:id="@+id/list_result_expanded_time_full_connection"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/list_result_expanded_time_search_connection"
-        android:layout_alignLeft="@id/list_result_expanded_time_search_connection"
-        android:text="11:30"/>
+        android:layout_below="@id/list_result_expanded_price_text_view"
+        android:text="@string/list_result_expanded_departure"/>
 
     <TextView
-        android:id="@+id/list_result_expanded_path_full_connection"
+        android:id="@+id/list_result_expanded_departure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/list_result_expanded_path_search_connection"
-        android:layout_alignLeft="@id/list_result_expanded_path_search_connection"
-        android:text="Swidnica - Wrocław"/>
+        android:layout_alignBaseline="@id/list_result_expanded_departure_text_view"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/list_result_expanded_departure_text_view"
+        android:textStyle="bold"/>
 
 </RelativeLayout>

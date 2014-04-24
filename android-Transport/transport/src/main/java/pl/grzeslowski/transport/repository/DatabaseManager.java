@@ -47,13 +47,13 @@ public class DatabaseManager {
     private static List<Provider> sProviders = Arrays.asList(new Provider(1, "P.W.H.D"), new Provider(2, "Guliwer"), new Provider(3, "PKP"));
 
     private static List<Connection> sConnections = Arrays.asList(
-            new Connection(Arrays.asList(sCities.get(0), sCities.get(5), sCities.get(6), sCities.get(7), sCities.get(8), sCities.get(9), sCities.get(10), sCities.get(11), sCities.get(12), sCities.get(13), sCities.get(1)), getRandomLocalTime(), sProviders.get(0), Arrays.asList(new ConnectionMark("nie kursuje w niedzielę"), new ConnectionMark("nie kursuje w wigilie i sylwestra"), new ConnectionMark("nie kursuje w święta ustawowe "))),
-            new Connection(Arrays.asList(sCities.get(0), sCities.get(2)), getRandomLocalTime(), sProviders.get(1)),
-            new Connection(Arrays.asList(sCities.get(2), sCities.get(3), sCities.get(4), sCities.get(0), sCities.get(5), sCities.get(6), sCities.get(7), sCities.get(8), sCities.get(9), sCities.get(10), sCities.get(11), sCities.get(12), sCities.get(13), sCities.get(1)), getRandomLocalTime(), sProviders.get(2), Arrays.asList(new ConnectionMark("nie kursuje w niedzielę"), new ConnectionMark("nie kursuje w wigilie i sylwestra"))),
+            new Connection(Arrays.asList(sCities.get(0), sCities.get(5), sCities.get(6), sCities.get(7), sCities.get(8), sCities.get(9), sCities.get(10), sCities.get(11), sCities.get(12), sCities.get(13), sCities.get(1)), getRandomLocalTime(), sProviders.get(0), Arrays.asList(new ConnectionMark("nie kursuje w niedzielę"), new ConnectionMark("nie kursuje w wigilie i sylwestra"), new ConnectionMark("nie kursuje w święta ustawowe ")), "pl. Dawida", "6", "4,5"),
+            new Connection(Arrays.asList(sCities.get(0), sCities.get(2)), getRandomLocalTime(), sProviders.get(1), "dworzec PKS", "6", "4,5"),
+            new Connection(Arrays.asList(sCities.get(2), sCities.get(3), sCities.get(4), sCities.get(0), sCities.get(5), sCities.get(6), sCities.get(7), sCities.get(8), sCities.get(9), sCities.get(10), sCities.get(11), sCities.get(12), sCities.get(13), sCities.get(1)), getRandomLocalTime(), sProviders.get(2), Arrays.asList(new ConnectionMark("nie kursuje w niedzielę"), new ConnectionMark("nie kursuje w wigilie i sylwestra")), "dwozec PKP", "6", "4,5"),
 
-            new Connection(Arrays.asList(sCities.get(1), sCities.get(0)), getRandomLocalTime(), sProviders.get(0)),
-            new Connection(Arrays.asList(sCities.get(2), sCities.get(0)), getRandomLocalTime(), sProviders.get(1)),
-            new Connection(Arrays.asList(sCities.get(1), sCities.get(2)), getRandomLocalTime(), sProviders.get(2))
+            new Connection(Arrays.asList(sCities.get(1), sCities.get(0)), getRandomLocalTime(), sProviders.get(0), "pl. Dawida", "6", "4,5"),
+            new Connection(Arrays.asList(sCities.get(2), sCities.get(0)), getRandomLocalTime(), sProviders.get(1), "dworzec PKS", "6", "4,5"),
+            new Connection(Arrays.asList(sCities.get(1), sCities.get(2)), getRandomLocalTime(), sProviders.get(2), "dworzec PKP", "6", "4,5")
     );
 
     private static LocalTime getRandomLocalTime() {

@@ -26,7 +26,7 @@ import pl.grzeslowski.transport.product_flavors.MonetizationType;
 
 public class ResultListAdapter extends BaseExpandableListAdapter {
 
-    private static final int sChildrenCount = 0;
+    private static final int sChildrenCount = 1;
     private final Activity mActivity;
     private final List<Connection> mConnections;
     private final LayoutInflater mInflater;
@@ -119,29 +119,28 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
         } else {
 
             // show normal child
-            ChildViewHolder viewHolder;
-
-            if (convertView != null && convertView.getTag() instanceof ChildViewHolder) {
-                viewHolder = (ChildViewHolder) convertView.getTag();
-            } else {
-                convertView = mInflater.inflate(R.layout.list_result_expanded, null);
-                viewHolder = new ChildViewHolder(convertView);
-
-                convertView.setTag(viewHolder);
-            }
-
-            Connection connection = mConnections.get(groupPosition);
-
-            String cities = Joiner.on(", ").join(Collections2.transform(connection.getPath(), new Function<City, String>() {
-                @Override
-                public String apply(City input) {
-                    return input.getName();
-                }
-            }));
-//        viewHolder.mTextView.setText(cities);
-
-            return convertView;
+            return showExpandedView(convertView, groupPosition);
         }
+    }
+
+    private View showExpandedView(View convertView, int groupPosition) {
+        ChildViewHolder viewHolder;
+
+        if (convertView != null && convertView.getTag() instanceof ChildViewHolder) {
+            viewHolder = (ChildViewHolder) convertView.getTag();
+        } else {
+            convertView = mInflater.inflate(R.layout.list_result_expanded, null);
+            viewHolder = new ChildViewHolder(convertView);
+
+            convertView.setTag(viewHolder);
+        }
+
+        Connection connection = mConnections.get(groupPosition);
+
+        viewHolder.mDeparture.setText(connection.getDeparture());
+        viewHolder.mPrice.setText(String.format("%s %s / %s %s", connection.getNormalPrice(), mActivity.getString(R.string.normal_price), connection.getStudentPrice(), mActivity.getString(R.string.student_price)));
+
+        return convertView;
     }
 
     private View showMarks(View convertView, int groupPosition, int childPosition) {
@@ -186,10 +185,12 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
     }
 
     private class ChildViewHolder {
-//        private TextView mTextView;
+        private TextView mPrice;
+        private TextView mDeparture;
 
         ChildViewHolder(View convertView) {
-//            mTextView = (TextView) convertView.findViewById(R.id.list_result_expanded_text_view);
+            mPrice = (TextView) convertView.findViewById(R.id.list_result_expanded_price);
+            mDeparture = (TextView) convertView.findViewById(R.id.list_result_expanded_departure);
         }
     }
 
