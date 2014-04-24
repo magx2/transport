@@ -3,11 +3,10 @@ package pl.grzeslowski.transport.model;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
-/**
- * Created by Martin on 2014-04-23.
- */
+import java.io.Serializable;
+
 @DatabaseTable
-public class ConnectionMark {
+public class ConnectionMark implements Serializable {
     private static final String ID = "id";
     private static final String MARK = "mark";
 

@@ -28,21 +28,17 @@ import pl.grzeslowski.transport.tools.ConnectionComparator;
 @EFragment(R.layout.fragment_result)
 public class ResultFragment extends Fragment {
     private static final String sConnectionsTag = "connections";
-    private static final String sFromTag = "from";
-    private static final String sToTag = "to";
 
     @ViewById(R.id.fragment_result_list)
     ExpandableListView mResultList;
     @Bean
     DatabaseManager mDatabaseManager;
     private List<Connection> mConnections = new ArrayList<Connection>();
-    private City mFrom;
-    private City mTo;
 
     @AfterViews
     void prepare() {
         if (!mConnections.isEmpty()) {
-            parseResultsToList(mConnections, mFrom, mTo);
+            parseResultsToList(mConnections);
         }
     }
 
@@ -51,18 +47,16 @@ public class ResultFragment extends Fragment {
         Preconditions.checkNotNull(to);
 
         mConnections = mDatabaseManager.getConnections(from, to);
-        mFrom = from;
-        mTo = to;
-        parseResultsToList(mConnections, from, to);
+        parseResultsToList(mConnections);
     }
 
-    private void parseResultsToList(final List<Connection> connections, City from, City to) {
+    private void parseResultsToList(final List<Connection> connections) {
         Collections.sort(connections, new ConnectionComparator());
-        setAdapter(connections, from, to);
+        setAdapter(connections);
     }
 
-    private void setAdapter(List<Connection> elements, City from, City to) {
-        ResultListAdapter adapter = new ResultListAdapter(elements, getActivity(), from, to);
+    private void setAdapter(List<Connection> elements) {
+        ResultListAdapter adapter = new ResultListAdapter(elements, getActivity());
         mResultList.setAdapter(adapter);
     }
 
@@ -70,8 +64,6 @@ public class ResultFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if (savedInstanceState != null) {
             mConnections = (List<Connection>) savedInstanceState.get(sConnectionsTag);
-            mFrom = (City) savedInstanceState.get(sFromTag);
-            mTo = (City) savedInstanceState.get(sToTag);
         }
 
         return null;
@@ -80,8 +72,6 @@ public class ResultFragment extends Fragment {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         outState.putSerializable(sConnectionsTag, new ArrayList<Connection>(mConnections));
-        outState.putSerializable(sFromTag, mFrom);
-        outState.putSerializable(sToTag, mTo);
 
         super.onSaveInstanceState(outState);
     }

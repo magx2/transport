@@ -28,18 +28,14 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
 
     private static final int sChildrenCount = 0;
     private final Activity mActivity;
-    private City mFrom;
-    private City mTo;
     private final List<Connection> mConnections;
     private final LayoutInflater mInflater;
     private static final int sFreeVersionMark = 1;
 
-    public ResultListAdapter(List<Connection> connections, Activity activity, City from, City to) {
+    public ResultListAdapter(List<Connection> connections, Activity activity) {
         mConnections = new ArrayList<Connection>(Preconditions.checkNotNull(connections));
         mActivity = Preconditions.checkNotNull(activity);
         mInflater = activity.getLayoutInflater();
-        mFrom = Preconditions.checkNotNull(from);
-        mTo = Preconditions.checkNotNull(to);
     }
 
     @Override
@@ -101,10 +97,6 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
 
         final LocalTime searchTime = connection.getTime();
         viewHolder.mSearchTime.setText(String.format("%02d:%02d", searchTime.getHourOfDay(), searchTime.getMinuteOfHour()));
-        viewHolder.mSearchPath.setText(String.format("%s - %s", mFrom.getName(), mTo.getName()));
-
-        final LocalTime fullTime = connection.getTime();
-        viewHolder.mFullTime.setText(String.format("%02d:%02d", fullTime.getHourOfDay(), fullTime.getMinuteOfHour()));
 
         String cities = Joiner.on(" - ").join(Collections2.transform(connection.getPath(), new Function<City, String>() {
             @Override
@@ -184,15 +176,11 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
     private class ViewHolder {
         private TextView mProvider;
         private TextView mSearchTime;
-        private TextView mSearchPath;
-        private TextView mFullTime;
         private TextView mFullPath;
 
         ViewHolder(View convertView) {
             mProvider = (TextView) convertView.findViewById(R.id.list_result_provider);
             mSearchTime = (TextView) convertView.findViewById(R.id.list_result_time_search_connection);
-            mSearchPath = (TextView) convertView.findViewById(R.id.list_result_path_search_connection);
-            mFullTime = (TextView) convertView.findViewById(R.id.list_result_time_full_connection);
             mFullPath = (TextView) convertView.findViewById(R.id.list_result_path_full_connection);
         }
     }
