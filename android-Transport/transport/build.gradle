@@ -62,11 +62,17 @@ android {
         release {
             runProguard true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+
+            buildConfigField "java.lang.String", "DATABASE_NAME", "\"transporter\""
+            buildConfigField "int", "DATABASE_VERSION", "1"
         }
 
         debug {
             debuggable true
             runProguard false
+
+            buildConfigField "java.lang.String", "DATABASE_NAME", "\"transporter\""
+            buildConfigField "int", "DATABASE_VERSION", "1"
         }
     }
 
@@ -81,6 +87,8 @@ android {
             buildConfigField "pl.grzeslowski.transport.product_flavors.MonetizationType", "MONETIAZATION_TYPE", "pl.grzeslowski.transport.product_flavors.MonetizationType.PAID"
         }
     }
+
+    // Database Configs
 }
 
 def getSourceSetName(variant) {
