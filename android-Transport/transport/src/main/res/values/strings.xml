@@ -7,5 +7,6 @@
     <string name="search">Wyszukaj</string>
     <string name="title_activity_result">ResultActivity</string>
     <string name="hello_world">Hello world!</string>
+    <string name="marks_in_paid_version">Oznaczenia kursów dostępne są w płatnej wersji!</string>
 
 </resources>

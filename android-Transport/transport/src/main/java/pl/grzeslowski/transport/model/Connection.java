@@ -55,6 +55,10 @@ public class Connection implements Serializable {
         this(0, path, startTime, provider, null);
     }
 
+    public Connection(List<City> path, LocalTime startTime, Provider provider, List<ConnectionMark> marks) {
+        this(0, path, startTime, provider, marks);
+    }
+
     public int getId() {
         return mId;
     }
@@ -69,5 +73,9 @@ public class Connection implements Serializable {
 
     public Provider getProvider() {
         return mProvider;
+    }
+
+    public List<ConnectionMark> getMarks() {
+        return new ArrayList<ConnectionMark>(mMarks);
     }
 }

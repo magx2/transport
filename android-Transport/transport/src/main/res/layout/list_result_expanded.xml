@@ -1,13 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="?android:attr/listPreferredItemHeight">
 
     <TextView
-        android:id="@+id/list_result_expanded_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:id="@+id/list_result_expanded_provider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="P.W.H.D."/>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/list_result_expanded_time_search_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_result_expanded_provider"
+        android:text="11:43"/>
+
+    <TextView
+        android:id="@+id/list_result_expanded_path_search_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/list_result_expanded_time_search_connection"
+        android:text="Marcinowice - Wrocław"/>
+    <TextView
+        android:id="@+id/list_result_expanded_time_full_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_result_expanded_time_search_connection"
+        android:layout_alignLeft="@id/list_result_expanded_time_search_connection"
+        android:text="11:30"/>
+
+    <TextView
+        android:id="@+id/list_result_expanded_path_full_connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_result_expanded_path_search_connection"
+        android:layout_alignLeft="@id/list_result_expanded_path_search_connection"
+        android:text="Swidnica - Wrocław"/>
+
+</RelativeLayout>

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ExpandableListView
-    android:id="@+id/fragment_result_list"
+
+<TextView
+    android:id="@+id/list_result_mark_mark"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:divider="@null"
-    android:dividerHeight="0dp"/>
+    android:ellipsize="marquee"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:singleLine="true">
+</TextView>
