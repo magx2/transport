@@ -1,8 +1,6 @@
 package pl.grzeslowski.transport.fragments;
 
 import android.support.v4.app.Fragment;
-import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
@@ -24,6 +22,9 @@ import pl.grzeslowski.transport.activities.ResultActivity_;
 import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.repository.DatabaseManager;
 import pl.grzeslowski.transport.tools.ApplicationSharedPref_;
+import pl.grzeslowski.transport.views.RemeberingStateSpinner;
+
+import static pl.grzeslowski.transport.views.RemeberingStateSpinner.OnItemSelected;
 
 /**
  * Created by Martin on 2014-04-22.
@@ -31,9 +32,9 @@ import pl.grzeslowski.transport.tools.ApplicationSharedPref_;
 @EFragment(R.layout.fragment_search)
 public class SearchFragment extends Fragment {
     @ViewById(R.id.fragment_search_from)
-    Spinner mFrom;
+    RemeberingStateSpinner mFrom;
     @ViewById(R.id.fragment_search_to)
-    Spinner mTo;
+    RemeberingStateSpinner mTo;
     @Bean
     DatabaseManager mDatabaseManager;
     @Pref
@@ -45,11 +46,11 @@ public class SearchFragment extends Fragment {
 
         ArrayAdapter fromAdapter = new ArrayAdapter(getActivity(), android.R.layout.simple_spinner_item, names);
         mFrom.setAdapter(fromAdapter);
-        mFrom.setOnItemSelectedListener(new OnSpinnerItemListener(mFrom, myPrefs.lastFrom()));
+        mFrom.setOnItemSelected(new OnSpinnerItemListener(mFrom, mTo, myPrefs.lastFrom()));
 
         ArrayAdapter toAdapter = new ArrayAdapter(getActivity(), android.R.layout.simple_spinner_item, names);
         mTo.setAdapter(toAdapter);
-        mTo.setOnItemSelectedListener(new OnSpinnerItemListener(mTo, myPrefs.lastTo()));
+        mTo.setOnItemSelected(new OnSpinnerItemListener(mTo, mFrom, myPrefs.lastTo()));
 
         setCityInSpinners();
     }
@@ -102,25 +103,32 @@ public class SearchFragment extends Fragment {
         }
     }
 
-    private class OnSpinnerItemListener implements AdapterView.OnItemSelectedListener {
+    private class OnSpinnerItemListener implements OnItemSelected {
         private final Spinner mSpinner;
+        private final Spinner mBoundSpinner;
         private StringPrefField mStringPrefField;
 
-        private OnSpinnerItemListener(Spinner spinner, StringPrefField stringPrefField) {
+        private OnSpinnerItemListener(Spinner spinner, Spinner boundSpinner, StringPrefField stringPrefField) {
             mSpinner = spinner;
+            mBoundSpinner = boundSpinner;
             mStringPrefField = stringPrefField;
         }
 
         @Override
-        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            final String newFromCity = (String) mFrom.getAdapter().getItem(position);
-
+        public void selected(int newPosition, Object oldObject) {
+            final String newFromCity = (String) mSpinner.getAdapter().getItem(newPosition);
             mStringPrefField.put(newFromCity);
-        }
 
-        @Override
-        public void onNothingSelected(AdapterView<?> parent) {
+            if (newFromCity.equals(mBoundSpinner.getSelectedItem()) && oldObject != null) {
+                final SpinnerAdapter adapter = mBoundSpinner.getAdapter();
 
+                for (int i = 0; i < adapter.getCount(); i++) {
+                    if (oldObject.equals(adapter.getItem(i))) {
+                        mBoundSpinner.setSelection(i);
+                        break;
+                    }
+                }
+            }
         }
     }
 }

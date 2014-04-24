@@ -10,12 +10,12 @@
         android:layout_height="wrap_content"
         android:text="@string/search_text"/>
 
-    <Spinner
+    <pl.grzeslowski.transport.views.RemeberingStateSpinner
         android:id="@+id/fragment_search_from"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
-    <Spinner
+    <pl.grzeslowski.transport.views.RemeberingStateSpinner
         android:id="@+id/fragment_search_to"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
