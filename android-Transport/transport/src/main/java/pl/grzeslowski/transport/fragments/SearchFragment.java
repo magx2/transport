@@ -22,9 +22,9 @@ import pl.grzeslowski.transport.activities.ResultActivity_;
 import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.repository.DatabaseManager;
 import pl.grzeslowski.transport.tools.ApplicationSharedPref_;
-import pl.grzeslowski.transport.views.RemeberingStateSpinner;
+import pl.grzeslowski.transport.views.RememberingStateSpinner;
 
-import static pl.grzeslowski.transport.views.RemeberingStateSpinner.OnItemSelected;
+import static pl.grzeslowski.transport.views.RememberingStateSpinner.OnItemSelected;
 
 /**
  * Created by Martin on 2014-04-22.
@@ -32,9 +32,9 @@ import static pl.grzeslowski.transport.views.RemeberingStateSpinner.OnItemSelect
 @EFragment(R.layout.fragment_search)
 public class SearchFragment extends Fragment {
     @ViewById(R.id.fragment_search_from)
-    RemeberingStateSpinner mFrom;
+    RememberingStateSpinner mFrom;
     @ViewById(R.id.fragment_search_to)
-    RemeberingStateSpinner mTo;
+    RememberingStateSpinner mTo;
     @Bean
     DatabaseManager mDatabaseManager;
     @Pref

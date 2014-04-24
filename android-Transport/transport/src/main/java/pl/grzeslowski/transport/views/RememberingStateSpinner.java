@@ -6,21 +6,21 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 
-public class RemeberingStateSpinner extends Spinner {
+public class RememberingStateSpinner extends Spinner {
     private Object mActualItem;
     private OnItemSelected mOnItemSelected;
 
-    public RemeberingStateSpinner(Context context) {
+    public RememberingStateSpinner(Context context) {
         super(context);
         init();
     }
 
-    public RemeberingStateSpinner(Context context, AttributeSet attrs) {
+    public RememberingStateSpinner(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public RemeberingStateSpinner(Context context, AttributeSet attrs, int defStyle) {
+    public RememberingStateSpinner(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         init();
     }
@@ -29,7 +29,7 @@ public class RemeberingStateSpinner extends Spinner {
         super.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                RemeberingStateSpinner.this.onItemSelected(position);
+                RememberingStateSpinner.this.onItemSelected(position);
             }
 
             @Override
