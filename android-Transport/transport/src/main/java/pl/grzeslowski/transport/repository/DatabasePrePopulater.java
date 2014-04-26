@@ -13,7 +13,7 @@ import pl.grzeslowski.transport.model.Provider;
 
 public class DatabasePrePopulater {
 
-    private static List<City> sCities = Arrays.asList(
+    public static List<City> CITIES = Arrays.asList(
             new City("Swidnica"),
             new City("Wrocław"),
             new City("Wałbrzych"),
@@ -30,13 +30,13 @@ public class DatabasePrePopulater {
             new City("Tyniec Mały")
     );
 
-    private static List<Provider> sProviders = Arrays.asList(
+    public static List<Provider> PROVIDERS = Arrays.asList(
             new Provider("P.W.H.D"),
             new Provider("Guliwer"),
             new Provider("PKP")
     );
 
-    private static List<Connection> sConnections = Arrays.asList(
+    public static List<Connection> CONNECTIONS = Arrays.asList(
 
             // Sca - Wro
             new Connection(
@@ -535,7 +535,7 @@ public class DatabasePrePopulater {
             )
     );
 
-    private static Provider getPwhd() { return  sProviders.get(0);}
+    private static Provider getPwhd() { return  PROVIDERS.get(0);}
     
     
     private static List<City> getWroScaPwhd() {
@@ -546,11 +546,6 @@ public class DatabasePrePopulater {
     }
 
     private static List<City> getScaWroPwhd() {
-        return Arrays.asList(sCities.get(0), sCities.get(5), sCities.get(6), sCities.get(7), sCities.get(8), sCities.get(9), sCities.get(10), sCities.get(11), sCities.get(12), sCities.get(13), sCities.get(1));
-    }
-
-
-    public void populate(DatabaseHelper databaseHelper) {
-
+        return Arrays.asList(CITIES.get(0), CITIES.get(5), CITIES.get(6), CITIES.get(7), CITIES.get(8), CITIES.get(9), CITIES.get(10), CITIES.get(11), CITIES.get(12), CITIES.get(13), CITIES.get(1));
     }
 }

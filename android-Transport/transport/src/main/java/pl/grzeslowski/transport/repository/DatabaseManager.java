@@ -17,8 +17,9 @@ import java.util.List;
 
 import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.model.Connection;
+import pl.grzeslowski.transport.model.Provider;
 
-@EBean
+@EBean(scope = EBean.Scope.Singleton)
 public class DatabaseManager {
 
     private final DatabaseHelper mDatabaseHelper;
@@ -79,5 +80,13 @@ public class DatabaseManager {
                 return cityName.equals(input.getName());
             }
         });
+    }
+
+    public List<Provider> getAllProviders() {
+        return mDatabaseHelper.getAllProviders();
+    }
+
+    public Collection<Connection> getAllConnections() {
+        return mDatabaseHelper.getAllConnections();
     }
 }

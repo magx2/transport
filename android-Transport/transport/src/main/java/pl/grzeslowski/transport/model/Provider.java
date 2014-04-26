@@ -11,8 +11,8 @@ import java.io.Serializable;
  */
 @DatabaseTable
 public class Provider implements Serializable {
-    public static final String ID = "id";
-    public static final String NAME = "name";
+    public static final String ID = "provider_id";
+    public static final String NAME = "provider_name";
 
     @DatabaseField(generatedId = true, columnName = ID)
     private int mId;
@@ -34,5 +34,13 @@ public class Provider implements Serializable {
 
     public String getName() {
         return mName;
+    }
+
+    @Override
+    public String toString() {
+        return "Provider{" +
+                "mId=" + mId +
+                ", mName='" + mName + '\'' +
+                '}';
     }
 }

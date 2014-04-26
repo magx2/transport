@@ -1,6 +1,7 @@
 package pl.grzeslowski.transport.model;
 
 import com.google.common.base.Preconditions;
+import com.j256.ormlite.field.DataType;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.field.ForeignCollectionField;
 import com.j256.ormlite.table.DatabaseTable;
@@ -18,22 +19,21 @@ import java.util.List;
  */
 @DatabaseTable
 public class Connection implements Serializable {
-    private static final String ID = "id";
-    private static final String PATH = "path";
-    private static final String START_TIME = "start";
-    private static final String PROVIDER = "provider";
-    private static final String MARKS = "marks";
-    private static final String DEPARTURE = "departure";
-    private static final String NORMAL_PRICE = "normal_price";
-    private static final String STUDENT_PRICE = "student_price";
+    public static final String ID = "id";
+    public static final String PATH = "path";
+    public static final String START_TIME = "start";
+    public static final String PROVIDER = "provider";
+    public static final String MARKS = "marks";
+    public static final String DEPARTURE = "departure";
+    public static final String NORMAL_PRICE = "normal_price";
+    public static final String STUDENT_PRICE = "student_price";
 
     @DatabaseField(generatedId = true, columnName = ID)
     private int mId;
-    @ForeignCollectionField(eager = true, columnName = PATH)
     private Collection<City> mPath;
-    @DatabaseField(columnName = START_TIME, canBeNull = false)
+    @DatabaseField(columnName = START_TIME, canBeNull = false, dataType= DataType.SERIALIZABLE)
     private LocalTime mStartTime;
-    @DatabaseField(columnName = PROVIDER, canBeNull = false)
+    @DatabaseField(columnName = PROVIDER, canBeNull = false, foreign = true, foreignAutoRefresh = true)
     private Provider mProvider;
     @ForeignCollectionField(eager = true, columnName = MARKS)
     private Collection<ConnectionMark> mMarks;
@@ -57,6 +57,10 @@ public class Connection implements Serializable {
             mMarks = new ArrayList<ConnectionMark>();
         } else {
             mMarks = new ArrayList<ConnectionMark>(marks);
+
+            for(ConnectionMark mark : marks) {
+                mark.setConnection(this);
+            }
         }
         mDeparture = Preconditions.checkNotNull(departure);
         mNormalPrice = Preconditions.checkNotNull(normalPrice);
@@ -101,5 +105,21 @@ public class Connection implements Serializable {
 
     public String getStudentPrice() {
         return mStudentPrice;
+    }
+
+    public void setPath(List<City> path) {
+        mPath = path;
+    }
+
+    @Override
+    public String toString() {
+        return "Connection{" +
+                "mId=" + mId +
+                ", mStartTime=" + mStartTime +
+                ", mProvider=" + mProvider +
+                ", mDeparture='" + mDeparture + '\'' +
+                ", mNormalPrice='" + mNormalPrice + '\'' +
+                ", mStudentPrice='" + mStudentPrice + '\'' +
+                '}';
     }
 }

@@ -22,6 +22,7 @@ configurations {
 }
 
 def AAVersion = '3.0.1'
+def ORMLiteVersion = '4.46'
 
 dependencies {
     compile 'com.android.support:appcompat-v7:19.1.0'
@@ -33,7 +34,8 @@ dependencies {
     compile "org.androidannotations:androidannotations-api:$AAVersion"
 
     // ORMLite
-    compile 'com.j256.ormlite:ormlite-android:4.46'
+    compile "com.j256.ormlite:ormlite-android:$ORMLiteVersion"
+    compile "com.j256.ormlite:ormlite-core:$ORMLiteVersion"
 
     // Google Guava
     compile 'com.google.guava:guava:16.0.1'

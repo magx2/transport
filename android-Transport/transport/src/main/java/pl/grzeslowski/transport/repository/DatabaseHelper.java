@@ -4,47 +4,94 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
-import com.j256.ormlite.dao.Dao;
+import com.j256.ormlite.dao.RuntimeExceptionDao;
+import com.j256.ormlite.misc.TransactionManager;
+import com.j256.ormlite.stmt.PreparedQuery;
+import com.j256.ormlite.stmt.QueryBuilder;
+import com.j256.ormlite.stmt.SelectArg;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
 
 import java.sql.SQLException;
 import java.util.Collection;
 import java.util.List;
+import java.util.concurrent.Callable;
 
 import pl.grzeslowski.transport.BuildConfig;
 import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.model.Connection;
+import pl.grzeslowski.transport.model.ConnectionCity;
 import pl.grzeslowski.transport.model.ConnectionMark;
 import pl.grzeslowski.transport.model.Provider;
 
 class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
-    private final Dao<City, Integer> mCityDao;
-    private final Dao<Connection, Integer> mConnectionDao;
-    private final Dao<ConnectionMark, Integer> mConnectionMarkDao;
-    private final Dao<Provider, Integer> mProviderDao;
+    private final RuntimeExceptionDao<City, Integer> mCityDao;
+    private final RuntimeExceptionDao<Connection, Integer> mConnectionDao;
+    private final RuntimeExceptionDao<ConnectionMark, Integer> mConnectionMarkDao;
+    private final RuntimeExceptionDao<Provider, Integer> mProviderDao;
+    private final RuntimeExceptionDao<ConnectionCity, Integer> mConnectionCityDao;
 
     public DatabaseHelper(final Context context) {
         super(context, BuildConfig.DATABASE_NAME, null, BuildConfig.DATABASE_VERSION);
 
-        try {
-            mCityDao = getDao(City.class);
-            mConnectionDao = getDao(Connection.class);
-            mConnectionMarkDao = getDao(ConnectionMark.class);
-            mProviderDao = getDao(Provider.class);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        mCityDao = getRuntimeExceptionDao(City.class);
+        mProviderDao = getRuntimeExceptionDao(Provider.class);
+        mConnectionMarkDao = getRuntimeExceptionDao(ConnectionMark.class);
+        mConnectionDao = getRuntimeExceptionDao(Connection.class);
+        mConnectionCityDao = getRuntimeExceptionDao(ConnectionCity.class);
     }
 
     @Override
     public void onCreate(SQLiteDatabase database, ConnectionSource connectionSource) {
         try {
+            TableUtils.dropTable(connectionSource, City.class, true);
+            TableUtils.dropTable(connectionSource, Connection.class, true);
+            TableUtils.dropTable(connectionSource, ConnectionMark.class, true);
+            TableUtils.dropTable(connectionSource, Provider.class, true);
+            TableUtils.dropTable(connectionSource, ConnectionCity.class, true);
+
             TableUtils.createTableIfNotExists(connectionSource, City.class);
             TableUtils.createTableIfNotExists(connectionSource, Connection.class);
             TableUtils.createTableIfNotExists(connectionSource, ConnectionMark.class);
             TableUtils.createTableIfNotExists(connectionSource, Provider.class);
+            TableUtils.createTableIfNotExists(connectionSource, ConnectionCity.class);
+
+            if (getAllConnections().isEmpty()) {
+                TransactionManager.callInTransaction(connectionSource, new Callable<Void>() {
+                    public Void call() throws Exception {
+
+                        // city
+                        for (City city : DatabasePrePopulater.CITIES) {
+                            mCityDao.create(city);
+                        }
+
+                        // provider
+                        for (Provider provider : DatabasePrePopulater.PROVIDERS) {
+                            mProviderDao.create(provider);
+                        }
+
+                        // connections
+                        for (Connection connection : DatabasePrePopulater.CONNECTIONS) {
+                            mConnectionDao.create(connection);
+
+                            int i = 0;
+                            for (City city : connection.getPath()) {
+                                final ConnectionCity connectionCity = new ConnectionCity(connection, city, i++);
+
+                                mConnectionCityDao.create(connectionCity);
+                            }
+
+                            // creating marks
+                            for (ConnectionMark mark : connection.getMarks()) {
+                                mConnectionMarkDao.create(mark);
+                            }
+                        }
+
+                        return null;
+                    }
+                });
+            }
         } catch (SQLException e) {
             throw new RuntimeException("Cannot create DB", e);
         }
@@ -56,18 +103,54 @@ class DatabaseHelper extends OrmLiteSqliteOpenHelper {
     }
 
     public List<City> getCities() {
+        return mCityDao.queryForAll();
+    }
+
+    public Collection<Connection> getAllConnections() {
         try {
-            return mCityDao.queryForAll();
+            final List<Connection> connections = mConnectionDao.queryForAll();
+
+            for (Connection connection : connections) {
+                List<City> path = lookUpForCities(connection);
+
+                connection.setPath(path);
+            }
+
+            return connections;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
-    public Collection<Connection> getAllConnections() {
-        try {
-            return mConnectionDao.queryForAll();
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+    private List<City> lookUpForCities(Connection connection) throws SQLException {
+        PreparedQuery<City> postsForUserQuery = makeCitiesForConnectionQuery();
+        postsForUserQuery.setArgumentHolderValue(0, connection);
+        return mCityDao.query(postsForUserQuery);
+    }
+
+    private PreparedQuery<City> makeCitiesForConnectionQuery() throws SQLException {
+
+        // build our inner query for UserPost objects
+        QueryBuilder<ConnectionCity, Integer> connectionCityQb = mConnectionCityDao.queryBuilder();
+
+        // just select the post-id field
+        connectionCityQb.selectColumns(ConnectionCity.CITY);
+        SelectArg userSelectArg = new SelectArg();
+
+        // you could also just pass in user1 here
+        connectionCityQb.where().eq(ConnectionCity.CONNECTION, userSelectArg);
+        connectionCityQb.orderBy(ConnectionCity.NUMBER, true);
+
+        // build our outer query for Post objects
+        QueryBuilder<City, Integer> cityQb = mCityDao.queryBuilder();
+
+        // where the id matches in the post-id from the inner query
+        cityQb.where().in(City.ID, connectionCityQb);
+
+        return cityQb.prepare();
+    }
+
+    public List<Provider> getAllProviders() {
+        return mProviderDao.queryForAll();
     }
 }

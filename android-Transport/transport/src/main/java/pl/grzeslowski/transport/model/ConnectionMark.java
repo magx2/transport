@@ -1,5 +1,6 @@
 package pl.grzeslowski.transport.model;
 
+import com.google.common.base.Preconditions;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
@@ -14,6 +15,12 @@ public class ConnectionMark implements Serializable {
     private int mId;
     @DatabaseField(columnName = MARK, canBeNull = false)
     private String mMark;
+    @DatabaseField(foreign = true, foreignAutoCreate = true)
+    private Connection mConnection;
+
+    public ConnectionMark() {
+        // for ORM
+    }
 
     public ConnectionMark(int id, String mark) {
         mId = id;
@@ -30,5 +37,9 @@ public class ConnectionMark implements Serializable {
 
     public String getMark() {
         return mMark;
+    }
+
+    public void setConnection(Connection connection) {
+        mConnection = Preconditions.checkNotNull(connection);
     }
 }
