@@ -3,12 +3,12 @@ package pl.grzeslowski.transport.repository;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.google.common.base.Function;
+import com.google.common.collect.Lists;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 import com.j256.ormlite.dao.RuntimeExceptionDao;
 import com.j256.ormlite.misc.TransactionManager;
-import com.j256.ormlite.stmt.PreparedQuery;
 import com.j256.ormlite.stmt.QueryBuilder;
-import com.j256.ormlite.stmt.SelectArg;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
 
@@ -111,7 +111,17 @@ class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             final List<Connection> connections = mConnectionDao.queryForAll();
 
             for (Connection connection : connections) {
-                List<City> path = lookUpForCities(connection);
+                final QueryBuilder<ConnectionCity, Integer> queryBuilder = mConnectionCityDao.queryBuilder();
+                queryBuilder.where().eq(ConnectionCity.CONNECTION, connection).prepare();
+                queryBuilder.orderBy(ConnectionCity.NUMBER, true);
+
+                final List<ConnectionCity> citiesForConnection = mConnectionCityDao.query(queryBuilder.prepare());
+                final List<City> path = Lists.transform(citiesForConnection, new Function<ConnectionCity, City>() {
+                    @Override
+                    public City apply(ConnectionCity input) {
+                        return input.getCity();
+                    }
+                });
 
                 connection.setPath(path);
             }
@@ -120,34 +130,6 @@ class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    private List<City> lookUpForCities(Connection connection) throws SQLException {
-        PreparedQuery<City> postsForUserQuery = makeCitiesForConnectionQuery();
-        postsForUserQuery.setArgumentHolderValue(0, connection);
-        return mCityDao.query(postsForUserQuery);
-    }
-
-    private PreparedQuery<City> makeCitiesForConnectionQuery() throws SQLException {
-
-        // build our inner query for UserPost objects
-        QueryBuilder<ConnectionCity, Integer> connectionCityQb = mConnectionCityDao.queryBuilder();
-
-        // just select the post-id field
-        connectionCityQb.selectColumns(ConnectionCity.CITY);
-        SelectArg userSelectArg = new SelectArg();
-
-        // you could also just pass in user1 here
-        connectionCityQb.where().eq(ConnectionCity.CONNECTION, userSelectArg);
-        connectionCityQb.orderBy(ConnectionCity.NUMBER, true);
-
-        // build our outer query for Post objects
-        QueryBuilder<City, Integer> cityQb = mCityDao.queryBuilder();
-
-        // where the id matches in the post-id from the inner query
-        cityQb.where().in(City.ID, connectionCityQb);
-
-        return cityQb.prepare();
     }
 
     public List<Provider> getAllProviders() {

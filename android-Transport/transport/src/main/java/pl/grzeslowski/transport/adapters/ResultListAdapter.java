@@ -93,7 +93,6 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
         Connection connection = mConnections.get(groupPosition);
 
         viewHolder.mProvider.setText(connection.getProvider().getName());
-        viewHolder.mProvider.setSelected(true);
 
         final LocalTime searchTime = connection.getTime();
         viewHolder.mSearchTime.setText(String.format("%02d:%02d", searchTime.getHourOfDay(), searchTime.getMinuteOfHour()));
@@ -105,7 +104,6 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
             }
         }));
         viewHolder.mFullPath.setText(cities);
-        viewHolder.mFullPath.setSelected(true);
 
         return convertView;
     }

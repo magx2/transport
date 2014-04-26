@@ -13,7 +13,7 @@ public class ConnectionCity {
     private int mId;
     @DatabaseField(foreign = true, canBeNull = false, columnName = CONNECTION)
     private Connection mConnection;
-    @DatabaseField(foreign = true, canBeNull = false, columnName = CITY)
+    @DatabaseField(foreign = true, canBeNull = false, columnName = CITY, foreignAutoRefresh = true)
     private City mCity;
     @DatabaseField(canBeNull = false, columnName = NUMBER)
     private int mNumber;
@@ -26,5 +26,9 @@ public class ConnectionCity {
         mConnection = connection;
         mCity = city;
         mNumber = number;
+    }
+
+    public City getCity() {
+        return mCity;
     }
 }
