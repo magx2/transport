@@ -24,10 +24,10 @@ import pl.grzeslowski.transport.product_flavors.MonetizationType;
 public class ResultListAdapter extends BaseExpandableListAdapter {
 
     private static final int sChildrenCount = 1;
+    private static final int sFreeVersionMark = 1;
     private final Activity mActivity;
     private final List<Connection> mConnections;
     private final LayoutInflater mInflater;
-    private static final int sFreeVersionMark = 1;
 
     public ResultListAdapter(List<Connection> connections, Activity activity) {
         mConnections = new ArrayList<Connection>(Preconditions.checkNotNull(connections));
