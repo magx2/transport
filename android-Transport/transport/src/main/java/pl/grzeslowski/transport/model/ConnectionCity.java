@@ -1,10 +1,10 @@
 package pl.grzeslowski.transport.model;
 
 import com.j256.ormlite.field.DatabaseField;
-import com.j256.ormlite.table.DatabaseTable;
 
-@DatabaseTable
-public class ConnectionCity {
+import java.io.Serializable;
+
+public class ConnectionCity implements Serializable {
     public static final String CONNECTION = "cc_connection";
     public static final String CITY = "cc_city";
     public static final String NUMBER = "cc_number";
@@ -18,7 +18,7 @@ public class ConnectionCity {
     @DatabaseField(canBeNull = false, columnName = NUMBER)
     private int mNumber;
 
-    private  ConnectionCity() {
+    private ConnectionCity() {
         // for ORM
     }
 
