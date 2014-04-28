@@ -16,6 +16,7 @@ import java.util.List;
 
 import pl.grzeslowski.transport.BuildConfig;
 import pl.grzeslowski.transport.R;
+import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.model.Connection;
 import pl.grzeslowski.transport.model.ConnectionMark;
 import pl.grzeslowski.transport.product_flavors.MonetizationType;
@@ -123,6 +124,8 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
 
         Connection connection = mConnections.get(groupPosition);
 
+        final List<City> path = connection.getPath();
+        viewHolder.mPath.setText(String.format("%s - %s", path.get(0).getName(), path.get(path.size() - 1).getName()));
         viewHolder.mDeparture.setText(connection.getDeparture());
         viewHolder.mPrice.setText(String.format("%s %s / %s %s", connection.getNormalPrice(), mActivity.getString(R.string.normal_price), connection.getStudentPrice(), mActivity.getString(R.string.student_price)));
 
@@ -169,10 +172,12 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
     }
 
     private class ChildViewHolder {
+        private TextView mPath;
         private TextView mPrice;
         private TextView mDeparture;
 
         ChildViewHolder(View convertView) {
+            mPath = (TextView) convertView.findViewById(R.id.list_result_expanded_path);
             mPrice = (TextView) convertView.findViewById(R.id.list_result_expanded_price);
             mDeparture = (TextView) convertView.findViewById(R.id.list_result_expanded_departure);
         }
