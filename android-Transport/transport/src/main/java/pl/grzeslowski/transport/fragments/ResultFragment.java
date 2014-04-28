@@ -93,13 +93,13 @@ public class ResultFragment extends Fragment {
     public void onPause() {
         super.onPause();
 
-        mLoader.cancel(true);
+        closeLoader();
     }
 
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-
-        mLoader.cancel(true);
+    private void closeLoader() {
+        if (mLoader != null) {
+            mLoader.cancel(true);
+            mLoader = null;
+        }
     }
 }
