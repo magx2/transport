@@ -11,6 +11,7 @@ import com.google.common.collect.Lists;
 
 import org.androidannotations.annotations.EBean;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -20,7 +21,7 @@ import pl.grzeslowski.transport.model.Connection;
 import pl.grzeslowski.transport.model.Provider;
 
 @EBean(scope = EBean.Scope.Singleton)
-public class DatabaseManager {
+public class DatabaseManager implements Serializable {
 
     private final DatabaseHelper mDatabaseHelper;
 
