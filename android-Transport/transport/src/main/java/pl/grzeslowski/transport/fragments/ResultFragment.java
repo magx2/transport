@@ -47,7 +47,7 @@ public class ResultFragment extends Fragment {
     }
 
     public void showResultsFor(final City from, final City to) {
-        mProgressDialog = ProgressDialog.show(getActivity(), "tit", "mess");
+        mProgressDialog = ProgressDialog.show(getActivity(), getActivity().getResources().getString(R.string.loading_connections_title), getActivity().getResources().getString(R.string.loading_connections_message));
 
         Preconditions.checkNotNull(from);
         Preconditions.checkNotNull(to);
