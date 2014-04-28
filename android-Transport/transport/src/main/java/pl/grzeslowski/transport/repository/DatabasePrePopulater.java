@@ -42,6 +42,10 @@ public class DatabasePrePopulater {
 
     private static final String PWHD_WALBRZYCH_NORMAL_PRICE = "10,50";
     private static final String PWHD_WALBRZYCH_STUDENT_PRICE = "00,00";
+
+    private static final String PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE = "10,50";
+    private static final String PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE = "00,00";
+
     public static List<Connection> CONNECTIONS = Arrays.asList(
 
             // Sca - Wro
@@ -665,6 +669,1060 @@ public class DatabasePrePopulater {
                             new ConnectionMark("Nie kursuje w wigilie i sylwestra")
                     ),
                     PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
+            ),
+
+            // Sca - Wal DNI ROBOCZE
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(4, 40),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(5, 00),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(5, 23),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(5, 30),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(5, 40),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(5, 50),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(6, 20),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(6, 35),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(6, 55),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("s")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(7, 05),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(7, 34),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(7, 45),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(8, 15),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(8, 22),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(8, 35),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(9, 05),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(9, 15),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(9, 25),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(9, 52),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(10, 05),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(10, 15),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(10, 30),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(10, 50),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(11, 05),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(11, 15),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(11, 30),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(11, 40),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(11, 55),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(12, 15),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(12, 25),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(12, 40),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(13, 00),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(13, 10),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(13, 28),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(13, 40),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(13, 55),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(14, 20),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(14, 35),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(15, 00),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(15, 10),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(15, 20),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(15, 29),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(15, 40),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(15, 50),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(15, 55),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(16, 05),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(16, 20),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(16, 35),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(17, 00),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(17, 05),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(17, 15),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(17, 30),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(17, 54),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(18, 15),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(18, 25),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(18, 29),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(18, 50),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(19, 25),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(19, 35),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(20, 15),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(20, 45),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(21, 15),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(22, 20),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("Dni robocze"),
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+
+// Sca - Wal reszta
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(5,20),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("w"),
+                            new ConnectionMark("d")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(5,25),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(5,50),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(6,05),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(6,30),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(6,40),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("w")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(6,58),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(7,15),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("w")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(7,25),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(7,35),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(8,00),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("s")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(8,15),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(8,42),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(8,50),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(9,10),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("w")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(9,30),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(9,45),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(9,55),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(10,10),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(10,45),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(10,50),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("w")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(10,55),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(11,12),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(11,45),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(11,55),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(12,30),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(12,45),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(12,55),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(13,20),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(13,35),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(13,55),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("w")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(14,00),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(14,10),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(14,25),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(14,40),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(14,50),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(14,55),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(15,05),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(15,20),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(15,35),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(16,00),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(16,05),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("w")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(16,10),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(16,25),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(16,40),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(16,50),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(16,55),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(17,05),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(17,35),
+                    getPwhd(),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(17,45),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(17,55),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m"),
+                            new ConnectionMark("w")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(18,20),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(18,30),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(18,45),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(19,05),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(19,30),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(19,40),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(20,10),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(20,20),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m"),
+                            new ConnectionMark("w")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(20,45),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(21,15),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(21,30),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(21,45),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(22,15),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
+            ),
+            new Connection(
+                    getScaWalPwhd(),
+                    new LocalTime(23,00),
+                    getPwhd(),
+                    Arrays.asList(
+                            new ConnectionMark("m")
+                    ),
+                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
             )
     );
 
@@ -699,4 +1757,9 @@ public class DatabasePrePopulater {
         walSca.addAll(getScaWroPwhd());
         return walSca;
     }
+
+    private static List<City> getScaWalPwhd() {
+        return Arrays.asList(CITIES.get(0), CITIES.get(4), CITIES.get(3), CITIES.get(2));
+    }
+
 }
