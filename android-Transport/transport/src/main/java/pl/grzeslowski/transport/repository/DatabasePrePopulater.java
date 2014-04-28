@@ -482,15 +482,6 @@ public class DatabasePrePopulater {
                 ),
                 new Connection(
                         getWalWroPwhdPath(),
-                        new LocalTime(6, 40),
-                        getPwhd(),
-                        Arrays.asList(
-                                new ConnectionMark("Nie kursuje w święta ustawowe")
-                        ),
-                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
-                ),
-                new Connection(
-                        getWalWroPwhdPath(),
                         new LocalTime(7, 05),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
@@ -545,15 +536,6 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 // Z Wal-Wro
-                new Connection(
-                        getWalWroPwhdPath(),
-                        new LocalTime(5, 20),
-                        getPwhd(),
-                        Arrays.asList(
-                                new ConnectionMark("Dni robocze")
-                        ),
-                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
-                ),
                 new Connection(
                         getWalWroPwhdPath(),
                         new LocalTime(6, 40),
