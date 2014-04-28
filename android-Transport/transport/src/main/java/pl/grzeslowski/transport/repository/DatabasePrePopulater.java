@@ -328,15 +328,6 @@ public class DatabasePrePopulater {
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
-                        new LocalTime(8, 40),
-                        getPwhd(),
-                        Arrays.asList(
-                                new ConnectionMark("nie kursuje w święta ustawowe")
-                        ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-                ),
-                new Connection(
-                        getWroScaPwhdPath(),
                         new LocalTime(9, 10),
                         getPwhd(),
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
@@ -367,12 +358,6 @@ public class DatabasePrePopulater {
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
-                        new LocalTime(11, 05),
-                        getPwhd(),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-                ),
-                new Connection(
-                        getWroScaPwhdPath(),
                         new LocalTime(12, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -397,12 +382,6 @@ public class DatabasePrePopulater {
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
-                        new LocalTime(14, 00),
-                        getPwhd(),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-                ),
-                new Connection(
-                        getWroScaPwhdPath(),
                         new LocalTime(14, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -416,15 +395,6 @@ public class DatabasePrePopulater {
                         getPwhd(),
                         Arrays.asList(
                                 new ConnectionMark("nie kursuje w święta ustawowe")
-                        ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-                ),
-                new Connection(
-                        getWroScaPwhdPath(),
-                        new LocalTime(15, 55),
-                        getPwhd(),
-                        Arrays.asList(
-                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
                         ),
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
@@ -446,29 +416,11 @@ public class DatabasePrePopulater {
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
-                        new LocalTime(17, 30),
-                        getPwhd(),
-                        Arrays.asList(
-                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                        ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-                ),
-                new Connection(
-                        getWroScaPwhdPath(),
                         new LocalTime(18, 20),
                         getPwhd(),
                         Arrays.asList(
                                 new ConnectionMark("nie kursuje w wigilie i sylwestra"),
                                 new ConnectionMark("nie kursuje w święta ustawowe")
-                        ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-                ),
-                new Connection(
-                        getWroScaPwhdPath(),
-                        new LocalTime(19, 05),
-                        getPwhd(),
-                        Arrays.asList(
-                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
                         ),
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
@@ -1858,12 +1810,6 @@ public class DatabasePrePopulater {
                 new Connection(
                         getWalScaPwhdPath(),
                         new LocalTime(6, 05),
-                        getPwhd(),
-                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-                ),
-                new Connection(
-                        getWalScaPwhdPath(),
-                        new LocalTime(6, 30),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
