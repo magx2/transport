@@ -36,6 +36,9 @@ public class DatabasePrePopulater {
             new Provider("PKP")
     );
 
+    private static String PWHD_WROCLAW_DEPARTURE = "ul. Dawida";
+    private static String PWHD_SWIDNICA_DEPARTURE = "ul. Kolejowa stanowiska 4, 5";
+
     public static List<Connection> CONNECTIONS = Arrays.asList(
 
             // Sca - Wro
@@ -47,7 +50,7 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w niedzielę"),
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -56,7 +59,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -65,7 +68,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -74,7 +77,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -83,7 +86,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -92,7 +95,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -101,7 +104,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -110,7 +113,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -119,7 +122,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -128,7 +131,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -137,7 +140,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -146,7 +149,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -155,7 +158,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -164,7 +167,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -173,7 +176,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -182,7 +185,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -192,13 +195,13 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
                     new LocalTime(14, 50),
                      getPwhd(),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -208,13 +211,13 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w święta ustawowe"),
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
                     new LocalTime(16, 05),
                      getPwhd(),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -224,7 +227,7 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w święta ustawowe"),
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -234,7 +237,7 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w święta ustawowe"),
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -243,7 +246,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -253,7 +256,7 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w święta ustawowe"),
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -262,7 +265,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -271,7 +274,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -281,7 +284,7 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w święta ustawowe"),
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getScaWroPwhd(),
@@ -291,7 +294,7 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w święta ustawowe"),
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Kolejowa stanowiska 4, 5", "6", "4,5"
+                    PWHD_SWIDNICA_DEPARTURE, "6", "4,5"
             ),
 
             // Wro - Sca
@@ -303,7 +306,7 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w święta ustawowe"),
                             new ConnectionMark("nie kursuje w niedzielę")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -312,7 +315,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -321,13 +324,13 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
                     new LocalTime(7, 25),
                      getPwhd(),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -336,13 +339,13 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
                     new LocalTime(9, 10),
                      getPwhd(),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -351,7 +354,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -360,19 +363,19 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
                     new LocalTime(10, 40),
                      getPwhd(),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
                     new LocalTime(11, 05),
                      getPwhd(),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -381,13 +384,13 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
                     new LocalTime(12, 30),
                      getPwhd(),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -396,13 +399,13 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
                     new LocalTime(14, 00),
                      getPwhd(),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -411,7 +414,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -420,7 +423,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -429,13 +432,13 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
                     new LocalTime(16, 10),
                      getPwhd(),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -445,7 +448,7 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -454,7 +457,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -464,7 +467,7 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -473,7 +476,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -483,7 +486,7 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -492,7 +495,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -501,7 +504,7 @@ public class DatabasePrePopulater {
                     Arrays.asList(
                             new ConnectionMark("nie kursuje w wigilie i sylwestra")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -511,7 +514,7 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -521,7 +524,7 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             ),
             new Connection(
                     getWroScaPwhd(),
@@ -531,7 +534,7 @@ public class DatabasePrePopulater {
                             new ConnectionMark("nie kursuje w wigilie i sylwestra"),
                             new ConnectionMark("nie kursuje w święta ustawowe")
                     ),
-                    "ul. Dawida", "6", "4,5"
+                    PWHD_WROCLAW_DEPARTURE, "6", "4,5"
             )
     );
 

@@ -45,21 +45,13 @@ class DatabaseHelper extends OrmLiteSqliteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase database, ConnectionSource connectionSource) {
         try {
-            TableUtils.dropTable(connectionSource, City.class, true);
-            TableUtils.dropTable(connectionSource, Connection.class, true);
-            TableUtils.dropTable(connectionSource, ConnectionMark.class, true);
-            TableUtils.dropTable(connectionSource, Provider.class, true);
-            TableUtils.dropTable(connectionSource, ConnectionCity.class, true);
-
-            TableUtils.createTableIfNotExists(connectionSource, City.class);
-            TableUtils.createTableIfNotExists(connectionSource, Connection.class);
-            TableUtils.createTableIfNotExists(connectionSource, ConnectionMark.class);
-            TableUtils.createTableIfNotExists(connectionSource, Provider.class);
-            TableUtils.createTableIfNotExists(connectionSource, ConnectionCity.class);
+            createTablesIfNotExists(connectionSource);
 
             if (getAllConnections().isEmpty()) {
                 TransactionManager.callInTransaction(connectionSource, new Callable<Void>() {
                     public Void call() throws Exception {
+                        dropTables(DatabaseHelper.this.connectionSource);
+                        createTablesIfNotExists(DatabaseHelper.this.connectionSource);
 
                         // city
                         for (City city : DatabasePrePopulater.CITIES) {
@@ -97,6 +89,22 @@ class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         }
     }
 
+    private void createTablesIfNotExists(ConnectionSource connectionSource) throws SQLException {
+        TableUtils.createTableIfNotExists(connectionSource, City.class);
+        TableUtils.createTableIfNotExists(connectionSource, Connection.class);
+        TableUtils.createTableIfNotExists(connectionSource, ConnectionMark.class);
+        TableUtils.createTableIfNotExists(connectionSource, Provider.class);
+        TableUtils.createTableIfNotExists(connectionSource, ConnectionCity.class);
+    }
+
+    private void dropTables(ConnectionSource connectionSource) throws SQLException {
+        TableUtils.dropTable(connectionSource, City.class, true);
+        TableUtils.dropTable(connectionSource, Connection.class, true);
+        TableUtils.dropTable(connectionSource, ConnectionMark.class, true);
+        TableUtils.dropTable(connectionSource, Provider.class, true);
+        TableUtils.dropTable(connectionSource, ConnectionCity.class, true);
+    }
+
     @Override
     public void onUpgrade(SQLiteDatabase database, ConnectionSource connectionSource, int oldVersion, int newVersion) {
         // do nothing...
@@ -110,23 +118,43 @@ class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         try {
             final List<Connection> connections = mConnectionDao.queryForAll();
 
-            for (Connection connection : connections) {
-                final QueryBuilder<ConnectionCity, Integer> queryBuilder = mConnectionCityDao.queryBuilder();
-                queryBuilder.where().eq(ConnectionCity.CONNECTION, connection).prepare();
-                queryBuilder.orderBy(ConnectionCity.NUMBER, true);
-
-                final List<ConnectionCity> citiesForConnection = mConnectionCityDao.query(queryBuilder.prepare());
-                final List<City> path = Lists.transform(citiesForConnection, new Function<ConnectionCity, City>() {
-                    @Override
-                    public City apply(ConnectionCity input) {
-                        return input.getCity();
-                    }
-                });
-
-                connection.setPath(path);
-            }
+            setPathForConnection(connections);
 
             return connections;
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    private void setPathForConnection(Iterable<Connection> connections) throws SQLException {
+        for (Connection connection : connections) {
+            final QueryBuilder<ConnectionCity, Integer> queryBuilder = mConnectionCityDao.queryBuilder();
+            queryBuilder.where().eq(ConnectionCity.CONNECTION, connection).prepare();
+
+            final List<ConnectionCity> citiesForConnection = mConnectionCityDao.query(queryBuilder.prepare());
+            final List<City> path = Lists.transform(citiesForConnection, new Function<ConnectionCity, City>() {
+                @Override
+                public City apply(ConnectionCity input) {
+                    return input.getCity();
+                }
+            });
+
+            connection.setPath(path);
+        }
+    }
+
+    public Collection<Connection> getAllConnections(City from, City to) {
+        try {
+            final QueryBuilder<ConnectionCity, Integer> ccQueryBuilder = mConnectionCityDao.queryBuilder();
+            ccQueryBuilder.where().eq(ConnectionCity.CITY, from).or().eq(ConnectionCity.CITY, to);
+            ccQueryBuilder.orderBy(ConnectionCity.NUMBER, true);
+
+            final QueryBuilder<Connection, Integer> connectionQueryBuilder = mConnectionDao.queryBuilder();
+            final List<Connection> connections = connectionQueryBuilder.join(ccQueryBuilder).distinct().query();
+
+            setPathForConnection(connections);
+
+            return  connections;
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }

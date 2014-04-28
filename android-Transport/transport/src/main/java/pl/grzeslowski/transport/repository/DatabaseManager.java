@@ -42,7 +42,7 @@ public class DatabaseManager {
     }
 
     public List<Connection> getConnections(final City from, final City to) {
-        Collection<Connection> connection = mDatabaseHelper.getAllConnections();
+        Collection<Connection> connection = mDatabaseHelper.getAllConnections(from, to);
 
         Collection<Connection> filter = Collections2.filter(connection, new Predicate<Connection>() {
             @Override
