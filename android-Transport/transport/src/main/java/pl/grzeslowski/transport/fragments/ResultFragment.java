@@ -37,6 +37,7 @@ public class ResultFragment extends Fragment {
     DatabaseManager mDatabaseManager;
     private List<Connection> mConnections = new ArrayList<Connection>();
     private ProgressDialog mProgressDialog;
+    private ConnectionsLoader mLoader;
 
     @AfterViews
     void prepare() {
@@ -51,16 +52,20 @@ public class ResultFragment extends Fragment {
         Preconditions.checkNotNull(from);
         Preconditions.checkNotNull(to);
 
-        new ConnectionsLoader(mDatabaseManager, this).execute(from, to);
+        mLoader = new ConnectionsLoader(mDatabaseManager, this);
+        mLoader.execute(from, to);
     }
 
     public void parseResultsToList(final List<Connection> connections) {
         Collections.sort(connections, new ConnectionComparator());
         setAdapter(connections);
 
+        mConnections = connections;
+
         if (mProgressDialog != null) {
             mProgressDialog.dismiss();
         }
+        mLoader = null;
     }
 
     private void setAdapter(List<Connection> elements) {
@@ -82,5 +87,19 @@ public class ResultFragment extends Fragment {
         outState.putSerializable(sConnectionsTag, new ArrayList<Connection>(mConnections));
 
         super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+        mLoader.cancel(true);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+
+        mLoader.cancel(true);
     }
 }
