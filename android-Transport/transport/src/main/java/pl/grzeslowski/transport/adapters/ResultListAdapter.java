@@ -7,10 +7,7 @@ import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
-import com.google.common.base.Function;
-import com.google.common.base.Joiner;
 import com.google.common.base.Preconditions;
-import com.google.common.collect.Collections2;
 
 import org.joda.time.LocalTime;
 
@@ -19,7 +16,6 @@ import java.util.List;
 
 import pl.grzeslowski.transport.BuildConfig;
 import pl.grzeslowski.transport.R;
-import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.model.Connection;
 import pl.grzeslowski.transport.model.ConnectionMark;
 import pl.grzeslowski.transport.product_flavors.MonetizationType;
@@ -97,14 +93,6 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
         final LocalTime searchTime = connection.getTime();
         viewHolder.mSearchTime.setText(String.format("%02d:%02d", searchTime.getHourOfDay(), searchTime.getMinuteOfHour()));
 
-        String cities = Joiner.on(" - ").join(Collections2.transform(connection.getPath(), new Function<City, String>() {
-            @Override
-            public String apply(City input) {
-                return input.getName();
-            }
-        }));
-        viewHolder.mFullPath.setText(cities);
-
         return convertView;
     }
 
@@ -173,12 +161,10 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
     private class ViewHolder {
         private TextView mProvider;
         private TextView mSearchTime;
-        private TextView mFullPath;
 
         ViewHolder(View convertView) {
             mProvider = (TextView) convertView.findViewById(R.id.list_result_provider);
             mSearchTime = (TextView) convertView.findViewById(R.id.list_result_time_search_connection);
-            mFullPath = (TextView) convertView.findViewById(R.id.list_result_path_full_connection);
         }
     }
 
