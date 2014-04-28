@@ -30,7 +30,6 @@ public class DatabasePrePopulater {
             new City("Małuszów"),
             new City("Tyniec Mały")
     );
-
     public static List<Provider> PROVIDERS = Arrays.asList(
             new Provider("P.W.H.D"),
             new Provider("Guliwer"),
@@ -44,11 +43,11 @@ public class DatabasePrePopulater {
     private static final String PWHD_SCA_WRO_NORMAL_PRICE = "10,50";
     private static final String PWHD_SCA_WRO_STUDENT_PRICE = "00,00";
 
-    private static final String PWHD_WALBRZYCH_NORMAL_PRICE = "10,50";
-    private static final String PWHD_WALBRZYCH_STUDENT_PRICE = "00,00";
-
     private static final String PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE = "10,50";
     private static final String PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE = "00,00";
+
+    private static final String PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE = "10,50";
+    private static final String PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE = "5,00";
 
     private static List<Connection> getPwhdScaWro() {
         return Arrays.asList(
@@ -536,6 +535,7 @@ public class DatabasePrePopulater {
 
     private static List<Connection> getPwhdWalWro() {
         return Arrays.asList(
+
                 // Wal - Wro
                 new Connection(
                         getWalWroPwhd(),
@@ -544,7 +544,7 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Kursuje od poniedziałku do piątku oprócz świąt")
                         ),
-                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWalWroPwhd(),
@@ -553,19 +553,19 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWalWroPwhd(),
                         new LocalTime(7, 05),
                         getPwhd(),
-                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWalWroPwhd(),
                         new LocalTime(9, 10),
                         getPwhd(),
-                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWalWroPwhd(),
@@ -574,13 +574,13 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWalWroPwhd(),
                         new LocalTime(13, 55),
                         getPwhd(),
-                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWalWroPwhd(),
@@ -589,7 +589,7 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWalWroPwhd(),
@@ -598,7 +598,7 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra")
                         ),
-                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWalWroPwhd(),
@@ -608,241 +608,245 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w święta ustawowe"),
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra")
                         ),
-                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                // Z Wal-Wro
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(13, 55),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Dni robocze")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(5, 20),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Dni robocze")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(6, 40),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Dni robocze")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(7, 15),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Dni robocze")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(6, 40),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Sobota, niedziela i święta")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(9, 10),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Dni robocze")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(10, 50),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Dni robocze")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(16, 05),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Dni robocze")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(20, 20),
+                        getPwhd(),
+                        Arrays.asList(new ConnectionMark("Dni robocze"),
+                                new ConnectionMark("Nie kursuje 24.I i 31.XII")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(17, 55),
+                        getPwhd(),
+                        Arrays.asList(new ConnectionMark("Dni robocze"),
+                                new ConnectionMark("Nie kursuje 24.I i 31.XII")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(7, 15),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Sobota, niedziela i święta")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(9, 10),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Sobota, niedziela i święta")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(10, 50),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Sobota, niedziela i święta")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(13, 55),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Sobota, niedziela i święta")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(16, 05),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Sobota, niedziela i święta")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(17, 55),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Sobota, niedziela i święta"),
+                                new ConnectionMark("Nie kursuje 24.I i 31.XII")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWalWroPwhd(),
+                        new LocalTime(20, 20),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Sobota, niedziela i święta"),
+                                new ConnectionMark("Nie kursuje 24.I i 31.XII")
+                        ),
+                        PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 )
         );
     }
 
+    private static List<Connection> getPwhdWroWal() {
+        return Arrays.asList(
+                
+                // PWHD Wro - Wal
+                new Connection(
+                        getWroWalPwhd(),
+                        new LocalTime(6, 30),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroWalPwhd(),
+                        new LocalTime(8, 40),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroWalPwhd(),
+                        new LocalTime(11, 05),
+                        getPwhd(),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroWalPwhd(),
+                        new LocalTime(14, 00),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroWalPwhd(),
+                        new LocalTime(15, 55),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroWalPwhd(),
+                        new LocalTime(17, 30),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Nie kursuje w święta ustawowe"),
+                                new ConnectionMark("Nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroWalPwhd(),
+                        new LocalTime(19, 05),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroWalPwhd(),
+                        new LocalTime(20, 00),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("Nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
+                )
+                );
+    }
+
     public static List<Connection> CONNECTIONS = Arrays.asList(
-
-// Z Wal-Wro
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(13, 55),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Dni robocze")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(5, 20),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Dni robocze")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(6, 40),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Dni robocze")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(7, 15),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Dni robocze")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(6, 40),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Sobota, niedziela i święta")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(9, 10),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Dni robocze")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(10, 50),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Dni robocze")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(16, 05),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Dni robocze")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(20, 20),
-                    getPwhd(),
-                    Arrays.asList(new ConnectionMark("Dni robocze"),
-                            new ConnectionMark("Nie kursuje 24.I i 31.XII")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(17, 55),
-                    getPwhd(),
-                    Arrays.asList(new ConnectionMark("Dni robocze"),
-                            new ConnectionMark("Nie kursuje 24.I i 31.XII")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(7, 15),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Sobota, niedziela i święta")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(9, 10),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Sobota, niedziela i święta")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(10, 50),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Sobota, niedziela i święta")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(13, 55),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Sobota, niedziela i święta")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(16, 05),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Sobota, niedziela i święta")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(17, 55),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Sobota, niedziela i święta"),
-                            new ConnectionMark("Nie kursuje 24.I i 31.XII")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWalWroPwhd(),
-                    new LocalTime(20, 20),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Sobota, niedziela i święta"),
-                            new ConnectionMark("Nie kursuje 24.I i 31.XII")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
-            ),
-
-// PWHD Wro - Wal
-            new Connection(
-                    getWroWalPwhd(),
-                    new LocalTime(6, 30),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroWalPwhd(),
-                    new LocalTime(8, 40),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroWalPwhd(),
-                    new LocalTime(11, 05),
-                    getPwhd(),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroWalPwhd(),
-                    new LocalTime(14, 00),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroWalPwhd(),
-                    new LocalTime(15, 55),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroWalPwhd(),
-                    new LocalTime(17, 30),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Nie kursuje w święta ustawowe"),
-                            new ConnectionMark("Nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroWalPwhd(),
-                    new LocalTime(19, 05),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroWalPwhd(),
-                    new LocalTime(20, 00),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("Nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_NORMAL_PRICE, PWHD_WALBRZYCH_STUDENT_PRICE
-            ),
 
 // Sca - Wal DNI ROBOCZE
             new Connection(
