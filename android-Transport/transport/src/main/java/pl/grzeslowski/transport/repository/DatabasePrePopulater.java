@@ -484,15 +484,6 @@ public class DatabasePrePopulater {
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
-                        new LocalTime(20, 00),
-                        getPwhd(),
-                        Arrays.asList(
-                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                        ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-                ),
-                new Connection(
-                        getWroScaPwhdPath(),
                         new LocalTime(20, 50),
                         getPwhd(),
                         Arrays.asList(
