@@ -2,6 +2,7 @@ package pl.grzeslowski.transport.repository;
 
 import org.joda.time.LocalTime;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -1990,7 +1991,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(17,07),
+                    new LocalTime(17, 07),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2001,7 +2002,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(17,10),
+                    new LocalTime(17, 10),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2012,7 +2013,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(17,20),
+                    new LocalTime(17, 20),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2022,7 +2023,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(17,55),
+                    new LocalTime(17, 55),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2032,7 +2033,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(18,30),
+                    new LocalTime(18, 30),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2042,7 +2043,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(18,50),
+                    new LocalTime(18, 50),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2052,7 +2053,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(19,25),
+                    new LocalTime(19, 25),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2062,7 +2063,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(19,55),
+                    new LocalTime(19, 55),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2072,7 +2073,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(20,15),
+                    new LocalTime(20, 15),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2082,7 +2083,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(20,40),
+                    new LocalTime(20, 40),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2092,7 +2093,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(21,00),
+                    new LocalTime(21, 00),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2103,7 +2104,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(21,15),
+                    new LocalTime(21, 15),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2114,7 +2115,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(21,45),
+                    new LocalTime(21, 45),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2125,7 +2126,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getScaWalPwhd(),
-                    new LocalTime(22,40),
+                    new LocalTime(22, 40),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2138,7 +2139,7 @@ public class DatabasePrePopulater {
 // WAL - SCA SWIETA
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(5,25),
+                    new LocalTime(5, 25),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2148,7 +2149,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(6,15),
+                    new LocalTime(6, 15),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2157,7 +2158,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(6,40),
+                    new LocalTime(6, 40),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2167,7 +2168,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(6,55),
+                    new LocalTime(6, 55),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2176,7 +2177,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(7,15),
+                    new LocalTime(7, 15),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2186,7 +2187,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(7,35),
+                    new LocalTime(7, 35),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2195,7 +2196,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(8,10),
+                    new LocalTime(8, 10),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2204,7 +2205,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(8,50),
+                    new LocalTime(8, 50),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2213,7 +2214,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(9,10),
+                    new LocalTime(9, 10),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2223,7 +2224,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(9,30),
+                    new LocalTime(9, 30),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2232,7 +2233,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(10,00),
+                    new LocalTime(10, 00),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2241,7 +2242,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(10,50),
+                    new LocalTime(10, 50),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2251,7 +2252,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(10,55),
+                    new LocalTime(10, 55),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2260,7 +2261,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(11,10),
+                    new LocalTime(11, 10),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2269,7 +2270,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(12,25),
+                    new LocalTime(12, 25),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2278,7 +2279,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(11,40),
+                    new LocalTime(11, 40),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2287,7 +2288,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(11,55),
+                    new LocalTime(11, 55),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2296,7 +2297,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(12,55),
+                    new LocalTime(12, 55),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2305,7 +2306,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(13,10),
+                    new LocalTime(13, 10),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2314,7 +2315,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(13,25),
+                    new LocalTime(13, 25),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2323,7 +2324,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(13,40),
+                    new LocalTime(13, 40),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2332,7 +2333,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(13,55),
+                    new LocalTime(13, 55),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2342,7 +2343,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(14,10),
+                    new LocalTime(14, 10),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2351,7 +2352,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(14,55),
+                    new LocalTime(14, 55),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2360,7 +2361,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(15,10),
+                    new LocalTime(15, 10),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2369,7 +2370,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(15,25),
+                    new LocalTime(15, 25),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2378,7 +2379,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(15,40),
+                    new LocalTime(15, 40),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2387,7 +2388,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(16,05),
+                    new LocalTime(16, 05),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2397,7 +2398,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(16,20),
+                    new LocalTime(16, 20),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta")
@@ -2406,7 +2407,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(16,55),
+                    new LocalTime(16, 55),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2416,7 +2417,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(17,25),
+                    new LocalTime(17, 25),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2426,7 +2427,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(17,40),
+                    new LocalTime(17, 40),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2436,7 +2437,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(17,55),
+                    new LocalTime(17, 55),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2447,7 +2448,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(18,10),
+                    new LocalTime(18, 10),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2457,7 +2458,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(18,25),
+                    new LocalTime(18, 25),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2467,7 +2468,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(18,55),
+                    new LocalTime(18, 55),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2477,7 +2478,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(19,30),
+                    new LocalTime(19, 30),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2487,7 +2488,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(20,20),
+                    new LocalTime(20, 20),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2498,7 +2499,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(20,45),
+                    new LocalTime(20, 45),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2508,7 +2509,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(21,00),
+                    new LocalTime(21, 00),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2518,7 +2519,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(21,15),
+                    new LocalTime(21, 15),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2528,7 +2529,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(21,40),
+                    new LocalTime(21, 40),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2538,7 +2539,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(22,00),
+                    new LocalTime(22, 00),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2549,7 +2550,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(22,15),
+                    new LocalTime(22, 15),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2560,7 +2561,7 @@ public class DatabasePrePopulater {
             ),
             new Connection(
                     getWalScaPwhd(),
-                    new LocalTime(22,20),
+                    new LocalTime(22, 20),
                     getPwhd(),
                     Arrays.asList(
                             new ConnectionMark("Sobota, niedziela i święta"),
@@ -2598,7 +2599,7 @@ public class DatabasePrePopulater {
     }
 
     private static List<City> getWalWroPwhd() {
-        List<City> walSca = Arrays.asList(CITIES.get(2), CITIES.get(3), CITIES.get(4));
+        List<City> walSca = new ArrayList<City>(Arrays.asList(CITIES.get(2), CITIES.get(3), CITIES.get(4)));
         walSca.addAll(getScaWroPwhd());
         return walSca;
     }
