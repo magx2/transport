@@ -1,5 +1,6 @@
 package pl.grzeslowski.transport.fragments;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -23,6 +24,7 @@ import pl.grzeslowski.transport.adapters.ResultListAdapter;
 import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.model.Connection;
 import pl.grzeslowski.transport.repository.DatabaseManager;
+import pl.grzeslowski.transport.tasks.ConnectionsLoader;
 import pl.grzeslowski.transport.tools.ConnectionComparator;
 
 @EFragment(R.layout.fragment_result)
@@ -34,6 +36,7 @@ public class ResultFragment extends Fragment {
     @Bean
     DatabaseManager mDatabaseManager;
     private List<Connection> mConnections = new ArrayList<Connection>();
+    private ProgressDialog mProgressDialog;
 
     @AfterViews
     void prepare() {
@@ -42,17 +45,22 @@ public class ResultFragment extends Fragment {
         }
     }
 
-    public void showResultsFor(City from, City to) {
+    public void showResultsFor(final City from, final City to) {
+        mProgressDialog = ProgressDialog.show(getActivity(), "tit", "mess");
+
         Preconditions.checkNotNull(from);
         Preconditions.checkNotNull(to);
 
-        mConnections = mDatabaseManager.getConnections(from, to);
-        parseResultsToList(mConnections);
+        new ConnectionsLoader(mDatabaseManager, this).execute(from, to);
     }
 
-    private void parseResultsToList(final List<Connection> connections) {
+    public void parseResultsToList(final List<Connection> connections) {
         Collections.sort(connections, new ConnectionComparator());
         setAdapter(connections);
+
+        if (mProgressDialog != null) {
+            mProgressDialog.dismiss();
+        }
     }
 
     private void setAdapter(List<Connection> elements) {
