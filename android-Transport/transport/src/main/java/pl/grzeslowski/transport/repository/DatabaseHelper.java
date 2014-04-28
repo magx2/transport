@@ -64,7 +64,7 @@ class DatabaseHelper extends OrmLiteSqliteOpenHelper {
                         }
 
                         // connections
-                        for (Connection connection : DatabasePrePopulater.CONNECTIONS) {
+                        for (Connection connection : DatabasePrePopulater.getConnections()) {
                             mConnectionDao.create(connection);
 
                             int i = 0;

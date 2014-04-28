@@ -53,7 +53,7 @@ public class DatabasePrePopulater {
         return Arrays.asList(
                 // Sca - Wro
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(4, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -63,7 +63,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(5, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -72,7 +72,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(5, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -81,13 +81,13 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(6, 15),
                         getPwhd(),
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(6, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -96,7 +96,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(7, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -105,19 +105,19 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(7, 55),
                         getPwhd(),
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(8, 40),
                         getPwhd(),
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(9, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -126,13 +126,13 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(9, 55),
                         getPwhd(),
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(10, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -141,13 +141,13 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(11, 05),
                         getPwhd(),
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(11, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -156,13 +156,13 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(12, 10),
                         getPwhd(),
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(12, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -171,13 +171,13 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(13, 30),
                         getPwhd(),
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(14, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -187,13 +187,13 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(14, 50),
                         getPwhd(),
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(15, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -203,13 +203,13 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(16, 05),
                         getPwhd(),
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(16, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -219,7 +219,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(17, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -229,7 +229,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(17, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -238,7 +238,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(18, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -248,7 +248,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(18, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -257,7 +257,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(19, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -266,7 +266,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(20, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -276,7 +276,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWroPwhd(),
+                        getScaWroPwhdPath(),
                         new LocalTime(21, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -293,7 +293,7 @@ public class DatabasePrePopulater {
 
                 // Wro - Sca
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(5, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -303,7 +303,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(6, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -312,7 +312,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(6, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -321,13 +321,13 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(7, 25),
                         getPwhd(),
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(8, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -336,13 +336,13 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(9, 10),
                         getPwhd(),
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(9, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -351,7 +351,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(10, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -360,19 +360,19 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(10, 40),
                         getPwhd(),
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(11, 05),
                         getPwhd(),
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(12, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -381,13 +381,13 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(12, 30),
                         getPwhd(),
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(13, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -396,13 +396,13 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(14, 00),
                         getPwhd(),
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(14, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -411,7 +411,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(15, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -420,7 +420,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(15, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -429,13 +429,13 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(16, 10),
                         getPwhd(),
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(17, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -445,7 +445,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(17, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -454,7 +454,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(18, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -464,7 +464,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(19, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -473,7 +473,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(19, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -483,7 +483,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(20, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -492,7 +492,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(20, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -501,7 +501,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(21, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -511,7 +511,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(21, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -521,7 +521,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroScaPwhd(),
+                        getWroScaPwhdPath(),
                         new LocalTime(22, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -538,7 +538,7 @@ public class DatabasePrePopulater {
 
                 // Wal - Wro
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(5, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -547,7 +547,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(6, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -556,19 +556,19 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(7, 05),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(9, 10),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(10, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -577,13 +577,13 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(13, 55),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(16, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -592,7 +592,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(17, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -601,7 +601,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(20, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -612,7 +612,7 @@ public class DatabasePrePopulater {
                 ),
                 // Z Wal-Wro
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(13, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -621,7 +621,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(5, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -630,7 +630,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(6, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -639,7 +639,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(7, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -648,7 +648,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(6, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -657,7 +657,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(9, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -666,7 +666,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(10, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -675,7 +675,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(16, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -684,7 +684,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(20, 20),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -693,7 +693,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(17, 55),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -702,7 +702,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(7, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -711,7 +711,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(9, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -720,7 +720,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(10, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -729,7 +729,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(13, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -738,7 +738,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(16, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -747,7 +747,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(17, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -757,7 +757,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroPwhd(),
+                        getWalWroPwhdPath(),
                         new LocalTime(20, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -774,7 +774,7 @@ public class DatabasePrePopulater {
 
                 // PWHD Wro - Wal
                 new Connection(
-                        getWroWalPwhd(),
+                        getWroWalPwhdPath(),
                         new LocalTime(6, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -783,7 +783,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroWalPwhd(),
+                        getWroWalPwhdPath(),
                         new LocalTime(8, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -792,13 +792,13 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroWalPwhd(),
+                        getWroWalPwhdPath(),
                         new LocalTime(11, 05),
                         getPwhd(),
                         PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroWalPwhd(),
+                        getWroWalPwhdPath(),
                         new LocalTime(14, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -807,7 +807,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroWalPwhd(),
+                        getWroWalPwhdPath(),
                         new LocalTime(15, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -816,7 +816,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroWalPwhd(),
+                        getWroWalPwhdPath(),
                         new LocalTime(17, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -826,7 +826,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroWalPwhd(),
+                        getWroWalPwhdPath(),
                         new LocalTime(19, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -835,7 +835,7 @@ public class DatabasePrePopulater {
                         PWHD_WROCLAW_DEPARTURE, PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE, PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWroWalPwhd(),
+                        getWroWalPwhdPath(),
                         new LocalTime(20, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -851,7 +851,7 @@ public class DatabasePrePopulater {
 
                 // Sca - Wal DNI ROBOCZE
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(4, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -860,7 +860,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(5, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -869,7 +869,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(5, 23),
                         getPwhd(),
                         Arrays.asList(
@@ -878,7 +878,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(5, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -887,7 +887,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(5, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -896,7 +896,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(5, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -905,7 +905,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(6, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -914,7 +914,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(6, 35),
                         getPwhd(),
                         Arrays.asList(
@@ -923,7 +923,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(6, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -933,7 +933,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(7, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -942,7 +942,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(7, 34),
                         getPwhd(),
                         Arrays.asList(
@@ -951,7 +951,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(7, 45),
                         getPwhd(),
                         Arrays.asList(
@@ -960,7 +960,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(8, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -969,7 +969,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(8, 22),
                         getPwhd(),
                         Arrays.asList(
@@ -978,7 +978,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(8, 35),
                         getPwhd(),
                         Arrays.asList(
@@ -987,7 +987,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(9, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -996,7 +996,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(9, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -1005,7 +1005,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(9, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -1014,7 +1014,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(9, 52),
                         getPwhd(),
                         Arrays.asList(
@@ -1023,7 +1023,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(10, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -1032,7 +1032,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(10, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -1041,7 +1041,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(10, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -1050,7 +1050,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(10, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -1059,7 +1059,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(11, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -1068,7 +1068,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(11, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -1077,7 +1077,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(11, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -1086,7 +1086,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(11, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -1095,7 +1095,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(11, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -1104,7 +1104,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(12, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -1113,7 +1113,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(12, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -1122,7 +1122,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(12, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -1131,7 +1131,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(13, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -1140,7 +1140,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(13, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -1149,7 +1149,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(13, 28),
                         getPwhd(),
                         Arrays.asList(
@@ -1158,7 +1158,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(13, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -1167,7 +1167,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(13, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -1176,7 +1176,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(14, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -1185,7 +1185,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(14, 35),
                         getPwhd(),
                         Arrays.asList(
@@ -1194,7 +1194,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(15, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -1203,7 +1203,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(15, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -1212,7 +1212,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(15, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -1221,7 +1221,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(15, 29),
                         getPwhd(),
                         Arrays.asList(
@@ -1230,7 +1230,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(15, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -1239,7 +1239,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(15, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -1248,7 +1248,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(15, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -1257,7 +1257,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(16, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -1267,7 +1267,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(16, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -1277,7 +1277,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(16, 35),
                         getPwhd(),
                         Arrays.asList(
@@ -1287,7 +1287,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(17, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -1297,7 +1297,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(17, 05),
                         getPwhd(),
                         Arrays.asList(
@@ -1307,7 +1307,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(17, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -1317,7 +1317,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(17, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -1327,7 +1327,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(17, 54),
                         getPwhd(),
                         Arrays.asList(
@@ -1337,7 +1337,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(18, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -1347,7 +1347,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(18, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -1357,7 +1357,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(18, 29),
                         getPwhd(),
                         Arrays.asList(
@@ -1367,7 +1367,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(18, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -1376,7 +1376,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(19, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -1386,7 +1386,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(19, 35),
                         getPwhd(),
                         Arrays.asList(
@@ -1396,7 +1396,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(20, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -1406,7 +1406,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(20, 45),
                         getPwhd(),
                         Arrays.asList(
@@ -1416,7 +1416,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(21, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -1426,7 +1426,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(22, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -1438,7 +1438,7 @@ public class DatabasePrePopulater {
 
                 // SCA - WAL Swieta
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(5, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -1447,7 +1447,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(5, 45),
                         getPwhd(),
                         Arrays.asList(
@@ -1456,7 +1456,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(6, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -1465,7 +1465,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(6, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -1474,7 +1474,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(7, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -1483,7 +1483,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(7, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -1492,7 +1492,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(7, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -1501,7 +1501,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(8, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -1510,7 +1510,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(9, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -1519,7 +1519,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(9, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -1528,7 +1528,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(10, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -1537,7 +1537,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(10, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -1546,7 +1546,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(10, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -1555,7 +1555,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(10, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -1564,7 +1564,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(11, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -1573,7 +1573,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(12, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -1582,7 +1582,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(12, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -1591,7 +1591,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(12, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -1600,7 +1600,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(12, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -1609,7 +1609,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(13, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -1618,7 +1618,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(14, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -1627,7 +1627,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(14, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -1636,7 +1636,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(14, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -1645,7 +1645,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(15, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -1654,7 +1654,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(15, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -1663,7 +1663,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(15, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -1672,7 +1672,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(16, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -1681,7 +1681,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(16, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -1690,7 +1690,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(16, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -1700,7 +1700,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(17, 07),
                         getPwhd(),
                         Arrays.asList(
@@ -1711,7 +1711,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(17, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -1722,7 +1722,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(17, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -1732,7 +1732,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(17, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -1742,7 +1742,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(18, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -1752,7 +1752,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(18, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -1762,7 +1762,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(19, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -1772,7 +1772,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(19, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -1782,7 +1782,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(20, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -1792,7 +1792,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(20, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -1802,7 +1802,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(21, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -1813,7 +1813,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(21, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -1824,7 +1824,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(21, 45),
                         getPwhd(),
                         Arrays.asList(
@@ -1835,7 +1835,7 @@ public class DatabasePrePopulater {
                         PWHD_SWIDNICA_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getScaWalPwhd(),
+                        getScaWalPwhdPath(),
                         new LocalTime(22, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -1853,49 +1853,49 @@ public class DatabasePrePopulater {
 
 // Wal - Sca DNI ROBOCZE
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(5, 25),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(5, 50),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(6, 05),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(6, 30),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(6, 58),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(7, 25),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(7, 35),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(8, 00),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -1904,211 +1904,211 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(8, 15),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(8, 42),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(8, 50),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(9, 30),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(9, 45),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(9, 55),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(10, 10),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(10, 45),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(10, 55),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(11, 12),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(11, 45),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(11, 55),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(12, 30),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(12, 45),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(12, 55),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(13, 20),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(13, 35),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(14, 00),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(14, 10),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(14, 25),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(14, 40),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(14, 50),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(14, 55),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(15, 05),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(15, 20),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(15, 35),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(16, 00),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(16, 10),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(16, 25),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(16, 40),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(16, 50),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(16, 55),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(17, 05),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(17, 35),
                         getPwhd(),
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(17, 45),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2117,7 +2117,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(18, 20),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2126,7 +2126,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(18, 30),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2135,7 +2135,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(18, 45),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2144,7 +2144,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(19, 05),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2153,7 +2153,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(19, 30),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2162,7 +2162,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(19, 40),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2171,7 +2171,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(20, 10),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2180,7 +2180,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(20, 45),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2189,7 +2189,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(21, 15),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2198,7 +2198,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(21, 30),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2207,7 +2207,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(21, 45),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2216,7 +2216,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(22, 15),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2225,7 +2225,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(23, 00),
                         getPwhd(),
                         Arrays.asList(new ConnectionMark("Dni robocze"),
@@ -2237,7 +2237,7 @@ public class DatabasePrePopulater {
 
 // WAL - SCA SWIETA
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(5, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -2247,7 +2247,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(6, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -2256,7 +2256,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(6, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -2265,7 +2265,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(7, 35),
                         getPwhd(),
                         Arrays.asList(
@@ -2274,7 +2274,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(8, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -2283,7 +2283,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(8, 50),
                         getPwhd(),
                         Arrays.asList(
@@ -2292,7 +2292,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(9, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -2301,7 +2301,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(10, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -2310,7 +2310,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(10, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -2319,7 +2319,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(11, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -2328,7 +2328,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(12, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -2337,7 +2337,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(11, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -2346,7 +2346,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(11, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -2355,7 +2355,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(12, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -2364,7 +2364,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(13, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -2373,7 +2373,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(13, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -2382,7 +2382,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(13, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -2391,7 +2391,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(14, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -2400,7 +2400,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(14, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -2409,7 +2409,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(15, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -2418,7 +2418,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(15, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -2427,7 +2427,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(15, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -2436,7 +2436,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(16, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -2445,7 +2445,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(16, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -2455,7 +2455,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(17, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -2465,7 +2465,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(17, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -2475,7 +2475,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(18, 10),
                         getPwhd(),
                         Arrays.asList(
@@ -2485,7 +2485,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(18, 25),
                         getPwhd(),
                         Arrays.asList(
@@ -2495,7 +2495,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(18, 55),
                         getPwhd(),
                         Arrays.asList(
@@ -2505,7 +2505,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(19, 30),
                         getPwhd(),
                         Arrays.asList(
@@ -2515,7 +2515,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(20, 45),
                         getPwhd(),
                         Arrays.asList(
@@ -2525,7 +2525,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(21, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -2535,7 +2535,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(21, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -2545,7 +2545,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(21, 40),
                         getPwhd(),
                         Arrays.asList(
@@ -2555,7 +2555,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(22, 00),
                         getPwhd(),
                         Arrays.asList(
@@ -2566,7 +2566,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(22, 15),
                         getPwhd(),
                         Arrays.asList(
@@ -2577,7 +2577,7 @@ public class DatabasePrePopulater {
                         PWHD_WALBRZYCH_DEPARTURE, PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE, PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalScaPwhd(),
+                        getWalScaPwhdPath(),
                         new LocalTime(22, 20),
                         getPwhd(),
                         Arrays.asList(
@@ -2590,9 +2590,21 @@ public class DatabasePrePopulater {
         );
     }
 
-    public static List<Connection> CONNECTIONS = Arrays.asList(
+    public static List<Connection> getConnections() {
+        List<Connection> connections = new ArrayList<Connection>();
 
-    );
+        connections.addAll(getPwhdScaWal());
+        connections.addAll(getPwhdWalSca());
+
+        connections.addAll(getPwhdScaWro());
+        connections.addAll(getPwhdWroSca());
+
+        connections.addAll(getPwhdWalWro());
+        connections.addAll(getPwhdWroWal());
+
+        return connections;
+    }
+
 
     private static Provider getPwhd() {
         return PROVIDERS.get(0);
@@ -2602,39 +2614,38 @@ public class DatabasePrePopulater {
         return PROVIDERS.get(1);
     }
 
-    private static List<City> getWroScaPwhd() {
-        List<City> path = getScaWroPwhd();
+    private static List<City> getWroScaPwhdPath() {
+        List<City> path = getScaWroPwhdPath();
         Collections.reverse(path);
 
         return path;
     }
 
-    private static List<City> getScaWroPwhd() {
+    private static List<City> getScaWroPwhdPath() {
         return Arrays.asList(CITIES.get(0), CITIES.get(5), CITIES.get(6), CITIES.get(7), CITIES.get(8), CITIES.get(9), CITIES.get(10), CITIES.get(11), CITIES.get(12), CITIES.get(13), CITIES.get(1));
     }
 
-    private static List<City> getWroWalPwhd() {
-        List<City> path = getWalWroPwhd();
+    private static List<City> getWroWalPwhdPath() {
+        List<City> path = getWalWroPwhdPath();
         Collections.reverse(path);
 
         return path;
     }
 
-    private static List<City> getWalWroPwhd() {
+    private static List<City> getWalWroPwhdPath() {
         List<City> walSca = new ArrayList<City>(Arrays.asList(CITIES.get(2), CITIES.get(3), CITIES.get(4)));
-        walSca.addAll(getScaWroPwhd());
+        walSca.addAll(getScaWroPwhdPath());
         return walSca;
     }
 
-    private static List<City> getScaWalPwhd() {
+    private static List<City> getScaWalPwhdPath() {
         return Arrays.asList(CITIES.get(0), CITIES.get(4), CITIES.get(3), CITIES.get(2));
     }
 
-    private static List<City> getWalScaPwhd() {
-        List<City> path = getScaWalPwhd();
+    private static List<City> getWalScaPwhdPath() {
+        List<City> path = getScaWalPwhdPath();
         Collections.reverse(path);
 
         return path;
     }
-
 }
