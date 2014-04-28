@@ -43,491 +43,500 @@ public class DatabasePrePopulater {
 
     private static final String PWHD_SCA_WRO_NORMAL_PRICE = "10,50";
     private static final String PWHD_SCA_WRO_STUDENT_PRICE = "00,00";
-    
+
     private static final String PWHD_WALBRZYCH_NORMAL_PRICE = "10,50";
     private static final String PWHD_WALBRZYCH_STUDENT_PRICE = "00,00";
 
     private static final String PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE = "10,50";
     private static final String PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE = "00,00";
 
-    private static List<Connection> PWHD_SCA_WRO = Arrays.asList(
-            // Sca - Wro
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(4, 25),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w niedzielę"),
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(5, 15),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(5, 40),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(6, 15),
-                    getPwhd(),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(6, 55),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(7, 25),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(7, 55),
-                    getPwhd(),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(8, 40),
-                    getPwhd(),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(9, 20),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(9, 55),
-                    getPwhd(),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(10, 30),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(11, 05),
-                    getPwhd(),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(11, 40),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(12, 10),
-                    getPwhd(),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(12, 40),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(13, 30),
-                    getPwhd(),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(14, 05),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(14, 50),
-                    getPwhd(),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(15, 30),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe"),
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(16, 05),
-                    getPwhd(),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(16, 40),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe"),
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(17, 05),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe"),
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(17, 40),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(18, 10),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe"),
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(18, 50),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(19, 50),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(20, 40),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe"),
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getScaWroPwhd(),
-                    new LocalTime(21, 15),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe"),
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            )      
-    );
-    
+    private static List<Connection> getPwhdScaWro() {
+        return Arrays.asList(
+                // Sca - Wro
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(4, 25),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w niedzielę"),
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(5, 15),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(5, 40),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(6, 15),
+                        getPwhd(),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(6, 55),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(7, 25),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(7, 55),
+                        getPwhd(),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(8, 40),
+                        getPwhd(),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(9, 20),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(9, 55),
+                        getPwhd(),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(10, 30),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(11, 05),
+                        getPwhd(),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(11, 40),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(12, 10),
+                        getPwhd(),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(12, 40),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(13, 30),
+                        getPwhd(),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(14, 05),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra"),
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(14, 50),
+                        getPwhd(),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(15, 30),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe"),
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(16, 05),
+                        getPwhd(),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(16, 40),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe"),
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(17, 05),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe"),
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(17, 40),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(18, 10),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe"),
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(18, 50),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(19, 50),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(20, 40),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe"),
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getScaWroPwhd(),
+                        new LocalTime(21, 15),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe"),
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                )
+        );
+    }
+
+    private static List<Connection> getPwhdWroSca() {
+        return Arrays.asList(
+
+                // Wro - Sca
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(5, 40),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe"),
+                                new ConnectionMark("nie kursuje w niedzielę")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(6, 30),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(6, 50),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(7, 25),
+                        getPwhd(),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(8, 40),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(9, 10),
+                        getPwhd(),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(9, 40),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(10, 10),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(10, 40),
+                        getPwhd(),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(11, 05),
+                        getPwhd(),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(12, 00),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(12, 30),
+                        getPwhd(),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(13, 25),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(14, 00),
+                        getPwhd(),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(14, 30),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(15, 20),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(15, 55),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(16, 10),
+                        getPwhd(),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(17, 00),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra"),
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(17, 30),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(18, 20),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra"),
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(19, 05),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(19, 30),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra"),
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(20, 00),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(20, 50),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(21, 25),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra"),
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(21, 50),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra"),
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                ),
+                new Connection(
+                        getWroScaPwhd(),
+                        new LocalTime(22, 25),
+                        getPwhd(),
+                        Arrays.asList(
+                                new ConnectionMark("nie kursuje w wigilie i sylwestra"),
+                                new ConnectionMark("nie kursuje w święta ustawowe")
+                        ),
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                )
+        );
+    }
+
+
     public static List<Connection> CONNECTIONS = Arrays.asList(
 
-// Wro - Sca
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(5, 40),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe"),
-                            new ConnectionMark("nie kursuje w niedzielę")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(6, 30),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(6, 50),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(7, 25),
-                    getPwhd(),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(8, 40),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(9, 10),
-                    getPwhd(),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(9, 40),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(10, 10),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(10, 40),
-                    getPwhd(),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(11, 05),
-                    getPwhd(),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(12, 00),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(12, 30),
-                    getPwhd(),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(13, 25),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(14, 00),
-                    getPwhd(),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(14, 30),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(15, 20),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(15, 55),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(16, 10),
-                    getPwhd(),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(17, 00),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(17, 30),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(18, 20),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(19, 05),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(19, 30),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(20, 00),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(20, 50),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(21, 25),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(21, 50),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
-            new Connection(
-                    getWroScaPwhd(),
-                    new LocalTime(22, 25),
-                    getPwhd(),
-                    Arrays.asList(
-                            new ConnectionMark("nie kursuje w wigilie i sylwestra"),
-                            new ConnectionMark("nie kursuje w święta ustawowe")
-                    ),
-                    PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
-            ),
 
 // Wal - Wro
             new Connection(
@@ -1421,7 +1430,7 @@ public class DatabasePrePopulater {
             ),
 
 // Wal - Sca DNI ROBOCZE
-         new Connection(
+            new Connection(
                     getWalScaPwhd(),
                     new LocalTime(5, 25),
                     getPwhd(),
