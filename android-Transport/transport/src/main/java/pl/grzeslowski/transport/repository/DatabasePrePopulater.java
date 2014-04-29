@@ -40,8 +40,8 @@ public class DatabasePrePopulater {
     private static String PWHD_SWIDNICA_DEPARTURE = "ul. Kolejowa stanowiska 4, 5";
     private static String PWHD_WALBRZYCH_DEPARTURE = "ul. Sikorskiego  (Teatr Dramatyczny)";
 
-    private static final String PWHD_SCA_WRO_NORMAL_PRICE = "6,50";
-    private static final String PWHD_SCA_WRO_STUDENT_PRICE = "4,50";
+    private static final String PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE = "6,50";
+    private static final String PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE = "4,50";
 
     private static final String PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE = "5,50";
     private static final String PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE = "3,50";
@@ -60,7 +60,7 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w niedzielę"),
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -69,7 +69,7 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -78,13 +78,13 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
                         new LocalTime(6, 15),
                         getPwhd(),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -93,7 +93,7 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -102,19 +102,19 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
                         new LocalTime(7, 55),
                         getPwhd(),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
                         new LocalTime(8, 40),
                         getPwhd(),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -123,13 +123,13 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
                         new LocalTime(9, 55),
                         getPwhd(),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -138,13 +138,13 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
                         new LocalTime(11, 05),
                         getPwhd(),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -153,13 +153,13 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
                         new LocalTime(12, 10),
                         getPwhd(),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -168,13 +168,13 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
                         new LocalTime(13, 30),
                         getPwhd(),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -184,13 +184,13 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra"),
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
                         new LocalTime(14, 50),
                         getPwhd(),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -200,13 +200,13 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w święta ustawowe"),
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
                         new LocalTime(16, 05),
                         getPwhd(),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -216,7 +216,7 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w święta ustawowe"),
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -226,7 +226,7 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w święta ustawowe"),
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -235,7 +235,7 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -245,7 +245,7 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w święta ustawowe"),
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -254,7 +254,7 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -263,7 +263,7 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -273,7 +273,7 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w święta ustawowe"),
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroPwhdPath(),
@@ -283,7 +283,7 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w święta ustawowe"),
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra")
                         ),
-                        PWHD_SWIDNICA_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_SWIDNICA_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 )
         );
     }
@@ -300,7 +300,7 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w święta ustawowe"),
                                 new ConnectionMark("Nie kursuje w niedzielę")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -309,19 +309,19 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
                         new LocalTime(7, 25),
                         getPwhd(),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
                         new LocalTime(9, 10),
                         getPwhd(),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -330,7 +330,7 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -339,13 +339,13 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
                         new LocalTime(10, 40),
                         getPwhd(),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -354,13 +354,13 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
                         new LocalTime(12, 30),
                         getPwhd(),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -369,7 +369,7 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -378,7 +378,7 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -387,13 +387,13 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
                         new LocalTime(16, 10),
                         getPwhd(),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -403,7 +403,7 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra"),
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -413,7 +413,7 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra"),
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -423,7 +423,7 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra"),
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -432,7 +432,7 @@ public class DatabasePrePopulater {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -442,7 +442,7 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra"),
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -452,7 +452,7 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra"),
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaPwhdPath(),
@@ -462,7 +462,7 @@ public class DatabasePrePopulater {
                                 new ConnectionMark("Nie kursuje w wigilie i sylwestra"),
                                 new ConnectionMark("Nie kursuje w święta ustawowe")
                         ),
-                        PWHD_WROCLAW_DEPARTURE, PWHD_SCA_WRO_NORMAL_PRICE, PWHD_SCA_WRO_STUDENT_PRICE
+                        PWHD_WROCLAW_DEPARTURE, PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE, PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 )
         );
     }
