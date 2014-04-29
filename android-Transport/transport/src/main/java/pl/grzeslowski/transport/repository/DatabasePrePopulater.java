@@ -40,11 +40,11 @@ public class DatabasePrePopulater {
     private static String PWHD_SWIDNICA_DEPARTURE = "ul. Kolejowa stanowiska 4, 5";
     private static String PWHD_WALBRZYCH_DEPARTURE = "ul. Sikorskiego  (Teatr Dramatyczny)";
 
-    private static final String PWHD_SCA_WRO_NORMAL_PRICE = "10,50";
-    private static final String PWHD_SCA_WRO_STUDENT_PRICE = "00,00";
+    private static final String PWHD_SCA_WRO_NORMAL_PRICE = "6,50";
+    private static final String PWHD_SCA_WRO_STUDENT_PRICE = "4,50";
 
-    private static final String PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE = "10,50";
-    private static final String PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE = "00,00";
+    private static final String PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE = "5,50";
+    private static final String PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE = "3,50";
 
     private static final String PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE = "10,50";
     private static final String PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE = "5,00";
