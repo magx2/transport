@@ -8,15 +8,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
-import com.google.common.base.Preconditions;
-
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import pl.grzeslowski.transport.R;
@@ -26,6 +23,9 @@ import pl.grzeslowski.transport.model.Connection;
 import pl.grzeslowski.transport.repository.DatabaseManager;
 import pl.grzeslowski.transport.tasks.ConnectionsLoader;
 import pl.grzeslowski.transport.tools.ConnectionComparator;
+
+import static com.google.common.base.Preconditions.checkNotNull;
+import static java.util.Collections.sort;
 
 @EFragment(R.layout.fragment_result)
 public class ResultFragment extends Fragment {
@@ -47,17 +47,21 @@ public class ResultFragment extends Fragment {
     }
 
     public void showResultsFor(final City from, final City to) {
+        if(!mConnections.isEmpty()) {
+            return;
+        }
+
         mProgressDialog = ProgressDialog.show(getActivity(), getActivity().getResources().getString(R.string.loading_connections_title), getActivity().getResources().getString(R.string.loading_connections_message));
 
-        Preconditions.checkNotNull(from);
-        Preconditions.checkNotNull(to);
+        checkNotNull(from);
+        checkNotNull(to);
 
         mLoader = new ConnectionsLoader(mDatabaseManager, this);
         mLoader.execute(from, to);
     }
 
     public void parseResultsToList(final List<Connection> connections) {
-        Collections.sort(connections, new ConnectionComparator());
+        sort(connections, new ConnectionComparator());
         setAdapter(connections);
 
         mConnections = connections;
