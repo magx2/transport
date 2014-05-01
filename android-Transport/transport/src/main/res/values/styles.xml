@@ -11,7 +11,7 @@
         <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_transporter</item>
         <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Transporter</item>
 
-
+        <item name="android:windowBackground">@color/background_color</item>
     </style>
 
     <style name="ActionBar.Solid.Transporter" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
