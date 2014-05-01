@@ -78,12 +78,6 @@ android {
         debug {
             debuggable true
             runProguard false
-
-            buildConfigField "java.lang.String", "DATABASE_NAME", "\"transporter\""
-            buildConfigField "int", "DATABASE_VERSION", "1"
-
-            buildConfigField "java.lang.String", "PAID_PACKAGE_NAME", "\"$paidPackage\""
-            buildConfigField "java.lang.String", "FREE_PACKAGE_NAME", "\"$freePackage\""
         }
     }
 
