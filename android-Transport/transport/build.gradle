@@ -63,6 +63,12 @@ android {
         targetCompatibility JavaVersion.VERSION_1_6
     }
 
+    signingConfigs {
+        debug {
+            storeFile file("../../debug.keystore")
+        }
+    }
+
     buildTypes {
         release {
             runProguard true
@@ -79,9 +85,8 @@ android {
         debug {
             debuggable true
             runProguard false
+            signingConfig signingConfigs.debug
         }
-
-
     }
 
     productFlavors {
@@ -95,8 +100,6 @@ android {
             buildConfigField "pl.grzeslowski.transport.product_flavors.MonetizationType", "MONETIAZATION_TYPE", "pl.grzeslowski.transport.product_flavors.MonetizationType.PAID"
         }
     }
-
-    // Database Configs
 }
 
 def getSourceSetName(variant) {
