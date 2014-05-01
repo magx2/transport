@@ -23,6 +23,9 @@ configurations {
 
 def AAVersion = '3.0.1'
 def ORMLiteVersion = '4.46'
+def mainPackage = 'pl.grzeslowski.transport'
+def paidPackage = mainPackage + '.paid'
+def freePackage = mainPackage + '.free'
 
 dependencies {
     compile 'com.android.support:appcompat-v7:19.1.0'
@@ -67,6 +70,9 @@ android {
 
             buildConfigField "java.lang.String", "DATABASE_NAME", "\"transporter\""
             buildConfigField "int", "DATABASE_VERSION", "1"
+
+            buildConfigField "java.lang.String", "PAID_PACKAGE_NAME", "\"$paidPackage\""
+            buildConfigField "java.lang.String", "FREE_PACKAGE_NAME", "\"$freePackage\""
         }
 
         debug {
@@ -75,17 +81,20 @@ android {
 
             buildConfigField "java.lang.String", "DATABASE_NAME", "\"transporter\""
             buildConfigField "int", "DATABASE_VERSION", "1"
+
+            buildConfigField "java.lang.String", "PAID_PACKAGE_NAME", "\"$paidPackage\""
+            buildConfigField "java.lang.String", "FREE_PACKAGE_NAME", "\"$freePackage\""
         }
     }
 
     productFlavors {
         free {
-//            packageName "pl.grzeslowski.transport.free"
+            packageName freePackage
             buildConfigField "pl.grzeslowski.transport.product_flavors.MonetizationType", "MONETIAZATION_TYPE", "pl.grzeslowski.transport.product_flavors.MonetizationType.FREE"
         }
 
         paid {
-//            packageName "pl.grzeslowski.transport.paid"
+            packageName paidPackage
             buildConfigField "pl.grzeslowski.transport.product_flavors.MonetizationType", "MONETIAZATION_TYPE", "pl.grzeslowski.transport.product_flavors.MonetizationType.PAID"
         }
     }
@@ -108,9 +117,16 @@ android.applicationVariants.all { variant ->
 
     android.sourceSets[getSourceSetName(variant)].java.srcDirs += aptOutput.getPath()
 
+//    variant.javaCompile.options.compilerArgs += [
+//            '-processorpath', configurations.apt.getAsPath(),
+//            '-AandroidManifestFile=' + variant.processResources.manifestFile,
+//            '-s', aptOutput
+//    ]
+
     variant.javaCompile.options.compilerArgs += [
             '-processorpath', configurations.apt.getAsPath(),
             '-AandroidManifestFile=' + variant.processResources.manifestFile,
+            '-AresourcePackageName=' + mainPackage,
             '-s', aptOutput
     ]
 
