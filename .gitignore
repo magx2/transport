@@ -26,3 +26,6 @@ proguard/
 *.*~
 
 android-Transport/.idea/
+
+*.db
+*.iml
