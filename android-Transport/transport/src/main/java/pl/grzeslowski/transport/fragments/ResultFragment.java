@@ -47,10 +47,6 @@ public class ResultFragment extends Fragment {
     }
 
     public void showResultsFor(final City from, final City to) {
-        if(!mConnections.isEmpty()) {
-            return;
-        }
-
         mProgressDialog = ProgressDialog.show(getActivity(), getActivity().getResources().getString(R.string.loading_connections_title), getActivity().getResources().getString(R.string.loading_connections_message));
 
         checkNotNull(from);
