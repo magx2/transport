@@ -47,13 +47,15 @@ public class ResultFragment extends Fragment {
     }
 
     public void showResultsFor(final City from, final City to) {
-        mProgressDialog = ProgressDialog.show(getActivity(), getActivity().getResources().getString(R.string.loading_connections_title), getActivity().getResources().getString(R.string.loading_connections_message));
+        if (mLoader == null) {
+            mProgressDialog = ProgressDialog.show(getActivity(), getActivity().getResources().getString(R.string.loading_connections_title), getActivity().getResources().getString(R.string.loading_connections_message));
 
-        checkNotNull(from);
-        checkNotNull(to);
+            checkNotNull(from);
+            checkNotNull(to);
 
-        mLoader = new ConnectionsLoader(mDatabaseManager, this);
-        mLoader.execute(from, to);
+            mLoader = new ConnectionsLoader(mDatabaseManager, this);
+            mLoader.execute(from, to);
+        }
     }
 
     public void parseResultsToList(final List<Connection> connections) {
