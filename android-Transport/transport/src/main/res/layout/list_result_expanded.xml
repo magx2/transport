@@ -8,6 +8,7 @@
     <TextView
         android:id="@+id/list_result_expanded_path_text_view"
         android:layout_width="wrap_content"
+        style="@style/TabTextAppTheme"
         android:layout_height="wrap_content"
         android:text="@string/list_result_expanded_path"/>
 
@@ -15,6 +16,7 @@
         android:id="@+id/list_result_expanded_path"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/TabTextAppTheme"
         android:layout_marginLeft="5dp"
         android:layout_toRightOf="@id/list_result_expanded_path_text_view"
         android:textStyle="bold"/>
@@ -23,6 +25,7 @@
         android:id="@+id/list_result_expanded_price_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="@style/TabTextAppTheme"
         android:layout_below="@id/list_result_expanded_path"
         android:text="@string/list_result_expanded_price"/>
 
@@ -31,24 +34,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="5dp"
+        style="@style/TabTextAppTheme"
         android:layout_below="@id/list_result_expanded_path"
-        android:layout_toRightOf="@id/list_result_expanded_price_text_view"
+        android:layout_toRightOf="@id/list_result_expanded_path_text_view"
         android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/list_result_expanded_departure_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/list_result_expanded_price_text_view"
+        style="@style/TabTextAppTheme"
+        android:layout_below="@id/list_result_expanded_price"
         android:text="@string/list_result_expanded_departure"/>
 
     <TextView
         android:id="@+id/list_result_expanded_departure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@id/list_result_expanded_departure_text_view"
+        style="@style/TabTextAppTheme"
+        android:layout_below="@id/list_result_expanded_price"
         android:layout_marginLeft="5dp"
-        android:layout_toRightOf="@id/list_result_expanded_departure_text_view"
+        android:layout_toRightOf="@id/list_result_expanded_path_text_view"
         android:textStyle="bold"/>
 
 </RelativeLayout>

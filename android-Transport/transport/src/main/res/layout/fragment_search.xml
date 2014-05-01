@@ -8,21 +8,25 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/TabTextAppTheme"
         android:text="@string/search_text"/>
 
     <pl.grzeslowski.transport.views.RememberingStateSpinner
         android:id="@+id/fragment_search_from"
         android:layout_width="match_parent"
+        style="@style/SpinnerAppTheme"
         android:layout_height="wrap_content"/>
 
     <pl.grzeslowski.transport.views.RememberingStateSpinner
         android:id="@+id/fragment_search_to"
         android:layout_width="match_parent"
+        style="@style/SpinnerAppTheme"
         android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/fragment_search_search"
         android:layout_width="match_parent"
+        style="@style/ButtonAppTheme"
         android:layout_height="wrap_content"
         android:text="@string/search"/>
 
