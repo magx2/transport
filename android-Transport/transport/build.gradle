@@ -75,10 +75,13 @@ android {
             buildConfigField "java.lang.String", "FREE_PACKAGE_NAME", "\"$freePackage\""
         }
 
+        debug.initWith(buildTypes.release)
         debug {
             debuggable true
             runProguard false
         }
+
+
     }
 
     productFlavors {
