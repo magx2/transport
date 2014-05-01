@@ -114,12 +114,6 @@ android.applicationVariants.all { variant ->
 
     android.sourceSets[getSourceSetName(variant)].java.srcDirs += aptOutput.getPath()
 
-//    variant.javaCompile.options.compilerArgs += [
-//            '-processorpath', configurations.apt.getAsPath(),
-//            '-AandroidManifestFile=' + variant.processResources.manifestFile,
-//            '-s', aptOutput
-//    ]
-
     variant.javaCompile.options.compilerArgs += [
             '-processorpath', configurations.apt.getAsPath(),
             '-AandroidManifestFile=' + variant.processResources.manifestFile,
