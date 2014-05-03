@@ -6,5 +6,6 @@
     <dimen name="margin_between_search_and_result">15dp</dimen>
     <dimen name="buy_fragment_height">40dp</dimen>
     <dimen name="buy_font_size">20sp</dimen>
+    <dimen name="shadow_height">5dp</dimen>
 
 </resources>
