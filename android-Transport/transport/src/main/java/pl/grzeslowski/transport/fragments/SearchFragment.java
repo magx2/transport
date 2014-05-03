@@ -44,11 +44,11 @@ public class SearchFragment extends Fragment {
     void prepare() {
         List<String> names = mDatabaseManager.getCitiesNames();
 
-        ArrayAdapter fromAdapter = new ArrayAdapter(getActivity(), android.R.layout.simple_spinner_item, names);
+        ArrayAdapter fromAdapter = new ArrayAdapter(getActivity(), R.layout.spinner_list_item, names);
         mFrom.setAdapter(fromAdapter);
         mFrom.setOnItemSelected(new OnSpinnerItemListener(mFrom, mTo, myPrefs.lastFrom()));
 
-        ArrayAdapter toAdapter = new ArrayAdapter(getActivity(), android.R.layout.simple_spinner_item, names);
+        ArrayAdapter toAdapter = new ArrayAdapter(getActivity(), R.layout.spinner_list_item, names);
         mTo.setAdapter(toAdapter);
         mTo.setOnItemSelected(new OnSpinnerItemListener(mTo, mFrom, myPrefs.lastTo()));
 

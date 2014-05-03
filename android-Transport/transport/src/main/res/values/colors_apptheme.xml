@@ -4,4 +4,5 @@
     <color name="background_color">#FFBB33</color>
     <color name="link_color">#0099CC</color>
     <color name="marks_in_paid_version_color">#000</color>
+    <color name="text_view_color">#fff</color>
 </resources>
