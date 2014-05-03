@@ -6,9 +6,6 @@ import com.j256.ormlite.table.DatabaseTable;
 
 import java.io.Serializable;
 
-/**
- * Created by Martin on 2014-04-17.
- */
 @DatabaseTable
 public class City implements Serializable {
     public static final String ID = "id";

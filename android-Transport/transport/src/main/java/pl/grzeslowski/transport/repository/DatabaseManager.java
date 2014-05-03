@@ -22,7 +22,7 @@ import pl.grzeslowski.transport.model.Provider;
 @EBean(scope = EBean.Scope.Singleton)
 public class DatabaseManager {
 
-    private transient DatabaseHelper mDatabaseHelper;
+    private DatabaseHelper mDatabaseHelper;
 
     public DatabaseManager(Context context) {
         mDatabaseHelper = new DatabaseHelper(context);

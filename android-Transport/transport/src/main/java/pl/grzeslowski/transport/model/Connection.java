@@ -14,13 +14,9 @@ import java.util.Collection;
 import java.util.List;
 
 
-/**
- * Created by Martin on 2014-04-17.
- */
 @DatabaseTable
 public class Connection implements Serializable {
     public static final String ID = "id";
-    public static final String PATH = "path";
     public static final String START_TIME = "start";
     public static final String PROVIDER = "provider";
     public static final String MARKS = "marks";
@@ -35,7 +31,7 @@ public class Connection implements Serializable {
     private LocalTime mStartTime;
     @DatabaseField(columnName = PROVIDER, canBeNull = false, foreign = true, foreignAutoRefresh = true)
     private Provider mProvider;
-    @ForeignCollectionField(eager = true, columnName = MARKS)
+    @ForeignCollectionField(eager = false, columnName = MARKS)
     private Collection<ConnectionMark> mMarks;
     @DatabaseField(columnName = DEPARTURE, canBeNull = false)
     private String mDeparture;
@@ -108,7 +104,7 @@ public class Connection implements Serializable {
     }
 
     public void setPath(List<City> path) {
-        mPath = path;
+        mPath = new ArrayList<City>(path);
     }
 
     @Override
