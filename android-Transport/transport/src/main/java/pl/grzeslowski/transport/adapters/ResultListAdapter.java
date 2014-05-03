@@ -1,12 +1,6 @@
 package pl.grzeslowski.transport.adapters;
 
 import android.app.Activity;
-import android.content.ActivityNotFoundException;
-import android.content.Intent;
-import android.net.Uri;
-import android.text.SpannableString;
-import android.text.style.UnderlineSpan;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,17 +24,15 @@ import pl.grzeslowski.transport.product_flavors.MonetizationType;
 public class ResultListAdapter extends BaseExpandableListAdapter {
 
     private static final int sChildrenCount = 1;
-    private static final int sFreeVersionMark = 2;
+    private static final int sFreeVersionMark = 1;
     private final Activity mActivity;
     private final List<Connection> mConnections;
     private final LayoutInflater mInflater;
-    private final DownloadPaidAppOpener mDownloadPaidAppOpener;
 
     public ResultListAdapter(List<Connection> connections, Activity activity) {
         mConnections = new ArrayList<Connection>(Preconditions.checkNotNull(connections));
         mActivity = Preconditions.checkNotNull(activity);
         mInflater = activity.getLayoutInflater();
-        mDownloadPaidAppOpener = new DownloadPaidAppOpener(activity);
     }
 
     @Override
@@ -171,20 +163,10 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
     }
 
     private void showFreeMark(int realChildPosition, MarkViewHolder viewHolder) {
-        if (realChildPosition == 0) {
-            viewHolder.mMarkView.setText(mActivity.getString(R.string.marks_in_paid_version));
-            viewHolder.mMarkView.setTextColor(mActivity.getResources().getColor(R.color.marks_in_paid_version_color));
+        viewHolder.mMarkView.setText(mActivity.getString(R.string.marks_in_paid_version));
+        viewHolder.mMarkView.setTextColor(mActivity.getResources().getColor(R.color.marks_in_paid_version_color));
 
-            viewHolder.mMarkView.setOnClickListener(null);
-        } else {
-            String tempString = new String(mActivity.getString(R.string.click_to_buy_premium_version));
-            SpannableString content = new SpannableString(tempString);
-            content.setSpan(new UnderlineSpan(), 0, tempString.length(), 0);
-            viewHolder.mMarkView.setText(content);
-            viewHolder.mMarkView.setTextColor(mActivity.getResources().getColor(R.color.link_color));
-
-            viewHolder.mMarkView.setOnClickListener(mDownloadPaidAppOpener);
-        }
+        viewHolder.mMarkView.setOnClickListener(null);
     }
 
     @Override
@@ -219,29 +201,6 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
 
         MarkViewHolder(View convertView) {
             mMarkView = (TextView) convertView.findViewById(R.id.list_result_mark_mark);
-        }
-    }
-
-    private class DownloadPaidAppOpener implements View.OnClickListener {
-
-        private static final String sPadPackage = BuildConfig.PAID_PACKAGE_NAME;
-        private static final String sMarketUri = "market://details?id=" + sPadPackage;
-        private final Activity mActivity;
-
-        private DownloadPaidAppOpener(Activity activity) {
-            mActivity = activity;
-        }
-
-        @Override
-        public void onClick(View v) {
-            try {
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(sMarketUri));
-
-                mActivity.startActivity(intent);
-            } catch (ActivityNotFoundException ex) {
-                Log.e("free_version", "Could not open [" + sMarketUri + "]", ex);
-            }
         }
     }
 }

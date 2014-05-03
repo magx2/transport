@@ -8,7 +8,6 @@
     <string name="title_activity_result">ResultActivity</string>
     <string name="hello_world">Hello world!</string>
     <string name="marks_in_paid_version">Oznaczenia kursów dostępne są w pełnej wersji!</string>
-    <string name="click_to_buy_premium_version">Aby pobrać pełną wersję kliknij w ten link!</string>
     <string name="list_result_expanded_path">Relacja: </string>
     <string name="list_result_expanded_price">Cena: </string>
     <string name="list_result_expanded_departure">Odjazd: </string>
