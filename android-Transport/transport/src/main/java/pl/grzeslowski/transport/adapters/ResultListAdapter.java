@@ -175,7 +175,6 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
 
     private void showFreeMark(int realChildPosition, MarkViewHolder viewHolder) {
         viewHolder.mMarkView.setText(mActivity.getString(R.string.marks_in_paid_version));
-        viewHolder.mMarkView.setTextColor(mActivity.getResources().getColor(R.color.marks_in_paid_version_color));
 
         viewHolder.mMarkView.setOnClickListener(null);
     }

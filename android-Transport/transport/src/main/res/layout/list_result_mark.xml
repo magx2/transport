@@ -7,9 +7,6 @@
     android:background="@color/apptheme_color_dark"
     android:layout_height="?android:attr/listPreferredItemHeight"
     android:paddingLeft="@dimen/expanded_view_left_margin"
-    android:ellipsize="marquee"
     style="@style/TabTextAppTheme"
-    android:marqueeRepeatLimit="marquee_forever"
-    android:singleLine="true"
     android:textStyle="italic">
 </TextView>
