@@ -24,5 +24,13 @@
         class="pl.grzeslowski.transport.fragments.ResultFragment_"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/activity_main_fragment_search"/>
+        android:layout_below="@id/activity_main_fragment_search"
+        android:layout_above="@+id/activity_main_fragment_buy"/>
+
+    <fragment
+        android:id="@+id/activity_main_fragment_buy"
+        class="pl.grzeslowski.transport.fragments.BuyFragment_"
+    android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>

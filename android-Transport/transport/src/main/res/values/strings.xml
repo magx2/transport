@@ -15,5 +15,6 @@
     <string name="student_price">studencki</string>
     <string name="loading_connections_title"></string>
     <string name="loading_connections_message">Ładuję połączenia...</string>
+    <string name="click_to_buy_premium_version"><u>Aby pobrać pełną wersję kliknij w ten link!</u></string>
 
 </resources>

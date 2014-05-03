@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView
+    style="@style/TabTextAppTheme"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/fragment_buy_link"
+    android:layout_height="@dimen/buy_fragment_height"
+    android:text="@string/click_to_buy_premium_version"
+    android:textColor="@color/apptheme_color_dark"
+    android:textStyle="bold"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textSize="@dimen/buy_font_size"
+    android:background="@color/background_color"
+    android:gravity="center"/>
