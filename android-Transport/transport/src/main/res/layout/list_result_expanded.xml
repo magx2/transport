@@ -3,6 +3,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="wrap_content"
                 android:layout_height="?android:attr/listPreferredItemHeight"
+                android:background="@color/apptheme_color_dark"
                 android:paddingLeft="@dimen/expanded_view_left_margin">
 
     <TextView

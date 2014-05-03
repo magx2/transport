@@ -5,6 +5,7 @@
               android:layout_height="match_parent"
               android:background="@color/apptheme_color"
               android:orientation="horizontal"
+              android:minHeight="35dp"
               android:paddingLeft="50dp">
 
 
