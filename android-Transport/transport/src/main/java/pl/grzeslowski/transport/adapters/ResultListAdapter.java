@@ -20,6 +20,7 @@ import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.model.Connection;
 import pl.grzeslowski.transport.model.ConnectionMark;
 import pl.grzeslowski.transport.product_flavors.MonetizationType;
+import pl.grzeslowski.transport.tools.TimeCounter;
 
 public class ResultListAdapter extends BaseExpandableListAdapter {
 
@@ -28,11 +29,13 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
     private final Activity mActivity;
     private final List<Connection> mConnections;
     private final LayoutInflater mInflater;
+    private final TimeCounter mTimeCounter;
 
     public ResultListAdapter(List<Connection> connections, Activity activity) {
         mConnections = new ArrayList<Connection>(Preconditions.checkNotNull(connections));
         mActivity = Preconditions.checkNotNull(activity);
         mInflater = activity.getLayoutInflater();
+        mTimeCounter = new TimeCounter();
     }
 
     @Override
@@ -92,7 +95,15 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
         viewHolder.mProvider.setText(connection.getProvider().getName());
 
         final LocalTime searchTime = connection.getTime();
-        viewHolder.mSearchTime.setText(String.format("%02d:%02d", searchTime.getHourOfDay(), searchTime.getMinuteOfHour()));
+        final String time = String.format("%02d:%02d", searchTime.getHourOfDay(), searchTime.getMinuteOfHour());
+
+        String formattedTimeTo = "";
+        if (mTimeCounter.shouldCountTimeTo(searchTime)) {
+            final int timeTo = mTimeCounter.countTimeTo(searchTime);
+
+            formattedTimeTo = String.format(" (+%02d:%02d)", timeTo / 60, timeTo % 60);
+        }
+        viewHolder.mSearchTime.setText(time + formattedTimeTo);
 
         return convertView;
     }
