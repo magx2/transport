@@ -6,7 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="search">Wyszukaj</string>
     <string name="title_activity_result">ResultActivity</string>
-    <string name="hello_world">Hello world!</string>
     <string name="marks_in_paid_version">Oznaczenia kursów dostępne są w pełnej wersji!</string>
     <string name="list_result_expanded_path">Relacja: </string>
     <string name="list_result_expanded_price">Cena: </string>
