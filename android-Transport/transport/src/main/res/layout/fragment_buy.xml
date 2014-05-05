@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="horizontal">
+<TextView
+    android:id="@+id/fragment_buy_link"
+    style="@style/TabTextAppTheme"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/apptheme_color"
+    android:minHeight="@dimen/fragment_buy_min_height"
+    android:gravity="center"
+    android:text="@string/click_to_buy_premium_version"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:textColor="@color/text_view_color"
+    android:textSize="@dimen/buy_font_size"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/margin_between_search_and_result"
+    android:textStyle="bold"/>
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:background="@color/apptheme_color"
-        android:src="@drawable/ic_action_ic_launcher_bus"
-        />
-
-    <TextView
-        android:id="@+id/fragment_buy_link"
-        style="@style/TabTextAppTheme"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/apptheme_color"
-        android:gravity="center"
-        android:text="@string/click_to_buy_premium_version"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/text_view_color"
-        android:textSize="@dimen/buy_font_size"
-        android:textStyle="bold"/>
-
-</LinearLayout>

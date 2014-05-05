@@ -9,5 +9,5 @@
     <dimen name="shadow_height">5dp</dimen>
     <dimen name="list_result_provider_font_size">17sp</dimen>
     <dimen name="spinner_text_size">15sp</dimen>
-
+    <dimen name="fragment_buy_min_height">45dp</dimen>
 </resources>
