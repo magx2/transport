@@ -25,6 +25,6 @@
         android:layout_weight="3"
         android:gravity="center_vertical"
         android:singleLine="true"
-        android:textSize="17sp"
+        android:textSize="@dimen/list_result_provider_font_size"
         android:textStyle="bold"/>
 </LinearLayout>
