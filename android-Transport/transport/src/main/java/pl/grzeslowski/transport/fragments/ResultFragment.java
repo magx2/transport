@@ -48,7 +48,7 @@ public class ResultFragment extends Fragment {
 
     public void showResultsFor(final City from, final City to) {
         if (mLoader == null) {
-            mProgressDialog = ProgressDialog.show(getActivity(), getActivity().getResources().getString(R.string.loading_connections_title), getActivity().getResources().getString(R.string.loading_connections_message));
+            showProgressDialog();
 
             checkNotNull(from);
             checkNotNull(to);
@@ -56,6 +56,13 @@ public class ResultFragment extends Fragment {
             mLoader = new ConnectionsLoader(mDatabaseManager, this);
             mLoader.execute(from, to);
         }
+    }
+
+    private void showProgressDialog() {
+        mProgressDialog = new ProgressDialog(getActivity(), R.style.TransporterProgressDialog);
+        mProgressDialog.setTitle(getActivity().getString(R.string.loading_connections_title));
+        mProgressDialog.setMessage(getActivity().getString(R.string.loading_connections_message));
+        mProgressDialog.show();
     }
 
     public void parseResultsToList(final List<Connection> connections) {

@@ -14,6 +14,27 @@
         <item name="android:windowBackground">@color/background_color</item>
     </style>
 
+    <!-- ProgresDialog -->
+    <style name="TransporterProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:textColorPrimary">@color/text_view_color</item>
+        <item name="android:textColor">@color/text_view_color</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/apptheme_color</item>
+        <item name="android:bottomDark">@color/apptheme_color</item>
+        <item name="android:bottomMedium">@color/apptheme_color</item>
+        <item name="android:centerBright">@color/apptheme_color</item>
+        <item name="android:centerDark">@color/apptheme_color</item>
+        <item name="android:centerMedium">@color/apptheme_color</item>
+        <item name="android:fullBright">@color/apptheme_color</item>
+        <item name="android:fullDark">@color/apptheme_color</item>
+        <item name="android:topBright">@color/apptheme_color</item>
+        <item name="android:topDark">@color/apptheme_color</item>
+    </style>
+
     <style name="Transporter.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Title">>
         <item name="android:textColor">@android:color/white</item>
     </style>
