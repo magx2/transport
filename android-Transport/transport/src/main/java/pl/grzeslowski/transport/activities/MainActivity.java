@@ -3,6 +3,7 @@ package pl.grzeslowski.transport.activities;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import com.crashlytics.android.Crashlytics;
 
 import org.androidannotations.annotations.EActivity;
 
+import pl.grzeslowski.transport.BuildConfig;
 import pl.grzeslowski.transport.R;
 
 
@@ -23,6 +25,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         Crashlytics.start(this);
+        Crashlytics.log(Log.INFO, "INIT", String.format("VERSION_CODE: %s,\nVERSION_NAME: %s,\nMONETAIZON: %s,\nDATABASE_VERSION: %s,\nDATABASE_NAME: %s", BuildConfig.VERSION_CODE, BuildConfig.VERSION_NAME, BuildConfig.MONETIAZATION_TYPE, BuildConfig.DATABASE_VERSION, BuildConfig.DATABASE_NAME));
     }
 
     /**
