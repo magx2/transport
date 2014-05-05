@@ -8,6 +8,9 @@
     <TextView
         style="@style/TabTextAppTheme"
         android:layout_width="match_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/spinner_text_size"
+        android:textStyle="bold"
         android:layout_height="wrap_content"
         android:text="@string/search_text"/>
 

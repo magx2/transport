@@ -6,5 +6,6 @@
           android:layout_height="wrap_content"
           android:ellipsize="marquee"
           style="@style/TabTextAppTheme"
+          android:textSize="@dimen/spinner_text_size"
           android:background="@color/background_color"
           android:textAlignment="inherit"/>
