@@ -18,6 +18,7 @@
         android:layout_marginRight="@dimen/activity_horizontal_margin"/>
 
     <View
+        android:id="@+id/activity_main_buy_shadow"
         android:layout_width="match_parent"
         android:layout_height="@dimen/shadow_height"
         android:layout_above="@+id/activity_main_fragment_buy"

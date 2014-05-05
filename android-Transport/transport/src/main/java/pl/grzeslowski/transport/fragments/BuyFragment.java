@@ -27,6 +27,9 @@ public class BuyFragment extends Fragment {
     void prepare() {
         if (BuildConfig.MONETIAZATION_TYPE == MonetizationType.PAID) {
             getView().setVisibility(View.GONE);
+
+            final View shadow = getActivity().findViewById(R.id.activity_main_buy_shadow);
+            shadow.setVisibility(View.GONE);
         } else {
             final DownloadPaidAppOpener appOpener = new DownloadPaidAppOpener(getActivity());
 
