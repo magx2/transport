@@ -15,7 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
-        android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        tools:layout="@layout/fragment_search"/>
 
     <View
         android:id="@+id/activity_main_buy_shadow"
@@ -29,6 +30,7 @@
         class="pl.grzeslowski.transport.fragments.BuyFragment_"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true"
+        tools:layout="@layout/fragment_buy"/>
 
 </RelativeLayout>
