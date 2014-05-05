@@ -101,7 +101,7 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
         if (mTimeCounter.shouldCountTimeTo(searchTime)) {
             final int timeTo = mTimeCounter.countTimeTo(searchTime);
 
-            formattedTimeTo = String.format(" (+%02d:%02d)", timeTo / 60, timeTo % 60);
+            formattedTimeTo = String.format(" (za %02d:%02d)", timeTo / 60, timeTo % 60);
         }
         viewHolder.mSearchTime.setText(time + formattedTimeTo);
 
