@@ -25,7 +25,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
 
         Crashlytics.start(this);
-        Crashlytics.log(Log.INFO, "INIT", String.format("VERSION_CODE: %s,\nVERSION_NAME: %s,\nMONETAIZON: %s,\nDATABASE_VERSION: %s,\nDATABASE_NAME: %s", BuildConfig.VERSION_CODE, BuildConfig.VERSION_NAME, BuildConfig.MONETIAZATION_TYPE, BuildConfig.DATABASE_VERSION, BuildConfig.DATABASE_NAME));
+        Crashlytics.log(Log.INFO, "INIT", String.format("VERSION_CODE: %s,\nVERSION_NAME: %s,\nMONETIAZATION_TYPE: %s,\nDATABASE_VERSION: %s,\nDATABASE_NAME: %s", BuildConfig.VERSION_CODE, BuildConfig.VERSION_NAME, BuildConfig.MONETIAZATION_TYPE, BuildConfig.DATABASE_VERSION, BuildConfig.DATABASE_NAME));
     }
 
     /**
