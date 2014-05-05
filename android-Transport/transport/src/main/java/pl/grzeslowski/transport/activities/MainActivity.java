@@ -65,7 +65,11 @@ public class MainActivity extends ActionBarActivity {
                         "MONETIAZATION_TYPE: %s,\n" +
                         "DATABASE_VERSION: %s,\n" +
                         "DATABASE_NAME: %s",
-                BuildConfig.VERSION_CODE, BuildConfig.VERSION_NAME, BuildConfig.MONETIAZATION_TYPE, BuildConfig.DATABASE_VERSION, BuildConfig.DATABASE_NAME
+                BuildConfig.VERSION_CODE,
+                BuildConfig.VERSION_NAME,
+                BuildConfig.MONETIAZATION_TYPE,
+                BuildConfig.DATABASE_VERSION,
+                BuildConfig.DATABASE_NAME
         ));
     }
 
