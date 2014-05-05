@@ -56,18 +56,20 @@ public class MainActivity extends ActionBarActivity {
 
     private void initCrashlitics() {
         Crashlytics.start(this);
-        Crashlytics.log(Log.INFO, "INIT", String.format(
-                "VERSION_CODE: %s,\n" +
-                        "VERSION_NAME: %s,\n" +
-                        "MONETIAZATION_TYPE: %s,\n" +
-                        "DATABASE_VERSION: %s,\n" +
-                        "DATABASE_NAME: %s",
-                BuildConfig.VERSION_CODE,
-                BuildConfig.VERSION_NAME,
-                BuildConfig.MONETIAZATION_TYPE,
-                BuildConfig.DATABASE_VERSION,
-                BuildConfig.DATABASE_NAME
-        ));
+        Crashlytics.log(Log.INFO, "INIT",
+                String.format(
+                        "VERSION_CODE: %s,\n" +
+                                "VERSION_NAME: %s,\n" +
+                                "MONETIAZATION_TYPE: %s,\n" +
+                                "DATABASE_VERSION: %s,\n" +
+                                "DATABASE_NAME: %s",
+                        BuildConfig.VERSION_CODE,
+                        BuildConfig.VERSION_NAME,
+                        BuildConfig.MONETIAZATION_TYPE,
+                        BuildConfig.DATABASE_VERSION,
+                        BuildConfig.DATABASE_NAME
+                )
+        );
     }
 
     public class DownloadPaidAppOpener implements View.OnClickListener {
