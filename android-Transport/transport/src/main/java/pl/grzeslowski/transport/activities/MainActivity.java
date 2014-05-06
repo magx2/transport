@@ -4,12 +4,10 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
 
-import com.crashlytics.android.Crashlytics;
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 
@@ -29,13 +27,6 @@ public class MainActivity extends ActionBarActivity {
 
     @FragmentById(R.id.activity_main_fragment_buy)
     BuyFragment mBuyFragment;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-
-        initCrashlitics();
-    }
 
     @AfterViews
     void prepare() {
@@ -70,25 +61,6 @@ public class MainActivity extends ActionBarActivity {
     private void hideBuyRelatedViews() {
         findViewById(R.id.activity_main_fragment_buy).setVisibility(View.GONE);
         findViewById(R.id.activity_main_buy_shadow).setVisibility(View.GONE);
-    }
-
-
-    private void initCrashlitics() {
-        Crashlytics.start(this);
-        Crashlytics.log(Log.INFO, "INIT",
-                String.format(
-                        "VERSION_CODE: %s,\n" +
-                                "VERSION_NAME: %s,\n" +
-                                "MONETIAZATION_TYPE: %s,\n" +
-                                "DATABASE_VERSION: %s,\n" +
-                                "DATABASE_NAME: %s",
-                        BuildConfig.VERSION_CODE,
-                        BuildConfig.VERSION_NAME,
-                        BuildConfig.MONETIAZATION_TYPE,
-                        BuildConfig.DATABASE_VERSION,
-                        BuildConfig.DATABASE_NAME
-                )
-        );
     }
 
     public class DownloadPaidAppOpener implements View.OnClickListener {
