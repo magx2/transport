@@ -52,7 +52,7 @@ public class MainActivity extends ActionBarActivity {
 
         // Get tracker.
         final TransporterApplication application = (TransporterApplication) getApplication();
-        Tracker t = application.getTracker(TransporterApplication.TrackerName.APP_TRACKER);
+        Tracker t = application.getTracker();
 
         // Set screen name.
         // Where path is a String representing the screen name.
