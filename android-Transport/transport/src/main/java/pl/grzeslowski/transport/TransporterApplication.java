@@ -12,7 +12,9 @@ import org.androidannotations.annotations.EApplication;
 @EApplication
 public class TransporterApplication extends Application {
 
-    public TransporterApplication() {
+    @Override
+    public void onCreate() {
+        super.onCreate();
         initCrashlitics();
     }
 
