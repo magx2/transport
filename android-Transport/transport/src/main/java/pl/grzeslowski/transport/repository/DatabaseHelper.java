@@ -2,6 +2,7 @@ package pl.grzeslowski.transport.repository;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 import com.google.common.base.Function;
 import com.google.common.collect.Lists;
@@ -145,6 +146,8 @@ class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
     public Collection<Connection> getAllConnections(City from, City to) {
         try {
+            Log.d(getClass().getSimpleName(), String.format("Starting getting Connections for Cities (%s) (%s)", from, to));
+
             final QueryBuilder<ConnectionCity, Integer> ccQueryBuilder = mConnectionCityDao.queryBuilder();
             ccQueryBuilder.where().eq(ConnectionCity.CITY, from).or().eq(ConnectionCity.CITY, to);
             ccQueryBuilder.orderBy(ConnectionCity.NUMBER, true);
@@ -153,6 +156,8 @@ class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             final List<Connection> connections = connectionQueryBuilder.join(ccQueryBuilder).distinct().query();
 
             setPathForConnection(connections);
+
+            Log.d(getClass().getSimpleName(), String.format("Got connections (%s)", connections.size()));
 
             return  connections;
         } catch (SQLException e) {
