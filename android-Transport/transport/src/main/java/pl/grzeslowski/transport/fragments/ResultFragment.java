@@ -1,6 +1,7 @@
 package pl.grzeslowski.transport.fragments;
 
 import android.app.ProgressDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -62,6 +63,12 @@ public class ResultFragment extends Fragment {
         mProgressDialog = new ProgressDialog(getActivity(), R.style.TransporterProgressDialog);
         mProgressDialog.setTitle(getActivity().getString(R.string.loading_connections_title));
         mProgressDialog.setMessage(getActivity().getString(R.string.loading_connections_message));
+        mProgressDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+            @Override
+            public void onCancel(DialogInterface dialog) {
+                closeLoader();
+            }
+        });
         mProgressDialog.show();
     }
 
