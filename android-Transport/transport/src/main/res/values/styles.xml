@@ -15,7 +15,7 @@
     </style>
 
     <!-- ProgresDialog -->
-    <style name="TransporterProgressDialog" parent="@android:style/Theme.Dialog">
+    <style name="TransporterProgressDialog" parent="@android:style/Theme.Holo.Dialog">
         <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
         <item name="android:textColorPrimary">@color/text_view_color</item>
         <item name="android:textColor">@color/text_view_color</item>
