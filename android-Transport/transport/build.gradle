@@ -34,7 +34,8 @@ def props = new Properties()
 file(propsPath).withInputStream {
     stream -> props.load(stream)
 }
-def adsenseTag = props.adsense_tag
+def adsenseTagFree = props.adsense_tag_free
+def adsenseTagPaid = props.adsense_tag_paid
 
 def AAVersion = '3.0.1'
 def ORMLiteVersion = '4.46'
@@ -101,8 +102,6 @@ android {
 
             buildConfigField "java.lang.String", "PAID_PACKAGE_NAME", "\"$paidPackage\""
             buildConfigField "java.lang.String", "FREE_PACKAGE_NAME", "\"$freePackage\""
-
-            buildConfigField "java.lang.String", "AD_SENSE_TAG", "\"$adsenseTag\""
         }
 
         debug.initWith(buildTypes.release)
@@ -117,11 +116,15 @@ android {
         free {
             packageName freePackage
             buildConfigField "pl.grzeslowski.transport.product_flavors.MonetizationType", "MONETIAZATION_TYPE", "pl.grzeslowski.transport.product_flavors.MonetizationType.FREE"
+
+            buildConfigField "java.lang.String", "AD_SENSE_TAG", "\"$adsenseTagFree\""
         }
 
         paid {
             packageName paidPackage
             buildConfigField "pl.grzeslowski.transport.product_flavors.MonetizationType", "MONETIAZATION_TYPE", "pl.grzeslowski.transport.product_flavors.MonetizationType.PAID"
+
+            buildConfigField "java.lang.String", "AD_SENSE_TAG", "\"$adsenseTagPaid\""
         }
     }
 }
