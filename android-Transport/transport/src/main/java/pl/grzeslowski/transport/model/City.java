@@ -1,5 +1,6 @@
 package pl.grzeslowski.transport.model;
 
+import com.google.common.base.Objects;
 import com.google.common.base.Preconditions;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
@@ -36,7 +37,7 @@ public class City implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-        if(o instanceof City) {
+        if (o instanceof City) {
             City c = (City) o;
 
             return mId == c.mId;
@@ -45,7 +46,13 @@ public class City implements Serializable {
         }
     }
 
+
     public String getName() {
         return mName;
+    }
+
+    @Override
+    public String toString() {
+        return Objects.toStringHelper(City.class).add("Id", mId).add("Name", mName).toString();
     }
 }
