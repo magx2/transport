@@ -28,11 +28,20 @@ configurations {
     apt
 }
 
+// loading props from file system
+def propsPath = "../../transporter.props";
+def props = new Properties()
+file(propsPath).withInputStream {
+    stream -> props.load(stream)
+}
+def adsenseTag = props.adsense_tag
+
 def AAVersion = '3.0.1'
 def ORMLiteVersion = '4.46'
 def mainPackage = 'pl.grzeslowski.transport'
 def paidPackage = mainPackage + '.paid'
 def freePackage = mainPackage + '.free'
+
 
 dependencies {
     compile 'com.android.support:appcompat-v7:19.1.0'
@@ -55,6 +64,9 @@ dependencies {
 
     // Crashlitics
     compile 'com.crashlytics.android:crashlytics:1.+'
+
+    // google play
+    compile 'com.google.android.gms:play-services:4.3.23'
 }
 
 android {
@@ -89,6 +101,8 @@ android {
 
             buildConfigField "java.lang.String", "PAID_PACKAGE_NAME", "\"$paidPackage\""
             buildConfigField "java.lang.String", "FREE_PACKAGE_NAME", "\"$freePackage\""
+
+            buildConfigField "java.lang.String", "AD_SENSE_TAG", "\"$adsenseTag\""
         }
 
         debug.initWith(buildTypes.release)
@@ -142,3 +156,34 @@ android.applicationVariants.all { variant ->
         aptOutput.mkdirs()
     }
 }
+
+task loadAdSense() {
+
+    println "load"
+    // saving adsense tag to xml file
+    def xmlFile = file("src/main/res/xml/global_tracker.xml")
+    def xml = new XmlParser().parse(xmlFile)
+    xml.string.each {
+        if (it.@name == "ga_trackingId") {
+            it.value = adsenseTag
+        }
+    }
+    new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile))).print(xml)
+}
+build.dependsOn loadAdSense
+
+task cleanXml(dependsOn: build) << {
+
+    println "clean"
+    // going back with xml
+    def xmlFile = file("src/main/res/xml/global_tracker.xml")
+    def xml = new XmlParser().parse(xmlFile)
+    xml.string.each {
+        if (it.@name == "ga_trackingId") {
+            it.value = "UA-XXXXXXX-Y"
+        }
+    }
+    new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile))).print(xml)
+}
+cleanXml.dependsOn build
+cleanXml.mustRunAfter build

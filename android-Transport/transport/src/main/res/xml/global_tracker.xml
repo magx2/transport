@@ -1,0 +1,14 @@
+<resources>
+  <integer name="ga_sessionTimeout">
+    300
+  </integer>
+  <bool name="ga_autoActivityTracking">
+    true
+  </bool>
+  <screenName name="pl.grzeslowski.transport.activities.MainActivity">
+    Main Activity
+  </screenName>
+  <screenName name="pl.grzeslowski.transport.activities.ResultActivity">
+    Result Activity
+  </screenName>
+</resources>

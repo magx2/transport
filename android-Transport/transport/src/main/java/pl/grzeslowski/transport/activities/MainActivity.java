@@ -10,6 +10,8 @@ import android.util.Log;
 import android.view.View;
 
 import com.crashlytics.android.Crashlytics;
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -17,6 +19,7 @@ import org.androidannotations.annotations.FragmentById;
 
 import pl.grzeslowski.transport.BuildConfig;
 import pl.grzeslowski.transport.R;
+import pl.grzeslowski.transport.TransporterApplication;
 import pl.grzeslowski.transport.fragments.BuyFragment;
 import pl.grzeslowski.transport.product_flavors.MonetizationType;
 
@@ -36,11 +39,27 @@ public class MainActivity extends ActionBarActivity {
 
     @AfterViews
     void prepare() {
+        initAdSense();
+
         if (BuildConfig.MONETIAZATION_TYPE == MonetizationType.PAID) {
             hideBuyRelatedViews();
         } else {
             initOpeningShow();
         }
+    }
+
+    private void initAdSense() {
+
+        // Get tracker.
+        final TransporterApplication application = (TransporterApplication) getApplication();
+        Tracker t = application.getTracker(TransporterApplication.TrackerName.APP_TRACKER);
+
+        // Set screen name.
+        // Where path is a String representing the screen name.
+        t.setScreenName(MainActivity.class.getCanonicalName());
+
+        // Send a screen view.
+        t.send(new HitBuilders.AppViewBuilder().build());
     }
 
     private void initOpeningShow() {
