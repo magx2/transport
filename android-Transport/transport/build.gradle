@@ -156,34 +156,3 @@ android.applicationVariants.all { variant ->
         aptOutput.mkdirs()
     }
 }
-
-task loadAdSense() {
-
-    println "load"
-    // saving adsense tag to xml file
-    def xmlFile = file("src/main/res/xml/global_tracker.xml")
-    def xml = new XmlParser().parse(xmlFile)
-    xml.string.each {
-        if (it.@name == "ga_trackingId") {
-            it.value = adsenseTag
-        }
-    }
-    new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile))).print(xml)
-}
-build.dependsOn loadAdSense
-
-task cleanXml(dependsOn: build) << {
-
-    println "clean"
-    // going back with xml
-    def xmlFile = file("src/main/res/xml/global_tracker.xml")
-    def xml = new XmlParser().parse(xmlFile)
-    xml.string.each {
-        if (it.@name == "ga_trackingId") {
-            it.value = "UA-XXXXXXX-Y"
-        }
-    }
-    new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile))).print(xml)
-}
-cleanXml.dependsOn build
-cleanXml.mustRunAfter build
