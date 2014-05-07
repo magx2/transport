@@ -1,7 +1,9 @@
 package pl.grzeslowski.transport.fragments;
 
 import android.support.v4.app.Fragment;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
@@ -26,15 +28,14 @@ import pl.grzeslowski.transport.views.RememberingStateSpinner;
 
 import static pl.grzeslowski.transport.views.RememberingStateSpinner.OnItemSelected;
 
-/**
- * Created by Martin on 2014-04-22.
- */
 @EFragment(R.layout.fragment_search)
 public class SearchFragment extends Fragment {
     @ViewById(R.id.fragment_search_from)
     RememberingStateSpinner mFrom;
     @ViewById(R.id.fragment_search_to)
     RememberingStateSpinner mTo;
+    @ViewById(R.id.fragment_search_change)
+    ImageView mChange;
     @Bean
     DatabaseManager mDatabaseManager;
     @Pref
@@ -42,6 +43,20 @@ public class SearchFragment extends Fragment {
 
     @AfterViews
     void prepare() {
+        initSpinners();
+        initChange();
+    }
+
+    private void initChange() {
+        mChange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mFrom.setSelection(mTo.getSelectedItemPosition(), true);
+            }
+        });
+    }
+
+    private void initSpinners() {
         List<String> names = mDatabaseManager.getCitiesNames();
 
         ArrayAdapter fromAdapter = new ArrayAdapter(getActivity(), R.layout.spinner_list_item, names);
