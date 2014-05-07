@@ -19,11 +19,11 @@ public class PwhdConnections {
     private static final String PWHD_SWIDNICA_WROCLAW_NORMAL_PRICE = "6,50";
     private static final String PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE = "4,50";
 
-    private static final String PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE = "5,50";
-    private static final String PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE = "3,50";
+    private static final String PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE = "4,60";
+    private static final String PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE = "???";
 
-    private static final String PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE = "10,50";
-    private static final String PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE = "5,00";
+    private static final String PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE = "11,10";
+    private static final String PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE = "9,10";
 
     private static List<City> getWroScaPwhdPath() {
         List<City> path = getScaWroPwhdPath();
