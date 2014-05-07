@@ -1,37 +1,56 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:orientation="vertical"
-              tools:context="pl.grzeslowski.transport.activities.MainActivity$PlaceholderFragment">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:context="pl.grzeslowski.transport.activities.MainActivity$PlaceholderFragment">
 
     <TextView
+        android:id="@+id/fragment_buy_text"
         style="@style/TabTextAppTheme"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search_text"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textSize="@dimen/spinner_text_size"
-        android:textStyle="bold"
-        android:layout_height="wrap_content"
-        android:text="@string/search_text"/>
+        android:textStyle="bold"/>
 
     <pl.grzeslowski.transport.views.RememberingStateSpinner
         android:id="@+id/fragment_search_from"
         style="@style/SpinnerAppTheme"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/fragment_buy_text"
+        android:layout_toLeftOf="@+id/fragment_search_change"/>
 
     <pl.grzeslowski.transport.views.RememberingStateSpinner
         android:id="@+id/fragment_search_to"
         style="@style/SpinnerAppTheme"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/fragment_search_from"
+        android:layout_toLeftOf="@id/fragment_search_change"/>
+
+    <ImageView
+        android:id="@+id/fragment_search_change"
+        style="@style/ButtonAppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/fragment_search_to"
+        android:layout_alignEnd="@+id/fragment_search_search"
+        android:layout_alignTop="@id/fragment_search_from"
+        android:src="@drawable/ic_change"/>
 
     <Button
         android:id="@+id/fragment_search_search"
         style="@style/ButtonAppTheme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_search_to"
         android:text="@string/search"
         android:textColor="@android:color/white"/>
 
-</LinearLayout>
+</RelativeLayout>
