@@ -33,8 +33,6 @@ class DatabasePrePopulater {
     );
 
 
-
-
     public static List<Connection> getConnections() {
         List<Connection> connections = new ArrayList<Connection>();
 
@@ -49,18 +47,22 @@ class DatabasePrePopulater {
         connections.addAll(PwhdConnections.getPwhdWroWal());
 
         // Guliwer
+        connections.addAll(GuliwerConnections.getGuliwerScaWro());
+        connections.addAll(GuliwerConnections.getGuliwerWroSca());
+
+        connections.addAll(GuliwerConnections.getGuliwerWalWro());
+        connections.addAll(GuliwerConnections.getGuliwerWroWal());
 
 
         return connections;
     }
 
 
-
-     static Provider getPwhd() {
+    static Provider getPwhd() {
         return PROVIDERS.get(0);
     }
 
-     static Provider getGuliwer() {
+    static Provider getGuliwer() {
         return PROVIDERS.get(1);
     }
 
