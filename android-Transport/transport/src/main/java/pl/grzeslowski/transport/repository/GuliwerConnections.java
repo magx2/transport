@@ -194,8 +194,8 @@ public class GuliwerConnections {
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
-                                new ConnectionMark("Kursuje w piątki "),
-                                new ConnectionMark("Kursuje w niedizele")
+                                new ConnectionMark("Kursuje w piątki"),
+                                new ConnectionMark("Kursuje w niedzielę")
                         ),
                         GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
@@ -253,8 +253,8 @@ public class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII"),
-                                new ConnectionMark("Kursuje w piątki "),
-                                new ConnectionMark("Kursuje w niedizele")
+                                new ConnectionMark("Kursuje w piątki"),
+                                new ConnectionMark("Kursuje w niedzielę")
                         ),
                         GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
@@ -440,8 +440,8 @@ public class GuliwerConnections {
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
-                                new ConnectionMark("Kursuje w piątki "),
-                                new ConnectionMark("Kursuje w niedizele")
+                                new ConnectionMark("Kursuje w piątki"),
+                                new ConnectionMark("Kursuje w niedzielę")
                         ),
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
@@ -500,8 +500,8 @@ public class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII"),
-                                new ConnectionMark("Kursuje w piątki "),
-                                new ConnectionMark("Kursuje w niedizele")
+                                new ConnectionMark("Kursuje w piątki"),
+                                new ConnectionMark("Kursuje w niedzielę")
                         ),
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
@@ -813,9 +813,9 @@ public class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("W Swidnicy zatrzymuje się na ul. Zamenhofa (Shell)"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII"),
-                                new ConnectionMark("Kursuje w piątki "),
-                                new ConnectionMark("Kursuje w soboty "),
-                                new ConnectionMark("Kursuje w niedizele")
+                                new ConnectionMark("Kursuje w piątki"),
+                                new ConnectionMark("Kursuje w soboty"),
+                                new ConnectionMark("Kursuje w niedzielę")
                         ),
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
