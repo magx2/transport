@@ -37,8 +37,12 @@ public class TransporterApplication extends Application {
     }
 
     public synchronized Tracker getTracker() {
-        GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
+        if (!"debug".equals(BuildConfig.BUILD_TYPE)) {
+            GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
 
-        return analytics.newTracker(BuildConfig.AD_SENSE_TAG);
+            return analytics.newTracker(BuildConfig.AD_SENSE_TAG);
+        } else {
+            return null;
+        }
     }
 }
