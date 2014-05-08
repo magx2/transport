@@ -5,7 +5,7 @@
     <string name="search_text">Wyszukaj połączenie:</string>
     <string name="action_settings">Settings</string>
     <string name="search">Wyszukaj</string>
-    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_result">Wyniki</string>
     <string name="marks_in_paid_version">Oznaczenia kursów dostępne są w pełnej wersji!</string>
     <string name="list_result_expanded_path">Relacja: </string>
     <string name="list_result_expanded_price">Cena: </string>
@@ -14,6 +14,6 @@
     <string name="student_price">studencki</string>
     <string name="loading_connections_title"></string>
     <string name="loading_connections_message">Ładuję połączenia...</string>
-    <string name="click_to_buy_premium_version">Pełna wersja</string>
+    <string name="click_to_buy_premium_version">Kup pełną wersję</string>
 
 </resources>
