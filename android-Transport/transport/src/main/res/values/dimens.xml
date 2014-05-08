@@ -3,6 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="expanded_view_left_margin">25dp</dimen>
+    <dimen name="expanded_view_right_margin">25dp</dimen>
     <dimen name="margin_between_search_and_result">15dp</dimen>
     <dimen name="buy_fragment_height">40dp</dimen>
     <dimen name="buy_font_size">20sp</dimen>

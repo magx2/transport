@@ -7,6 +7,7 @@
     android:background="@color/apptheme_color_dark"
     android:layout_height="?android:attr/listPreferredItemHeight"
     android:paddingLeft="@dimen/expanded_view_left_margin"
+    android:paddingRight="@dimen/expanded_view_right_margin"
     style="@style/TabTextAppTheme"
     android:textStyle="italic">
 </TextView>
