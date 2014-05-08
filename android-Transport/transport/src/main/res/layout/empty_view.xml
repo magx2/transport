@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/fragment_result_empty_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TabTextAppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:maxLines="999"
+        android:text="@string/fragment_result_empty_list_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="@dimen/empty_list_text_size"
+        android:textStyle="bold"/>
+
+</LinearLayout>
