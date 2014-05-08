@@ -16,5 +16,8 @@
     <string name="click_to_buy_premium_version">Kup pełną wersję</string>
     <string name="ab_feedback">Przekaż opinię</string>
     <string name="ab_info">O programie</string>
+    <string name="title_activity_info">Informacje o programie</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>

@@ -1,18 +1,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="pl.grzeslowski.transport.activities.ResultActivity">
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                tools:context="pl.grzeslowski.transport.activities.InfoActivity">
 
-    <fragment
-        android:id="@+id/activity_result_fragment_result"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
-        class="pl.grzeslowski.transport.fragments.ResultFragment_"
-        android:layout_width="match_parent"
-        android:layout_above="@+id/fragment_buy"
-        android:layout_height="match_parent"/>
+        android:text="@string/hello_world"/>
 
     <View
         android:id="@+id/fragment_buy_shadow"
@@ -25,7 +23,8 @@
         android:id="@+id/fragment_buy"
         class="pl.grzeslowski.transport.fragments.BuyFragment_"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_height="wrap_content"/>
+        tools:layout="@layout/fragment_buy"/>
 
 </RelativeLayout>
