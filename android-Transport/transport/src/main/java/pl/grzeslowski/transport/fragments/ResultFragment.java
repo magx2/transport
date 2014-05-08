@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
-import android.widget.LinearLayout;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
@@ -35,6 +34,8 @@ public class ResultFragment extends Fragment {
 
     @ViewById(R.id.fragment_result_list)
     ExpandableListView mResultList;
+    @ViewById(R.id.fragment_result_empty_view)
+    View mEmptyView;
     @Bean
     DatabaseManager mDatabaseManager;
     private List<Connection> mConnections = new ArrayList<Connection>();
@@ -51,9 +52,7 @@ public class ResultFragment extends Fragment {
     }
 
     private void initEmptyView() {
-        View emptyView = getActivity().getLayoutInflater().inflate(R.layout.fragment_result_empty_list, null);
-        mResultList.setEmptyView(emptyView);
-        getActivity().addContentView(emptyView, new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
+        mResultList.setEmptyView(mEmptyView);
     }
 
     public void showResultsFor(final City from, final City to) {
