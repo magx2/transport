@@ -695,7 +695,7 @@ class GuliwerConnections {
 
                 // Wro - Wal
                 new Connection(
-                        getWalWroGuliwerPath(),
+                        getWroWalGuliwerPath(),
                         new LocalTime(7, 05),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
@@ -705,7 +705,7 @@ class GuliwerConnections {
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroGuliwerPath(),
+                        getWroWalGuliwerPath(),
                         new LocalTime(8, 45),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
@@ -715,7 +715,7 @@ class GuliwerConnections {
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroGuliwerPath(),
+                        getWroWalGuliwerPath(),
                         new LocalTime(10, 05),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
@@ -725,7 +725,7 @@ class GuliwerConnections {
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroGuliwerPath(),
+                        getWroWalGuliwerPath(),
                         new LocalTime(12, 05),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
@@ -735,7 +735,7 @@ class GuliwerConnections {
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroGuliwerPath(),
+                        getWroWalGuliwerPath(),
                         new LocalTime(13, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
@@ -745,7 +745,7 @@ class GuliwerConnections {
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroGuliwerPath(),
+                        getWroWalGuliwerPath(),
                         new LocalTime(14, 05),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
@@ -755,7 +755,7 @@ class GuliwerConnections {
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroGuliwerPath(),
+                        getWroWalGuliwerPath(),
                         new LocalTime(15, 10),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
@@ -765,7 +765,7 @@ class GuliwerConnections {
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroGuliwerPath(),
+                        getWroWalGuliwerPath(),
                         new LocalTime(16, 15),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
@@ -775,7 +775,7 @@ class GuliwerConnections {
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroGuliwerPath(),
+                        getWroWalGuliwerPath(),
                         new LocalTime(17, 40),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
@@ -786,7 +786,7 @@ class GuliwerConnections {
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroGuliwerPath(),
+                        getWroWalGuliwerPath(),
                         new LocalTime(18, 30),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
@@ -797,7 +797,7 @@ class GuliwerConnections {
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroGuliwerPath(),
+                        getWroWalGuliwerPath(),
                         new LocalTime(19, 20),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
@@ -811,7 +811,7 @@ class GuliwerConnections {
                         GULIWER_WROCLAW_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                        getWalWroGuliwerPath(),
+                        getWroWalGuliwerPath(),
                         new LocalTime(20, 20),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
