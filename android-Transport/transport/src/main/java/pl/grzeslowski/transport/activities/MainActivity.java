@@ -29,7 +29,6 @@ public class MainActivity extends AdSenseActivity {
         mMenuHelper.showInfo();
     }
 
-
     @OptionsItem(R.id.menu_feedback)
     void sendFeedback() {
         mMenuHelper.sendFeedback();
