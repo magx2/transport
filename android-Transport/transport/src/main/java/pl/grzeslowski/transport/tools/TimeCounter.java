@@ -20,7 +20,7 @@ public class TimeCounter {
     public boolean shouldCountTimeTo(LocalTime fromTime, LocalTime toTime) {
         final int countTimeTo = countTimeTo(fromTime, toTime);
 
-        return countTimeTo >= 0 && countTimeTo <= sMaxMinsToCount;
+        return countTimeTo > 0 && countTimeTo <= sMaxMinsToCount;
     }
 
     public boolean shouldCountTimeTo(LocalTime toTime) {
