@@ -13,4 +13,5 @@
     <dimen name="fragment_buy_min_height">45dp</dimen>
     <dimen name="activity_main_search_width">200dp</dimen>
     <dimen name="empty_list_text_size">15sp</dimen>
+    <dimen name="fragment_search_search_button_size">18sp</dimen>
 </resources>

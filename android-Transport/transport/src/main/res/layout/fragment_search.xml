@@ -47,6 +47,7 @@
     <Button
         android:id="@+id/fragment_search_search"
         style="@style/ButtonAppTheme"
+        android:textSize="@dimen/fragment_search_search_button_size"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/fragment_search_to"
