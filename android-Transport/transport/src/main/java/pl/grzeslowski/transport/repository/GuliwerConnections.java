@@ -11,11 +11,11 @@ import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.model.Connection;
 import pl.grzeslowski.transport.model.ConnectionMark;
 
-public class GuliwerConnections {
+class GuliwerConnections {
 
     private static String GULIWER_WROCLAW_DEPARTURE = "pl. Dawida";
     private static String GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE = "ul. Kolejowa";
-    private static String GULIWER_SWIDNICA_ZAMENHOFA_DEPARTURE= "ul. Zamenhofa (Shell)";
+    private static String GULIWER_SWIDNICA_ZAMENHOFA_DEPARTURE = "ul. Zamenhofa (Shell)";
     private static String GULIWER_WALBRZYCH_DEPARTURE = "ul. Sikorskiego  (Teatr Dramatyczny)";
 
     private static final String GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE = "";
@@ -89,7 +89,7 @@ public class GuliwerConnections {
                 // Sca - Wro
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(4,40),
+                        new LocalTime(4, 40),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("E"),
@@ -99,7 +99,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(5,35),
+                        new LocalTime(5, 35),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -108,7 +108,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(6,10),
+                        new LocalTime(6, 10),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("E"),
@@ -118,7 +118,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(6,50),
+                        new LocalTime(6, 50),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -127,7 +127,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(7,15),
+                        new LocalTime(7, 15),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -136,7 +136,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(8,00),
+                        new LocalTime(8, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -145,7 +145,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(9,00),
+                        new LocalTime(9, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -154,7 +154,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(10,00),
+                        new LocalTime(10, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -163,7 +163,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(10,45),
+                        new LocalTime(10, 45),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -172,7 +172,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(11,20),
+                        new LocalTime(11, 20),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -181,7 +181,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(11,50),
+                        new LocalTime(11, 50),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -190,7 +190,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(12,40),
+                        new LocalTime(12, 40),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -201,7 +201,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(13,20),
+                        new LocalTime(13, 20),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -210,7 +210,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(13,50),
+                        new LocalTime(13, 50),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -219,7 +219,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(14,20),
+                        new LocalTime(14, 20),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -228,7 +228,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(15,00),
+                        new LocalTime(15, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -238,7 +238,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(15,45),
+                        new LocalTime(15, 45),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -248,7 +248,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(16,20),
+                        new LocalTime(16, 20),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -260,7 +260,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(17,00),
+                        new LocalTime(17, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -269,7 +269,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(18,00),
+                        new LocalTime(18, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -279,7 +279,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(18,30),
+                        new LocalTime(18, 30),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -289,7 +289,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(19,00),
+                        new LocalTime(19, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -299,7 +299,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(20,00),
+                        new LocalTime(20, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -309,7 +309,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
-                        new LocalTime(21,00),
+                        new LocalTime(21, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -326,7 +326,7 @@ public class GuliwerConnections {
                 // Wro - Sca
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(5,55),
+                        new LocalTime(5, 55),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -336,7 +336,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(7,05),
+                        new LocalTime(7, 05),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -345,7 +345,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(7,45),
+                        new LocalTime(7, 45),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -354,7 +354,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(8,45),
+                        new LocalTime(8, 45),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -363,7 +363,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(9,00),
+                        new LocalTime(9, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -373,7 +373,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(9,30),
+                        new LocalTime(9, 30),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -382,7 +382,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(10,05),
+                        new LocalTime(10, 05),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -391,7 +391,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(11,00),
+                        new LocalTime(11, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -400,7 +400,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(12,05),
+                        new LocalTime(12, 05),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -409,7 +409,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(13,00),
+                        new LocalTime(13, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -418,7 +418,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(13,30),
+                        new LocalTime(13, 30),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -427,7 +427,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(14,05),
+                        new LocalTime(14, 05),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -436,7 +436,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(14,25),
+                        new LocalTime(14, 25),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -447,7 +447,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(15,10),
+                        new LocalTime(15, 10),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -456,7 +456,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(15,40),
+                        new LocalTime(15, 40),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -466,7 +466,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(16,15),
+                        new LocalTime(16, 15),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
@@ -475,7 +475,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(16,45),
+                        new LocalTime(16, 45),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -485,7 +485,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(17,40),
+                        new LocalTime(17, 40),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -495,7 +495,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(18,00),
+                        new LocalTime(18, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -507,7 +507,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(18,30),
+                        new LocalTime(18, 30),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -517,7 +517,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(19,20),
+                        new LocalTime(19, 20),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -527,7 +527,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(20,20),
+                        new LocalTime(20, 20),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -537,7 +537,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(21,00),
+                        new LocalTime(21, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -547,7 +547,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(21,45),
+                        new LocalTime(21, 45),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -557,7 +557,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
-                        new LocalTime(22,15),
+                        new LocalTime(22, 15),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -573,8 +573,8 @@ public class GuliwerConnections {
 
                 // Wal - Wro
                 new Connection(
-                          getWalWroGuliwerPath(),
-                        new LocalTime(5,25),
+                        getWalWroGuliwerPath(),
+                        new LocalTime(5, 25),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -583,8 +583,8 @@ public class GuliwerConnections {
                         GULIWER_WALBRZYCH_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                          getWalWroGuliwerPath(),
-                        new LocalTime(6,30),
+                        getWalWroGuliwerPath(),
+                        new LocalTime(6, 30),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -593,8 +593,8 @@ public class GuliwerConnections {
                         GULIWER_WALBRZYCH_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                          getWalWroGuliwerPath(),
-                        new LocalTime(7,10),
+                        getWalWroGuliwerPath(),
+                        new LocalTime(7, 10),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -603,8 +603,8 @@ public class GuliwerConnections {
                         GULIWER_WALBRZYCH_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                          getWalWroGuliwerPath(),
-                        new LocalTime(9,20),
+                        getWalWroGuliwerPath(),
+                        new LocalTime(9, 20),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -613,8 +613,8 @@ public class GuliwerConnections {
                         GULIWER_WALBRZYCH_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                          getWalWroGuliwerPath(),
-                        new LocalTime(11,00),
+                        getWalWroGuliwerPath(),
+                        new LocalTime(11, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -623,8 +623,8 @@ public class GuliwerConnections {
                         GULIWER_WALBRZYCH_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                          getWalWroGuliwerPath(),
-                        new LocalTime(12,30),
+                        getWalWroGuliwerPath(),
+                        new LocalTime(12, 30),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -633,8 +633,8 @@ public class GuliwerConnections {
                         GULIWER_WALBRZYCH_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                          getWalWroGuliwerPath(),
-                        new LocalTime(14,05),
+                        getWalWroGuliwerPath(),
+                        new LocalTime(14, 05),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -644,8 +644,8 @@ public class GuliwerConnections {
                         GULIWER_WALBRZYCH_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                          getWalWroGuliwerPath(),
-                        new LocalTime(16,00),
+                        getWalWroGuliwerPath(),
+                        new LocalTime(16, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -654,8 +654,8 @@ public class GuliwerConnections {
                         GULIWER_WALBRZYCH_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                          getWalWroGuliwerPath(),
-                        new LocalTime(17,10),
+                        getWalWroGuliwerPath(),
+                        new LocalTime(17, 10),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -665,8 +665,8 @@ public class GuliwerConnections {
                         GULIWER_WALBRZYCH_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                          getWalWroGuliwerPath(),
-                        new LocalTime(18,00),
+                        getWalWroGuliwerPath(),
+                        new LocalTime(18, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -676,8 +676,8 @@ public class GuliwerConnections {
                         GULIWER_WALBRZYCH_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                          getWalWroGuliwerPath(),
-                        new LocalTime(19,10),
+                        getWalWroGuliwerPath(),
+                        new LocalTime(19, 10),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -687,8 +687,8 @@ public class GuliwerConnections {
                         GULIWER_WALBRZYCH_DEPARTURE, GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE, GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
-                          getWalWroGuliwerPath(),
-                        new LocalTime(20,10),
+                        getWalWroGuliwerPath(),
+                        new LocalTime(20, 10),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -705,7 +705,7 @@ public class GuliwerConnections {
                 // Wro - Wal
                 new Connection(
                         getWalWroGuliwerPath(),
-                        new LocalTime(7,05),
+                        new LocalTime(7, 05),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -715,7 +715,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWalWroGuliwerPath(),
-                        new LocalTime(8,45),
+                        new LocalTime(8, 45),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -725,7 +725,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWalWroGuliwerPath(),
-                        new LocalTime(10,05),
+                        new LocalTime(10, 05),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -735,7 +735,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWalWroGuliwerPath(),
-                        new LocalTime(12,05),
+                        new LocalTime(12, 05),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -745,7 +745,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWalWroGuliwerPath(),
-                        new LocalTime(13,00),
+                        new LocalTime(13, 00),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -755,7 +755,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWalWroGuliwerPath(),
-                        new LocalTime(14,05),
+                        new LocalTime(14, 05),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -765,7 +765,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWalWroGuliwerPath(),
-                        new LocalTime(15,10),
+                        new LocalTime(15, 10),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -775,7 +775,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWalWroGuliwerPath(),
-                        new LocalTime(16,15),
+                        new LocalTime(16, 15),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -785,7 +785,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWalWroGuliwerPath(),
-                        new LocalTime(17,40),
+                        new LocalTime(17, 40),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -796,7 +796,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWalWroGuliwerPath(),
-                        new LocalTime(18,30),
+                        new LocalTime(18, 30),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -807,7 +807,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWalWroGuliwerPath(),
-                        new LocalTime(19,20),
+                        new LocalTime(19, 20),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
@@ -821,7 +821,7 @@ public class GuliwerConnections {
                 ),
                 new Connection(
                         getWalWroGuliwerPath(),
-                        new LocalTime(20,20),
+                        new LocalTime(20, 20),
                         DatabasePrePopulater.getGuliwer(),
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
