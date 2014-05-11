@@ -15,7 +15,9 @@ public class TransporterApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        initCrashlitics();
+        if (!isDebug()) {
+            initCrashlitics();
+        }
     }
 
     private void initCrashlitics() {
@@ -37,12 +39,16 @@ public class TransporterApplication extends Application {
     }
 
     public synchronized Tracker getTracker() {
-        if (!"debug".equals(BuildConfig.BUILD_TYPE)) {
+        if (!isDebug()) {
             GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
 
             return analytics.newTracker(BuildConfig.AD_SENSE_TAG);
         } else {
             return null;
         }
+    }
+
+    private static boolean isDebug() {
+        return "debug".equals(BuildConfig.BUILD_TYPE);
     }
 }
