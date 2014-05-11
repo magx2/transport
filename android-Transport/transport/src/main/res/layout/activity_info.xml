@@ -6,11 +6,12 @@
                 tools:context="pl.grzeslowski.transport.activities.InfoActivity">
 
     <TextView
+        style="@style/TabTextAppTheme"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
-        android:text="@string/hello_world"/>
+        android:text="@string/activity_info_info"/>
 
     <View
         android:id="@+id/fragment_buy_shadow"

@@ -20,5 +20,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="fragment_result_empty_list_text">Wybierz dwie miejscowości i kliknij \'Wyszukaj\'.\nWybrane połącznia pojawią się w liście.\n\n<i>Uwaga: Pamiętaj aby sprawdzić dokładniejsze informacje poprzez rozwinięcie danego elementu!</i></string>
+    <string name="activity_info_info">Info...</string>
 
 </resources>
