@@ -61,7 +61,7 @@ public class ConnectionsLoader extends AsyncTask<City, Void, List<Connection>> {
     }
 
     private String buildLabelString(long end, City from, City to) {
-        return String.format("TIME{%s} FROM{%s} TO{%s}", end, from, to);
+        return String.format("TIME{%6s} FROM{%s} TO{%s}", end, from, to);
     }
 
     @Override

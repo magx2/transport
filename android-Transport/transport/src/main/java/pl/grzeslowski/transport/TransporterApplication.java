@@ -55,6 +55,6 @@ public class TransporterApplication extends Application {
     }
 
     private static boolean isDebug() {
-        return "debug".equals(BuildConfig.BUILD_TYPE) && false;
+        return "debug".equals(BuildConfig.BUILD_TYPE);
     }
 }
