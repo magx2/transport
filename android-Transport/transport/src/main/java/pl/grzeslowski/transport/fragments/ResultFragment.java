@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import pl.grzeslowski.transport.R;
+import pl.grzeslowski.transport.TransporterApplication;
 import pl.grzeslowski.transport.adapters.ResultListAdapter;
 import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.model.Connection;
@@ -62,7 +63,8 @@ public class ResultFragment extends Fragment {
             checkNotNull(from);
             checkNotNull(to);
 
-            mLoader = new ConnectionsLoader(mDatabaseManager, this);
+            final TransporterApplication application = (TransporterApplication) getActivity().getApplication();
+            mLoader = new ConnectionsLoader(application, mDatabaseManager, this);
             mLoader.execute(from, to);
         }
     }
