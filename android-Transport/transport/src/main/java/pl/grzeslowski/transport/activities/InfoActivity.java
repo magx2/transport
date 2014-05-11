@@ -1,7 +1,5 @@
 package pl.grzeslowski.transport.activities;
 
-import android.support.v7.app.ActionBarActivity;
-
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 import org.androidannotations.annotations.FragmentById;
@@ -13,7 +11,7 @@ import pl.grzeslowski.transport.tools.BuyFragmentInitializer;
 
 
 @EActivity(R.layout.activity_info)
-public class InfoActivity extends ActionBarActivity {
+public class InfoActivity  extends AdSenseActivity {
 
     @FragmentById(R.id.fragment_buy)
     BuyFragment mBuyFragment;
