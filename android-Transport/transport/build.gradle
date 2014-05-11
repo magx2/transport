@@ -36,6 +36,9 @@ file(propsPath).withInputStream {
 }
 def adsenseTagFree = props.adsense_tag_free
 def adsenseTagPaid = props.adsense_tag_paid
+def releaseStorePassword = props.release_store_password
+def releaseKeyAlias = props.release_key_alia
+def releaseKeyPassword = props.release_key_password
 
 def AAVersion = '3.0.1'
 def ORMLiteVersion = '4.46'
@@ -87,6 +90,14 @@ android {
     }
 
     signingConfigs {
+        release {
+            storeFile file("transport.keystore.jks")
+            storePassword releaseStorePassword
+            keyAlias releaseKeyAlias
+            keyPassword releaseKeyPassword
+        }
+
+
         debug {
             storeFile file("../../debug.keystore")
         }
