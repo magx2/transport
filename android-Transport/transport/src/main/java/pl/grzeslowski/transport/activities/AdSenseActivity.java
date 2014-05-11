@@ -26,7 +26,7 @@ public abstract class AdSenseActivity extends ActionBarActivity {
         if (t != null) {
 
             // Set screen name.
-            t.setScreenName(getClass().getCanonicalName());
+            t.setScreenName(((Object) this).getClass().getCanonicalName());
 
             // Send a screen view.
             t.send(new HitBuilders.AppViewBuilder().build());
