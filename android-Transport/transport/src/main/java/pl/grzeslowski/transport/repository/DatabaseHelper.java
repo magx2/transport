@@ -2,19 +2,21 @@ package pl.grzeslowski.transport.repository;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-import android.util.Log;
 
-import com.google.common.base.Function;
-import com.google.common.collect.Lists;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
+import com.j256.ormlite.dao.CloseableWrappedIterable;
 import com.j256.ormlite.dao.RuntimeExceptionDao;
 import com.j256.ormlite.misc.TransactionManager;
+import com.j256.ormlite.stmt.PreparedQuery;
 import com.j256.ormlite.stmt.QueryBuilder;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.Callable;
 
@@ -115,57 +117,79 @@ class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         return mCityDao.queryForAll();
     }
 
-    public Collection<Connection> getAllConnections() {
-        try {
-            final List<Connection> connections = mConnectionDao.queryForAll();
+    private Collection<Connection> getAllConnections() {
+        final List<Connection> connections = mConnectionDao.queryForAll();
 
-            setPathForConnection(connections);
-
-            return connections;
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
+        return connections;
     }
 
-    private void setPathForConnection(Iterable<Connection> connections) throws SQLException {
-        for (Connection connection : connections) {
-            final QueryBuilder<ConnectionCity, Integer> queryBuilder = mConnectionCityDao.queryBuilder();
-            queryBuilder.where().eq(ConnectionCity.CONNECTION, connection).prepare();
-
-            final List<ConnectionCity> citiesForConnection = mConnectionCityDao.query(queryBuilder.prepare());
-            final List<City> path = Lists.transform(citiesForConnection, new Function<ConnectionCity, City>() {
-                @Override
-                public City apply(ConnectionCity input) {
-                    return input.getCity();
-                }
-            });
-
-            connection.setPath(path);
-        }
-    }
-
-    public Collection<Connection> getAllConnections(City from, City to) {
+    public List<Connection> getAllConnections(City from, City to) {
         try {
-            Log.d(getClass().getSimpleName(), String.format("Starting getting Connections for Cities (%s) (%s)", from, to));
-
             final QueryBuilder<ConnectionCity, Integer> ccQueryBuilder = mConnectionCityDao.queryBuilder();
             ccQueryBuilder.where().eq(ConnectionCity.CITY, from).or().eq(ConnectionCity.CITY, to);
-            ccQueryBuilder.orderBy(ConnectionCity.NUMBER, true);
 
             final QueryBuilder<Connection, Integer> connectionQueryBuilder = mConnectionDao.queryBuilder();
             final List<Connection> connections = connectionQueryBuilder.join(ccQueryBuilder).distinct().query();
 
-            setPathForConnection(connections);
-
-            Log.d(getClass().getSimpleName(), String.format("Got connections (%s)", connections.size()));
-
-            return  connections;
+            return getConnectionsWithPath(connections, from, to);
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
     }
 
-    public List<Provider> getAllProviders() {
-        return mProviderDao.queryForAll();
+    private List<Connection> getConnectionsWithPath(List<Connection> connections, City from, City to) throws SQLException {
+        List<Connection> validConnections = new ArrayList<Connection>(connections.size());
+
+        for (Connection connection : connections) {
+
+            final QueryBuilder<ConnectionCity, Integer> queryBuilder = mConnectionCityDao.queryBuilder();
+            final PreparedQuery<ConnectionCity> preparedQuery = queryBuilder.where().eq(ConnectionCity.CONNECTION, connection).prepare();
+
+            final List<City> path = getPath(preparedQuery, from, to);
+            if (path != null) {
+                connection.setPath(path);
+                validConnections.add(connection);
+            }
+        }
+
+        return validConnections;
     }
+
+    private List<City> getPath(PreparedQuery<ConnectionCity> preparedQuery, City from, City to) throws SQLException {
+        final CloseableWrappedIterable<ConnectionCity> it = mConnectionCityDao.getWrappedIterable(preparedQuery);
+
+        final List<City> path = new LinkedList<City>();
+        boolean foundFrom = false;
+        boolean foundTo = false;
+
+        try {
+            for (ConnectionCity connectionCity : it) {
+                City next = connectionCity.getCity();
+
+                if (!foundFrom) {
+                    if (next.equals(from)) {
+                        foundFrom = true;
+                    } else if (next.equals(to)) {
+                        return null;
+                    }
+                } else {
+                    if (next.equals(to)) {
+                        foundTo = true;
+                    }
+                }
+
+                path.add(0, next);
+            }
+        } finally {
+            it.close();
+        }
+
+        if (foundTo) {
+            Collections.reverse(path);
+            return path;
+        } else {
+            return null;
+        }
+    }
+
 }
