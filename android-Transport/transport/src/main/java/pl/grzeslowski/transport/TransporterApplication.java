@@ -12,6 +12,8 @@ import org.androidannotations.annotations.EApplication;
 @EApplication
 public class TransporterApplication extends Application {
 
+    private Tracker mTracker;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -40,15 +42,19 @@ public class TransporterApplication extends Application {
 
     public synchronized Tracker getTracker() {
         if (!isDebug()) {
-            GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
+            if(mTracker == null) {
+                GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
 
-            return analytics.newTracker(BuildConfig.AD_SENSE_TAG);
+                mTracker = analytics.newTracker(BuildConfig.AD_SENSE_TAG);
+            }
+
+            return mTracker;
         } else {
             return null;
         }
     }
 
     private static boolean isDebug() {
-        return "debug".equals(BuildConfig.BUILD_TYPE);
+        return "debug".equals(BuildConfig.BUILD_TYPE) && false;
     }
 }
