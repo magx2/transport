@@ -22,3 +22,45 @@
 -keepclassmembers enum com.j256.** { *; }
 -keep interface com.j256.**
 -keepclassmembers interface com.j256.** { *; }
+
+-libraryjars libs
+
+-keepclassmembers class * {
+  public <init>(android.content.Context);
+}
+
+-keep class pl.grzeslowski.transport.model.**
+-keepclassmembers class pl.grzeslowski.transport.model.** { *; }
+
+-keepattributes *Annotation*
+-keepattributes Signature
+-keepattributes EnclosingMethod
+
+# The official support library.
+-keep class android.support.v4.app.** { *; }
+-keep interface android.support.v4.app.** { *; }
+
+# Library JARs.
+-keep class org.joda.** { *; }
+-keep interface org.joda.** { *; }
+-dontwarn org.joda.**
+-keep class com.loopj.android.http.** { *; }
+-keep interface com.loopj.android.http.** { *; }
+
+# Library projects.
+-keep class com.viewpagerindicator.** { *; }
+-keep interface com.viewpagerindicator.** { *; }
+
+-keep class com.google.** { *; }
+-keep interface com.google.** { *; }
+-dontwarn com.google.**
+
+-keep class org.androidannotations.** { *; }
+-keep interface org.androidannotations.** { *; }
+-dontwarn org.androidannotations.**
+
+# Google Analytics
+-keep class com.google.android.gms.analytics.**
+-keep class com.google.analytics.tracking.**
+-dontwarn com.google.android.gms.analytics.**
+-dontwarn com.google.analytics.tracking.**
