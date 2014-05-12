@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     >
 
-    <ExpandableListView
+    <com.idunnololz.widgets.AnimatedExpandableListView
         android:id="@+id/fragment_result_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

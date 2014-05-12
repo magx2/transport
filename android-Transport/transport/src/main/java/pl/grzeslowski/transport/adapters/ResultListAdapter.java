@@ -4,10 +4,10 @@ import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
 import com.google.common.base.Preconditions;
+import com.idunnololz.widgets.AnimatedExpandableListView;
 
 import org.joda.time.LocalTime;
 
@@ -22,7 +22,7 @@ import pl.grzeslowski.transport.model.ConnectionMark;
 import pl.grzeslowski.transport.product_flavors.MonetizationType;
 import pl.grzeslowski.transport.tools.TimeCounter;
 
-public class ResultListAdapter extends BaseExpandableListAdapter {
+public class ResultListAdapter extends AnimatedExpandableListView.AnimatedExpandableListAdapter {
 
     private static final int sChildrenCount = 1;
     private static final int sFreeVersionMark = 1;
@@ -44,7 +44,7 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public int getChildrenCount(int groupPosition) {
+    public int getRealChildrenCount(int groupPosition) {
         if (BuildConfig.MONETIAZATION_TYPE == MonetizationType.PAID) {
             return sChildrenCount + mConnections.get(groupPosition).getMarks().size();
         } else {
@@ -109,7 +109,7 @@ public class ResultListAdapter extends BaseExpandableListAdapter {
     }
 
     @Override
-    public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
+    public View getRealChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         if (childPosition >= sChildrenCount) {
 
             // show marks

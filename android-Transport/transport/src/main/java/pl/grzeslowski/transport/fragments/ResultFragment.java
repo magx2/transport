@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
+import com.idunnololz.widgets.AnimatedExpandableListView;
+
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EFragment;
@@ -34,7 +36,7 @@ public class ResultFragment extends Fragment {
     private static final String sConnectionsTag = "connections";
 
     @ViewById(R.id.fragment_result_list)
-    ExpandableListView mResultList;
+    AnimatedExpandableListView mResultList;
     @ViewById(R.id.fragment_result_empty_view)
     View mEmptyView;
     @Bean
@@ -49,7 +51,27 @@ public class ResultFragment extends Fragment {
             parseResultsToList(mConnections);
         }
 
+        initAnimatingList();
         initEmptyView();
+    }
+
+    private void initAnimatingList() {
+        mResultList.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
+
+            @Override
+            public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
+                // We call collapseGroupWithAnimation(int) and
+                // expandGroupWithAnimation(int) to animate group
+                // expansion/collapse.
+                if (mResultList.isGroupExpanded(groupPosition)) {
+                    mResultList.collapseGroupWithAnimation(groupPosition);
+                } else {
+                    mResultList.expandGroupWithAnimation(groupPosition);
+                }
+                return true;
+            }
+
+        });
     }
 
     private void initEmptyView() {
