@@ -19,7 +19,7 @@ public class EmailIntent {
     public void showEmailIntent(Activity activity, Email email) {
         Intent intent = new Intent(Intent.ACTION_SEND);
 
-        intent.setType("plain/text");
+        intent.setType("message/rfc822");
         intent.putExtra(Intent.EXTRA_SUBJECT, email.mSubject);
         intent.putExtra(Intent.EXTRA_TEXT, email.mText);
         intent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{email.mTo});
