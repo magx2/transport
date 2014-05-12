@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.idunnololz.widgets.AnimatedExpandableListView;
 
 import org.androidannotations.annotations.AfterViews;
@@ -16,7 +18,9 @@ import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EFragment;
 import org.androidannotations.annotations.ViewById;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import pl.grzeslowski.transport.R;
@@ -34,6 +38,9 @@ import static java.util.Collections.sort;
 @EFragment(R.layout.fragment_result)
 public class ResultFragment extends Fragment {
     private static final String sConnectionsTag = "connections";
+    private static final String SCREEN_NAME = "PROGRESS_DIALOG";
+    private static final String CATEGORY = "CANCEL";
+    private static final String sSdf = "hh:mm";
 
     @ViewById(R.id.fragment_result_list)
     AnimatedExpandableListView mResultList;
@@ -95,11 +102,33 @@ public class ResultFragment extends Fragment {
         mProgressDialog = new ProgressDialog(getActivity(), R.style.TransporterProgressDialog);
         mProgressDialog.setTitle(getActivity().getString(R.string.loading_connections_title));
         mProgressDialog.setMessage(getActivity().getString(R.string.loading_connections_message));
+
+        final TransporterApplication transporterApplication = (TransporterApplication) getActivity().getApplication();
         mProgressDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
             @Override
             public void onCancel(DialogInterface dialog) {
                 closeLoader();
+                sendToGoogleAnalytics();
             }
+
+            private void sendToGoogleAnalytics() {
+                final Tracker tracker = transporterApplication.getTracker();
+                if (tracker != null) {
+                    tracker.setScreenName(SCREEN_NAME);
+
+                    final SimpleDateFormat sdf = new SimpleDateFormat(sSdf);
+                    final Date now = new Date();
+                    String action = sdf.format(now);
+
+                    tracker.send(new HitBuilders.EventBuilder()
+                            .setAction(CATEGORY)
+                            .setLabel(action)
+                            .build());
+
+                    tracker.setScreenName(null);
+                }
+            }
+
         });
         mProgressDialog.show();
     }
