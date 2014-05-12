@@ -6,12 +6,37 @@
                 tools:context="pl.grzeslowski.transport.activities.InfoActivity">
 
     <TextView
+        android:id="@+id/activity_info_title"
         style="@style/TabTextAppTheme"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:text="@string/activity_info_title"
+        android:textSize="@dimen/activity_info_title_size"/>
+
+    <TextView
+        android:id="@+id/activity_info_text"
+        style="@style/TabTextAppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="99"
+        android:layout_below="@id/activity_info_title"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:text="@string/activity_info_info"/>
+    <TextView
+        style="@style/TabTextAppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="99"
+        android:layout_below="@id/activity_info_text"
+        android:textSize="@dimen/activity_info_author_size"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/activity_info_author"/>
 
     <View
         android:id="@+id/fragment_buy_shadow"

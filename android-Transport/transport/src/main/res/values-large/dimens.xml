@@ -1,8 +1,4 @@
 <resources>
-    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
-         (such as screen margins) for screens with more than 820dp of available width. This
-         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
-
     <dimen name="activity_horizontal_margin">64dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="expanded_view_left_margin">25dp</dimen>
@@ -17,4 +13,6 @@
     <dimen name="activity_main_search_width">350dp</dimen>
     <dimen name="empty_list_text_size">25sp</dimen>
     <dimen name="fragment_search_search_button_size">24sp</dimen>
+    <dimen name="activity_info_title_size">25sp</dimen>
+    <dimen name="activity_info_author_size">20sp</dimen>
 </resources>

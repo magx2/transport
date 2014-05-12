@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Transport</string>
+    <string name="app_name">Sfast</string>
     <string name="search_text">Wyszukaj połączenie:</string>
     <string name="search">Wyszukaj</string>
     <string name="title_activity_result">Wyniki</string>
@@ -12,13 +12,15 @@
     <string name="normal_price">normalny</string>
     <string name="student_price">studencki</string>
     <string name="loading_connections_title"></string>
-    <string name="loading_connections_message">Ładuję połączenia...</string>
+    <string name="loading_connections_message">Ładuję połączenia…</string>
     <string name="click_to_buy_premium_version">Kup pełną wersję</string>
     <string name="ab_feedback">Przekaż opinię</string>
     <string name="ab_info">O programie</string>
     <string name="title_activity_info">Informacje o programie</string>
     <string name="action_settings">Settings</string>
     <string name="fragment_result_empty_list_text">Wybierz dwie miejscowości i kliknij \'Wyszukaj\'.\nWybrane połącznia pojawią się w liście.\n\n<i>Uwaga: Pamiętaj aby sprawdzić dokładniejsze informacje poprzez rozwinięcie danego elementu!</i></string>
-    <string name="activity_info_info">Info...</string>
+    <string name="activity_info_info">Program ten powstał w celu ułatwienia znajdowania połączeń na trasie Wrocław - Swidnica - Wałbrzych.\nDziała on w trybie <strong>offline</strong> więc prezentowane rozkłady mogą różnić się od aktualnych. Z naszej strony dokładamy wszelkich starań by zapewnić Tobie jak najlepsze odczucia podczas używania aplikacji.\nJeżeli zauważyłeś jakieś problemy użyj przycisku w prawym górnym rogu by przesłać swoją opinię, będziemy bardzo wdzięczni.</string>
+    <string name="activity_info_title">O programie</string>
+    <string name="activity_info_author">Pozdrawiam MAG</string>
 
 </resources>
