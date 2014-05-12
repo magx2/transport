@@ -1,11 +1,14 @@
 package pl.grzeslowski.transport.tasks;
 
 import android.os.AsyncTask;
+import android.util.Log;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
 import com.google.common.base.Preconditions;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import pl.grzeslowski.transport.TransporterApplication;
@@ -20,6 +23,7 @@ public class ConnectionsLoader extends AsyncTask<City, Void, List<Connection>> {
     public static final String CATEGORY = "PROFILING";
     public static final String ACTION = "mDatabaseManager.getConnections(City, City)";
     private static final String SCREEN_NAME = "CONNECTIONS_LOADER";
+    private static final String sSdf = "hh:mm";
     private final DatabaseManager mDatabaseManager;
     private final ResultFragment mResultFragment;
     private final TransporterApplication mTransporterApplication;
@@ -50,18 +54,24 @@ public class ConnectionsLoader extends AsyncTask<City, Void, List<Connection>> {
         if (tracker != null) {
             tracker.setScreenName(SCREEN_NAME);
 
+            final String gaText = buildLabelString(end, from, to);
             tracker.send(new HitBuilders.EventBuilder()
                     .setCategory(CATEGORY)
                     .setAction(ACTION)
-                    .setLabel(buildLabelString(end, from, to))
+                    .setLabel(gaText)
                     .build());
+            Log.d(TransporterApplication.GA_TAG, gaText);
 
             tracker.setScreenName(null);
         }
     }
 
     private String buildLabelString(long end, City from, City to) {
-        return String.format("TIME{%6s} FROM{%s} TO{%s}", end, from, to);
+        final SimpleDateFormat sdf = new SimpleDateFormat(sSdf);
+        final Date now = new Date();
+
+        return String.format("DATE:{%s} TIME{%6s} FROM{%s} TO{%s}", sdf.format(now), end, from, to);
+
     }
 
     @Override

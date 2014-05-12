@@ -12,6 +12,7 @@ import org.androidannotations.annotations.EApplication;
 @EApplication
 public class TransporterApplication extends Application {
 
+    public static final String GA_TAG = "ga";
     private Tracker mTracker;
 
     @Override
