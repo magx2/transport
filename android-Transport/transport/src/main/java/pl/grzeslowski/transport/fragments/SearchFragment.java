@@ -7,6 +7,8 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
+import com.google.android.gms.analytics.HitBuilders;
+import com.google.android.gms.analytics.Tracker;
 import com.google.common.base.Strings;
 
 import org.androidannotations.annotations.AfterViews;
@@ -20,6 +22,7 @@ import org.androidannotations.api.sharedpreferences.StringPrefField;
 import java.util.List;
 
 import pl.grzeslowski.transport.R;
+import pl.grzeslowski.transport.TransporterApplication;
 import pl.grzeslowski.transport.activities.ResultActivity_;
 import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.repository.DatabaseManager;
@@ -30,6 +33,8 @@ import static pl.grzeslowski.transport.views.RememberingStateSpinner.OnItemSelec
 
 @EFragment(R.layout.fragment_search)
 public class SearchFragment extends Fragment {
+    private static final String CATEGORY = "CLICK_SWITCH";
+    private static final String SCREEN_NAME = "SearchFragment_Switch";
     @ViewById(R.id.fragment_search_from)
     RememberingStateSpinner mFrom;
     @ViewById(R.id.fragment_search_to)
@@ -48,10 +53,27 @@ public class SearchFragment extends Fragment {
     }
 
     private void initChange() {
+        final TransporterApplication transporterApplication = (TransporterApplication) getActivity().getApplication();
+
         mChange.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 mFrom.setSelection(mTo.getSelectedItemPosition(), true);
+
+                sendToGoogleAnalytics();
+            }
+
+            private void sendToGoogleAnalytics() {
+                final Tracker tracker = transporterApplication.getTracker();
+                if (tracker != null) {
+                    tracker.setScreenName(SCREEN_NAME);
+
+                    tracker.send(new HitBuilders.EventBuilder()
+                            .setCategory(CATEGORY)
+                            .build());
+
+                    tracker.setScreenName(null);
+                }
             }
         });
     }
