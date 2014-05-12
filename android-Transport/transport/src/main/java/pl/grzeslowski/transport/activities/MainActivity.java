@@ -15,14 +15,10 @@ import pl.grzeslowski.transport.tools.MenuHelper;
 @EActivity(R.layout.activity_main)
 @OptionsMenu(R.menu.main)
 public class MainActivity extends AdSenseActivity {
-    private final MenuHelper mMenuHelper;
+    private MenuHelper mMenuHelper;
 
     @FragmentById(R.id.fragment_buy)
     BuyFragment mBuyFragment;
-
-    public MainActivity() {
-        mMenuHelper = new MenuHelper(this);
-    }
 
     @OptionsItem(R.id.menu_info)
     void showInfo() {
@@ -39,5 +35,7 @@ public class MainActivity extends AdSenseActivity {
         final BuyFragmentInitializer buyFragmentInitializer = new BuyFragmentInitializer(this);
 
         buyFragmentInitializer.initBuyFragment(mBuyFragment);
+
+        mMenuHelper = new MenuHelper(this);
     }
 }

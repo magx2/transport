@@ -19,7 +19,7 @@ import pl.grzeslowski.transport.tools.MenuHelper;
 @EActivity(R.layout.activity_result)
 @OptionsMenu(R.menu.main)
 public class ResultActivity extends AdSenseActivity {
-    private final MenuHelper mMenuHelper;
+    private MenuHelper mMenuHelper;
 
     @FragmentById(R.id.fragment_buy)
     BuyFragment mBuyFragment;
@@ -29,10 +29,6 @@ public class ResultActivity extends AdSenseActivity {
     City mTo;
     @FragmentById(R.id.activity_result_fragment_result)
     ResultFragment mResultFragment;
-
-    public ResultActivity() {
-        mMenuHelper = new MenuHelper(this);
-    }
 
     @OptionsItem(R.id.menu_info)
     void showInfo() {
@@ -55,6 +51,8 @@ public class ResultActivity extends AdSenseActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         initBuyFragment();
+
+        mMenuHelper = new MenuHelper(this);
     }
 
     private void initBuyFragment() {

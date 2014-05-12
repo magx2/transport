@@ -6,6 +6,7 @@ import android.util.Log;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
+import com.google.common.base.Preconditions;
 
 import pl.grzeslowski.transport.BuildConfig;
 import pl.grzeslowski.transport.R;
@@ -20,7 +21,7 @@ public class MenuHelper {
     private final Activity mActivity;
 
     public MenuHelper(Activity activity) {
-        mTransporterApplication = (TransporterApplication) activity.getApplication();
+        mTransporterApplication = Preconditions.checkNotNull((TransporterApplication) activity.getApplication());
         mActivity = activity;
     }
 
