@@ -113,21 +113,21 @@ public class ResultListAdapter extends AnimatedExpandableListView.AnimatedExpand
         if (childPosition >= sChildrenCount) {
 
             // show marks
-            return showMarks(convertView, groupPosition, childPosition);
+            return showMarks(convertView, groupPosition, childPosition, parent);
         } else {
 
             // show normal child
-            return showExpandedView(convertView, groupPosition);
+            return showExpandedView(convertView, groupPosition, parent);
         }
     }
 
-    private View showExpandedView(View convertView, int groupPosition) {
+    private View showExpandedView(View convertView, int groupPosition, ViewGroup parent) {
         ChildViewHolder viewHolder;
 
         if (convertView != null && convertView.getTag() instanceof ChildViewHolder) {
             viewHolder = (ChildViewHolder) convertView.getTag();
         } else {
-            convertView = mInflater.inflate(R.layout.list_result_expanded, null);
+            convertView = mInflater.inflate(R.layout.list_result_expanded, parent, false);
             viewHolder = new ChildViewHolder(convertView);
 
             convertView.setTag(viewHolder);
@@ -143,7 +143,7 @@ public class ResultListAdapter extends AnimatedExpandableListView.AnimatedExpand
         return convertView;
     }
 
-    private View showMarks(View convertView, int groupPosition, int childPosition) {
+    private View showMarks(View convertView, int groupPosition, int childPosition, ViewGroup parent) {
         final int realChildPosition = childPosition - sChildrenCount;
 
         MarkViewHolder viewHolder;
@@ -151,7 +151,7 @@ public class ResultListAdapter extends AnimatedExpandableListView.AnimatedExpand
         if (convertView != null && convertView.getTag() instanceof MarkViewHolder) {
             viewHolder = (MarkViewHolder) convertView.getTag();
         } else {
-            convertView = mInflater.inflate(R.layout.list_result_mark, null);
+            convertView = mInflater.inflate(R.layout.list_result_mark, parent, false);
             viewHolder = new MarkViewHolder(convertView);
 
             convertView.setTag(viewHolder);
