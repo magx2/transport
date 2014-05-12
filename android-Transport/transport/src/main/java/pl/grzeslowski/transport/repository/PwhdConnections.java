@@ -20,7 +20,7 @@ class PwhdConnections {
     private static final String PWHD_SCWIDNICA_WROCLAW_STUDENT_PRICE = "4,50";
 
     private static final String PWHD_WALBRZYCH_SWIDNICA_NORMAL_PRICE = "4,60";
-    private static final String PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE = "???";
+    private static final String PWHD_WALBRZYCH_SWIDNICA_STUDENT_PRICE = "4,60";
 
     private static final String PWHD_WALBRZYCH_WROCLAW_NORMAL_PRICE = "11,10";
     private static final String PWHD_WALBRZYCH_WROCLAW_STUDENT_PRICE = "9,10";
