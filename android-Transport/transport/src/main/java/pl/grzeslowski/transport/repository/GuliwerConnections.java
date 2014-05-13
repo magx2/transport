@@ -15,14 +15,10 @@ class GuliwerConnections {
 
     private static String GULIWER_WROCLAW_DEPARTURE = "pl. Dawida";
     private static String GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE = "ul. Kolejowa";
-    private static String GULIWER_SWIDNICA_ZAMENHOFA_DEPARTURE = "ul. Zamenhofa (Shell)";
     private static String GULIWER_WALBRZYCH_DEPARTURE = "ul. Sikorskiego  (Teatr Dramatyczny)";
 
     private static final String GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE = "5,50";
-    private static final String GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE = "4,50";
-
-    private static final String GULIWER_WALBRZYCH_SWIDNICA_NORMAL_PRICE = "";
-    private static final String GULIWER_WALBRZYCH_SWIDNICA_STUDENT_PRICE = "";
+    private static final String GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE = "4,50";
 
     private static final String GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE = "11";
     private static final String GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE = "9";
@@ -95,7 +91,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Kursuje od poniedziałku do soboty oprócz świąt"),
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -104,7 +100,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -114,7 +110,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Kursuje od poniedziałku do soboty oprócz świąt"),
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -123,7 +119,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -132,7 +128,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -141,7 +137,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -150,7 +146,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -159,7 +155,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -168,7 +164,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -177,7 +173,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -186,7 +182,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -197,7 +193,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Kursuje w piątki"),
                                 new ConnectionMark("Kursuje w niedzielę")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -206,7 +202,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -215,7 +211,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -224,7 +220,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -234,7 +230,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -244,7 +240,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -256,7 +252,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Kursuje w piątki"),
                                 new ConnectionMark("Kursuje w niedzielę")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -265,7 +261,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -275,7 +271,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -285,7 +281,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -295,7 +291,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -305,7 +301,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getScaWroGuliwerPath(),
@@ -315,7 +311,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII")
                         ),
-                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 )
         );
     }
@@ -332,7 +328,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Kursuje od poniedziałku do soboty oprócz świąt")
                         ),
-                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
@@ -341,7 +337,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
@@ -351,7 +347,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Kursuje od poniedziałku do soboty oprócz świąt")
                         ),
-                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
@@ -360,7 +356,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
@@ -369,7 +365,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
@@ -378,7 +374,7 @@ class GuliwerConnections {
                         Arrays.asList(
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII")
                         ),
-                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
@@ -389,7 +385,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Kursuje w piątki"),
                                 new ConnectionMark("Kursuje w niedzielę")
                         ),
-                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
@@ -399,7 +395,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII")
                         ),
-                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
@@ -409,7 +405,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII")
                         ),
-                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
@@ -421,7 +417,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Kursuje w piątki"),
                                 new ConnectionMark("Kursuje w niedzielę")
                         ),
-                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
@@ -431,7 +427,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII")
                         ),
-                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
@@ -441,7 +437,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII")
                         ),
-                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 ),
                 new Connection(
                         getWroScaGuliwerPath(),
@@ -451,7 +447,7 @@ class GuliwerConnections {
                                 new ConnectionMark("Nie kursuje w dniu 1.I., w pierwszy dzień Świąt Wielkanocnych i w dniu 25.XII"),
                                 new ConnectionMark("Nie kursuje w dniu 24.XII")
                         ),
-                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE
+                        GULIWER_WROCLAW_DEPARTURE, GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE, GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE
                 )
         );
     }
