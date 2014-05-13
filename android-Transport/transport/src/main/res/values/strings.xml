@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">S-Fast</string>
-    <string name="activity_main_title">Swidnica-Fast</string>
+    <string name="app_name">NaCzas</string>
     <string name="search_text">Wyszukaj połączenie:</string>
     <string name="search">Wyszukaj</string>
     <string name="title_activity_result">Wyniki</string>
