@@ -18,14 +18,14 @@ class GuliwerConnections {
     private static String GULIWER_SWIDNICA_ZAMENHOFA_DEPARTURE = "ul. Zamenhofa (Shell)";
     private static String GULIWER_WALBRZYCH_DEPARTURE = "ul. Sikorskiego  (Teatr Dramatyczny)";
 
-    private static final String GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE = "";
-    private static final String GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE = "";
+    private static final String GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE = "5,50";
+    private static final String GULIWER_SCWIDNICA_WROCLAW_STUDENT_PRICE = "4,50";
 
     private static final String GULIWER_WALBRZYCH_SWIDNICA_NORMAL_PRICE = "";
     private static final String GULIWER_WALBRZYCH_SWIDNICA_STUDENT_PRICE = "";
 
-    private static final String GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE = "";
-    private static final String GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE = "";
+    private static final String GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE = "11";
+    private static final String GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE = "9";
 
     private static List<City> getWroScaGuliwerPath() {
         List<City> path = getScaWroGuliwerPath();
