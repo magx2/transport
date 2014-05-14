@@ -2,6 +2,7 @@
 <resources>
     <color name="apptheme_color">#33b5e5</color>
     <color name="apptheme_color_dark">#006688</color>
+    <color name="apptheme_color_light">#6dcaec</color>
     <color name="background_color">#FFBB33</color>
     <color name="link_color">#0099CC</color>
     <color name="marks_in_paid_version_color">#000</color>

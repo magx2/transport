@@ -38,6 +38,8 @@ import static java.util.Collections.sort;
 @EFragment(R.layout.fragment_result)
 public class ResultFragment extends Fragment {
     private static final String sConnectionsTag = "connections";
+    private static final String sFromTag = "from";
+    private static final String sToTag = "to";
     private static final String SCREEN_NAME = "PROGRESS_DIALOG";
     private static final String CATEGORY = "CANCEL";
     private static final String sSdf = "hh:mm";
@@ -51,6 +53,8 @@ public class ResultFragment extends Fragment {
     private List<Connection> mConnections = new ArrayList<Connection>();
     private ProgressDialog mProgressDialog;
     private ConnectionsLoader mLoader;
+    private City mFrom;
+    private City mTo;
 
     @AfterViews
     void prepare() {
@@ -87,6 +91,9 @@ public class ResultFragment extends Fragment {
 
     public void showResultsFor(final City from, final City to) {
         if (mLoader == null) {
+            mFrom = from;
+            mTo = to;
+
             showProgressDialog();
 
             checkNotNull(from);
@@ -146,7 +153,7 @@ public class ResultFragment extends Fragment {
     }
 
     private void setAdapter(List<Connection> elements) {
-        ResultListAdapter adapter = new ResultListAdapter(elements, getActivity());
+        ResultListAdapter adapter = new ResultListAdapter(elements, getActivity(), mFrom, mTo);
         mResultList.setAdapter(adapter);
     }
 
@@ -154,6 +161,8 @@ public class ResultFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if (savedInstanceState != null) {
             mConnections = (List<Connection>) savedInstanceState.get(sConnectionsTag);
+            mFrom = (City) savedInstanceState.get(sFromTag);
+            mTo = (City) savedInstanceState.get(sToTag);
         }
 
         return null;
@@ -162,6 +171,8 @@ public class ResultFragment extends Fragment {
     @Override
     public void onSaveInstanceState(Bundle outState) {
         outState.putSerializable(sConnectionsTag, new ArrayList<Connection>(mConnections));
+        outState.putSerializable(sFromTag, mFrom);
+        outState.putSerializable(sToTag, mTo);
 
         super.onSaveInstanceState(outState);
     }

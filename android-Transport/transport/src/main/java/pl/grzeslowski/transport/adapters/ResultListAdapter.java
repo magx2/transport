@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.google.common.base.Preconditions;
 import com.idunnololz.widgets.AnimatedExpandableListView;
 
 import org.joda.time.LocalTime;
@@ -22,6 +21,8 @@ import pl.grzeslowski.transport.model.ConnectionMark;
 import pl.grzeslowski.transport.product_flavors.MonetizationType;
 import pl.grzeslowski.transport.tools.TimeCounter;
 
+import static com.google.common.base.Preconditions.checkNotNull;
+
 public class ResultListAdapter extends AnimatedExpandableListView.AnimatedExpandableListAdapter {
 
     private static final int sChildrenCount = 1;
@@ -30,12 +31,22 @@ public class ResultListAdapter extends AnimatedExpandableListView.AnimatedExpand
     private final List<Connection> mConnections;
     private final LayoutInflater mInflater;
     private final TimeCounter mTimeCounter;
+    private final City mFrom;
+    private final City mTo;
+    private final int mStrongBackgroungColor;
+    private final int mWeakBackgroungColor;
 
-    public ResultListAdapter(List<Connection> connections, Activity activity) {
-        mConnections = new ArrayList<Connection>(Preconditions.checkNotNull(connections));
-        mActivity = Preconditions.checkNotNull(activity);
+    public ResultListAdapter(List<Connection> connections, Activity activity, City from, City to) {
+        mConnections = new ArrayList<Connection>(checkNotNull(connections));
+        mActivity = checkNotNull(activity);
         mInflater = activity.getLayoutInflater();
         mTimeCounter = new TimeCounter();
+
+        mFrom = checkNotNull(from);
+        mTo = checkNotNull(to);
+
+        mStrongBackgroungColor = activity.getResources().getColor(R.color.apptheme_color);
+        mWeakBackgroungColor = activity.getResources().getColor(R.color.apptheme_color_light);
     }
 
     @Override
@@ -105,7 +116,22 @@ public class ResultListAdapter extends AnimatedExpandableListView.AnimatedExpand
         }
         viewHolder.mSearchTime.setText(time + formattedTimeTo);
 
+        int color;
+        if (isStartingAndEndingInSearchingResults(connection.getPath())) {
+            color = mStrongBackgroungColor;
+        } else {
+            color = mWeakBackgroungColor;
+        }
+        viewHolder.mLayout.setBackgroundColor(color);
+
         return convertView;
+    }
+
+    private boolean isStartingAndEndingInSearchingResults(List<City> path) {
+        City from = path.get(0);
+        City to = path.get(path.size() - 1);
+
+        return mFrom.equals(from) && mTo.equals(to);
     }
 
     @Override
@@ -185,10 +211,12 @@ public class ResultListAdapter extends AnimatedExpandableListView.AnimatedExpand
     }
 
     private class ViewHolder {
+        private View mLayout;
         private TextView mProvider;
         private TextView mSearchTime;
 
         ViewHolder(View convertView) {
+            mLayout = convertView.findViewById(R.id.list_result_layout);
             mProvider = (TextView) convertView.findViewById(R.id.list_result_provider);
             mSearchTime = (TextView) convertView.findViewById(R.id.list_result_time_search_connection);
         }
