@@ -17,8 +17,8 @@ class GuliwerConnections {
     private static String GULIWER_SWIDNICA_KOLEJOWA_DEPARTURE = "ul. Kolejowa";
     private static String GULIWER_WALBRZYCH_DEPARTURE = "ul. Sikorskiego  (Teatr Dramatyczny)";
 
-    private static final String GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE = "5,50";
-    private static final String GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE = "4,50";
+    private static final String GULIWER_SWIDNICA_WROCLAW_NORMAL_PRICE = "8";
+    private static final String GULIWER_SWIDNICA_WROCLAW_STUDENT_PRICE = "5,50";
 
     private static final String GULIWER_WALBRZYCH_WROCLAW_NORMAL_PRICE = "11";
     private static final String GULIWER_WALBRZYCH_WROCLAW_STUDENT_PRICE = "9";
