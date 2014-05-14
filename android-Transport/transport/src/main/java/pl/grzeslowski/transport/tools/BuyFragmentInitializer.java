@@ -39,7 +39,7 @@ public class BuyFragmentInitializer {
 
 
     public class DownloadPaidAppOpener implements View.OnClickListener {
-        private static final String sPadPackage = "pl.grzeslowski.transporter";
+        private static final String sPadPackage = BuildConfig.PAID_PACKAGE_NAME;
         private static final String sMarketUri = "market://details?id=" + sPadPackage;
 
         private final Activity mActivity;
