@@ -12,7 +12,7 @@
     <string name="normal_price">normalny</string>
     <string name="student_price">studencki</string>
     <string name="loading_connections_title"></string>
-    <string name="loading_connections_message">Ładuję połączenia…</string>
+    <string name="loading_connections_message">Ładuję połączenia…\nMoże to trwać nawet do 2 min!</string>
     <string name="click_to_buy_premium_version">Kup pełną wersję</string>
     <string name="ab_feedback">Przekaż opinię</string>
     <string name="ab_info">O programie</string>
