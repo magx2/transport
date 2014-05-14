@@ -45,20 +45,19 @@ public class MenuHelper {
 
             sEmailIntent.showEmailIntent(mActivity, feedbackEmail);
 
-            sendTimeToGoogleAnalytics(emailText);
+            sendTimeToGoogleAnalytics();
         } catch (ActivityNotFoundException ex) {
             Log.e("sendFeedback", "Ex005", ex);
         }
     }
 
-    private void sendTimeToGoogleAnalytics(String emailText) {
+    private void sendTimeToGoogleAnalytics() {
         final Tracker tracker = mTransporterApplication.getTracker();
         if (tracker != null) {
             tracker.setScreenName(SCREEN_NAME);
 
             tracker.send(new HitBuilders.EventBuilder()
                     .setCategory(CATEGORY)
-                    .setAction(emailText)
                     .build());
 
             tracker.setScreenName(null);
