@@ -23,7 +23,7 @@ public class ConnectionsLoader extends AsyncTask<City, Void, List<Connection>> {
     public static final String CATEGORY = "PROFILING";
     public static final String ACTION = "mDatabaseManager.getConnections(City, City)";
     private static final String SCREEN_NAME = "CONNECTIONS_LOADER";
-    private static final String sSdf = "hh:mm";
+    private static final String sSdf = "HH:mm";
     private final DatabaseManager mDatabaseManager;
     private final ResultFragment mResultFragment;
     private final TransporterApplication mTransporterApplication;
