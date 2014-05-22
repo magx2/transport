@@ -3,6 +3,8 @@ package pl.grzeslowski.transport.tools;
 import android.app.Activity;
 import android.content.Intent;
 
+import static android.content.Intent.*;
+
 public class EmailIntent {
     public static class Email {
         private final String mSubject;
@@ -17,12 +19,12 @@ public class EmailIntent {
     }
 
     public void showEmailIntent(Activity activity, Email email) {
-        Intent intent = new Intent(Intent.ACTION_SEND);
+        Intent intent = new Intent(ACTION_SEND);
 
         intent.setType("message/rfc822");
-        intent.putExtra(Intent.EXTRA_SUBJECT, email.mSubject);
-        intent.putExtra(Intent.EXTRA_TEXT, email.mText);
-        intent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{email.mTo});
+        intent.putExtra(EXTRA_SUBJECT, email.mSubject);
+        intent.putExtra(EXTRA_TEXT, email.mText);
+        intent.putExtra(EXTRA_EMAIL, new String[]{email.mTo});
 
         activity.startActivity(intent);
     }

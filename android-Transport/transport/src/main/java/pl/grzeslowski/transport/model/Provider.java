@@ -1,10 +1,11 @@
 package pl.grzeslowski.transport.model;
 
-import com.google.common.base.Preconditions;
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
 
 import java.io.Serializable;
+
+import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
  * Created by Martin on 2014-04-17.
@@ -25,7 +26,7 @@ public class Provider implements Serializable {
 
     public Provider(int id, String name) {
         mId = id;
-        mName = Preconditions.checkNotNull(name);
+        mName = checkNotNull(name);
     }
 
     public Provider(String name) {

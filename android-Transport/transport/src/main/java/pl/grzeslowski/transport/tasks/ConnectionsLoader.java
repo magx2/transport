@@ -5,7 +5,6 @@ import android.util.Log;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
-import com.google.common.base.Preconditions;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -18,6 +17,8 @@ import pl.grzeslowski.transport.model.Connection;
 import pl.grzeslowski.transport.repository.DatabaseManager;
 import pl.grzeslowski.transport.tools.Profiler;
 
+import static com.google.common.base.Preconditions.checkNotNull;
+
 public class ConnectionsLoader extends AsyncTask<City, Void, List<Connection>> {
 
     public static final String CATEGORY = "PROFILING";
@@ -29,9 +30,9 @@ public class ConnectionsLoader extends AsyncTask<City, Void, List<Connection>> {
     private final TransporterApplication mTransporterApplication;
 
     public ConnectionsLoader(TransporterApplication transporterApplication, DatabaseManager databaseManager, ResultFragment resultFragment) {
-        mTransporterApplication = Preconditions.checkNotNull(transporterApplication);
-        mDatabaseManager = Preconditions.checkNotNull(databaseManager);
-        mResultFragment = Preconditions.checkNotNull(resultFragment);
+        mTransporterApplication = checkNotNull(transporterApplication);
+        mDatabaseManager = checkNotNull(databaseManager);
+        mResultFragment = checkNotNull(resultFragment);
     }
 
 

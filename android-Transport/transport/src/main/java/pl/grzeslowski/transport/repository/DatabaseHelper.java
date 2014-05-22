@@ -6,16 +6,13 @@ import android.database.sqlite.SQLiteDatabase;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 import com.j256.ormlite.dao.CloseableWrappedIterable;
 import com.j256.ormlite.dao.RuntimeExceptionDao;
-import com.j256.ormlite.misc.TransactionManager;
 import com.j256.ormlite.stmt.PreparedQuery;
 import com.j256.ormlite.stmt.QueryBuilder;
 import com.j256.ormlite.support.ConnectionSource;
-import com.j256.ormlite.table.TableUtils;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -26,6 +23,14 @@ import pl.grzeslowski.transport.model.Connection;
 import pl.grzeslowski.transport.model.ConnectionCity;
 import pl.grzeslowski.transport.model.ConnectionMark;
 import pl.grzeslowski.transport.model.Provider;
+
+import static com.j256.ormlite.misc.TransactionManager.callInTransaction;
+import static com.j256.ormlite.table.TableUtils.createTableIfNotExists;
+import static com.j256.ormlite.table.TableUtils.dropTable;
+import static java.util.Collections.reverse;
+import static pl.grzeslowski.transport.repository.DatabasePrePopulater.CITIES;
+import static pl.grzeslowski.transport.repository.DatabasePrePopulater.PROVIDERS;
+import static pl.grzeslowski.transport.repository.DatabasePrePopulater.getConnections;
 
 class DatabaseHelper extends OrmLiteSqliteOpenHelper {
 
@@ -51,23 +56,23 @@ class DatabaseHelper extends OrmLiteSqliteOpenHelper {
             createTablesIfNotExists(connectionSource);
 
             if (getAllConnections().isEmpty()) {
-                TransactionManager.callInTransaction(connectionSource, new Callable<Void>() {
+                callInTransaction(connectionSource, new Callable<Void>() {
                     public Void call() throws Exception {
                         dropTables(DatabaseHelper.this.connectionSource);
                         createTablesIfNotExists(DatabaseHelper.this.connectionSource);
 
                         // city
-                        for (City city : DatabasePrePopulater.CITIES) {
+                        for (City city : CITIES) {
                             mCityDao.create(city);
                         }
 
                         // provider
-                        for (Provider provider : DatabasePrePopulater.PROVIDERS) {
+                        for (Provider provider : PROVIDERS) {
                             mProviderDao.create(provider);
                         }
 
                         // connections
-                        for (Connection connection : DatabasePrePopulater.getConnections()) {
+                        for (Connection connection : getConnections()) {
                             mConnectionDao.create(connection);
 
                             int i = 0;
@@ -93,19 +98,19 @@ class DatabaseHelper extends OrmLiteSqliteOpenHelper {
     }
 
     private void createTablesIfNotExists(ConnectionSource connectionSource) throws SQLException {
-        TableUtils.createTableIfNotExists(connectionSource, City.class);
-        TableUtils.createTableIfNotExists(connectionSource, Connection.class);
-        TableUtils.createTableIfNotExists(connectionSource, ConnectionMark.class);
-        TableUtils.createTableIfNotExists(connectionSource, Provider.class);
-        TableUtils.createTableIfNotExists(connectionSource, ConnectionCity.class);
+        createTableIfNotExists(connectionSource, City.class);
+        createTableIfNotExists(connectionSource, Connection.class);
+        createTableIfNotExists(connectionSource, ConnectionMark.class);
+        createTableIfNotExists(connectionSource, Provider.class);
+        createTableIfNotExists(connectionSource, ConnectionCity.class);
     }
 
     private void dropTables(ConnectionSource connectionSource) throws SQLException {
-        TableUtils.dropTable(connectionSource, City.class, true);
-        TableUtils.dropTable(connectionSource, Connection.class, true);
-        TableUtils.dropTable(connectionSource, ConnectionMark.class, true);
-        TableUtils.dropTable(connectionSource, Provider.class, true);
-        TableUtils.dropTable(connectionSource, ConnectionCity.class, true);
+        dropTable(connectionSource, City.class, true);
+        dropTable(connectionSource, Connection.class, true);
+        dropTable(connectionSource, ConnectionMark.class, true);
+        dropTable(connectionSource, Provider.class, true);
+        dropTable(connectionSource, ConnectionCity.class, true);
     }
 
     @Override
@@ -185,7 +190,7 @@ class DatabaseHelper extends OrmLiteSqliteOpenHelper {
         }
 
         if (foundTo) {
-            Collections.reverse(path);
+            reverse(path);
             return path;
         } else {
             return null;

@@ -1,17 +1,19 @@
 package pl.grzeslowski.transport.tools;
 
+import static java.lang.System.*;
+
 public class Profiler {
 
     private long mStart;
     private long mEnd;
 
     public Profiler start() {
-        mStart = System.currentTimeMillis();
+        mStart = currentTimeMillis();
         return this;
     }
 
     public Profiler stop() {
-        mEnd = System.currentTimeMillis() - mStart;
+        mEnd = currentTimeMillis() - mStart;
         return this;
     }
 

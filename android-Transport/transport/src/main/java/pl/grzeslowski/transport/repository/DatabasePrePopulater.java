@@ -1,16 +1,17 @@
 package pl.grzeslowski.transport.repository;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 import pl.grzeslowski.transport.model.City;
 import pl.grzeslowski.transport.model.Connection;
 import pl.grzeslowski.transport.model.Provider;
 
+import static java.util.Arrays.asList;
+
 class DatabasePrePopulater {
 
-    public static List<City> CITIES = Arrays.asList(
+    public static List<City> CITIES = asList(
             new City("Świdnica"),
             new City("Wrocław"),
             new City("Wałbrzych"),
@@ -26,7 +27,7 @@ class DatabasePrePopulater {
             new City("Małuszów"),
             new City("Tyniec Mały")
     );
-    public static List<Provider> PROVIDERS = Arrays.asList(
+    public static List<Provider> PROVIDERS = asList(
             new Provider("P.W.H.D"),
             new Provider("Guliwer"),
             new Provider("PKP")

@@ -1,7 +1,5 @@
 package pl.grzeslowski.transport.tools;
 
-import com.google.common.base.Preconditions;
-
 import org.joda.time.LocalTime;
 
 import java.util.Comparator;
@@ -9,12 +7,15 @@ import java.util.Date;
 
 import pl.grzeslowski.transport.model.Connection;
 
+import static com.google.common.base.Preconditions.checkNotNull;
+import static java.lang.Math.*;
+
 public class ConnectionComparator implements Comparator<Connection>{
 
     private final LocalTime mTimeToCompare;
 
     public ConnectionComparator(LocalTime timeToCompare) {
-        mTimeToCompare =  Preconditions.checkNotNull(timeToCompare);
+        mTimeToCompare =  checkNotNull(timeToCompare);
     }
 
     public ConnectionComparator() {
@@ -29,7 +30,7 @@ public class ConnectionComparator implements Comparator<Connection>{
         int leftCompare = mTimeToCompare.compareTo(leftTime);
         int rightCompare = mTimeToCompare.compareTo(rightTime);
 
-        if(Math.signum(leftCompare)== Math.signum(rightCompare)) {
+        if(signum(leftCompare)== signum(rightCompare)) {
             return leftTime.compareTo(rightTime);
         } else {
             return leftCompare - rightCompare;

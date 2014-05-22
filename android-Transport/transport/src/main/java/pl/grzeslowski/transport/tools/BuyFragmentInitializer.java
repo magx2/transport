@@ -7,10 +7,12 @@ import android.net.Uri;
 import android.util.Log;
 import android.view.View;
 
-import pl.grzeslowski.transport.BuildConfig;
 import pl.grzeslowski.transport.R;
 import pl.grzeslowski.transport.fragments.BuyFragment;
-import pl.grzeslowski.transport.product_flavors.MonetizationType;
+
+import static pl.grzeslowski.transport.BuildConfig.MONETIAZATION_TYPE;
+import static pl.grzeslowski.transport.BuildConfig.PAID_PACKAGE_NAME;
+import static pl.grzeslowski.transport.product_flavors.MonetizationType.PAID;
 
 public class BuyFragmentInitializer {
 
@@ -21,7 +23,7 @@ public class BuyFragmentInitializer {
     }
 
     public void initBuyFragment(BuyFragment buyFragment) {
-        if (BuildConfig.MONETIAZATION_TYPE == MonetizationType.PAID) {
+        if (MONETIAZATION_TYPE == PAID) {
             hideBuyRelatedViews();
         } else {
             initOpeningShow(buyFragment);
@@ -39,7 +41,7 @@ public class BuyFragmentInitializer {
 
 
     public class DownloadPaidAppOpener implements View.OnClickListener {
-        private static final String sPadPackage = BuildConfig.PAID_PACKAGE_NAME;
+        private static final String sPadPackage = PAID_PACKAGE_NAME;
         private static final String sMarketUri = "market://details?id=" + sPadPackage;
 
         private final Activity mActivity;

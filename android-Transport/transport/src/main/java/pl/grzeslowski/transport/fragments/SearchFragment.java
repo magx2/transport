@@ -9,7 +9,6 @@ import android.widget.SpinnerAdapter;
 
 import com.google.android.gms.analytics.HitBuilders;
 import com.google.android.gms.analytics.Tracker;
-import com.google.common.base.Strings;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Bean;
@@ -29,6 +28,7 @@ import pl.grzeslowski.transport.repository.DatabaseManager;
 import pl.grzeslowski.transport.tools.ApplicationSharedPref_;
 import pl.grzeslowski.transport.views.RememberingStateSpinner;
 
+import static com.google.common.base.Strings.isNullOrEmpty;
 import static pl.grzeslowski.transport.views.RememberingStateSpinner.OnItemSelected;
 
 @EFragment(R.layout.fragment_search)
@@ -107,7 +107,7 @@ public class SearchFragment extends Fragment {
     }
 
     private boolean setSelection(Spinner spinner, String cityName) {
-        if (!Strings.isNullOrEmpty(cityName)) {
+        if (!isNullOrEmpty(cityName)) {
             final SpinnerAdapter adapter = spinner.getAdapter();
             for (int i = 0; i < adapter.getCount(); i++) {
                 if (cityName.equals(adapter.getItem(i))) {
