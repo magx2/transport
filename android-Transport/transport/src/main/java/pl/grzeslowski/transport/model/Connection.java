@@ -13,6 +13,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import pl.grzeslowski.transport.search.NotRunPeriod;
+
 
 @DatabaseTable
 public class Connection implements Serializable {
@@ -23,6 +25,7 @@ public class Connection implements Serializable {
     public static final String DEPARTURE = "departure";
     public static final String NORMAL_PRICE = "normal_price";
     public static final String STUDENT_PRICE = "student_price";
+    public static final String WHEN_NOT_RUN = "when_not_run";
 
     @DatabaseField(generatedId = true, columnName = ID)
     private int mId;
@@ -39,6 +42,8 @@ public class Connection implements Serializable {
     private String mNormalPrice;
     @DatabaseField(columnName = STUDENT_PRICE, canBeNull = false)
     private String mStudentPrice;
+    @ForeignCollectionField(eager = false, columnName = WHEN_NOT_RUN)
+    private Collection<NotRunPeriod> mWhenNotRun;
 
     private Connection() {
         // for ORM
@@ -105,6 +110,10 @@ public class Connection implements Serializable {
 
     public void setPath(List<City> path) {
         mPath = new ArrayList<City>(path);
+    }
+
+    public Collection<NotRunPeriod> getWhenNotRun() {
+        return mWhenNotRun;
     }
 
     @Override
