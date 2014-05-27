@@ -40,7 +40,7 @@ public enum NotRunPeriod {
     /**
      * Nie kursuje w dni wolne od nauki
      */
-    SCHOOL_HOLIDAY,
+    SCHOOL_HOLIDAYS,
     /**
      * Nie kursuje w sylwestra
      */
